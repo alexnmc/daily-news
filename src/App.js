@@ -7,7 +7,7 @@ export default class App extends Component { // no need to exposrt on the bottom
         super()
         this.state = {
             articles:[],
-            channel:'Please Choose A Channel'
+            channel:'Please Choose A Source:'
 
         }
     }
