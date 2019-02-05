@@ -14,6 +14,12 @@ export default class App extends Component { // no need to exposrt on the bottom
     }
 
     
+    componentDidMount(){
+
+       return this.getNews("https://newsapi.org/v2/top-headlines?sources=axios&apiKey="), this.setState({ channel: "Choose a source:"}) 
+    }
+
+
     getNews = (url) => {  
         
         Scroll.animateScroll.scrollToTop()
