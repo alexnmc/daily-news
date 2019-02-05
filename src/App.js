@@ -17,7 +17,7 @@ export default class App extends Component { // no need to exposrt on the bottom
     getNews = (url) => {  
         
         Scroll.animateScroll.scrollToTop()
-        axios.get( `${url}`+ process.env.REACT_APP_CODE)
+        axios.get( `${url}`+ 'f64c9be83f094f43a2c3954a6c1ec8aa')
          .then(response => {
             console.log(response.data.articles)
             this.setState({
