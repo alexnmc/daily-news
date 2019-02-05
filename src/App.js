@@ -73,11 +73,16 @@ export default class App extends Component { // no need to exposrt on the bottom
                 <p onClick = {()=>{ return this.getNews("https://newsapi.org/v2/top-headlines?sources=fox-news&apiKey="), this.setState({ channel: "FOX News"})}}>FOX News</p>
                 <p onClick = {()=>{ return this.getNews("https://newsapi.org/v2/top-headlines?sources=independent&apiKey="), this.setState({ channel: "Independent"})}}>Independent</p>
                 <p onClick = {()=>{ return this.getNews("https://newsapi.org/v2/top-headlines?sources=fox-sports&apiKey="), this.setState({ channel: "FOX Sports"})}}>FOX Sports</p>
-                <p onClick = {()=>{ return this.getNews(""), this.setState({ channel: ""})}}></p>
-                <p onClick = {()=>{ return this.getNews(""), this.setState({ channel: ""})}}></p>
-                <p onClick = {()=>{ return this.getNews(""), this.setState({ channel: ""})}}></p>
-                <p onClick = {()=>{ return this.getNews(""), this.setState({ channel: ""})}}></p>
-                <p onClick = {()=>{ return this.getNews(""), this.setState({ channel: ""})}}></p>
+                <p onClick = {()=>{ return this.getNews("https://newsapi.org/v2/top-headlines?sources=national-geographic&apiKey"), this.setState({ channel: "National Geographic"})}}>National Geographic</p>
+                <p onClick = {()=>{ return this.getNews("https://newsapi.org/v2/top-headlines?sources=mtv-news&apiKey="), this.setState({ channel: "Music Television News"})}}>MTV news</p>
+                <p onClick = {()=>{ return this.getNews("https://newsapi.org/v2/top-headlines?sources=newsweek&apiKey="), this.setState({ channel: "Newsweek"})}}>Newsweek</p>
+                <p onClick = {()=>{ return this.getNews("https://newsapi.org/v2/top-headlines?sources=news24&apiKey="), this.setState({ channel: "news 24"})}}>news24</p>
+                <p onClick = {()=>{ return this.getNews("https://newsapi.org/v2/top-headlines?sources=the-economist&apiKey="), this.setState({ channel: "The Economist"})}}>The Economist</p>
+                <p onClick = {()=>{ return this.getNews("https://newsapi.org/v2/top-headlines?sources=the-washington-times&apiKey="), this.setState({ channel: "The Washington Times"})}}>The Washington Times</p>
+                <p onClick = {()=>{ return this.getNews("https://newsapi.org/v2/top-headlines?sources=the-washington-post&apiKey="), this.setState({ channel: "The Washington Post"})}}>news 24</p>
+                <p onClick = {()=>{ return this.getNews("https://newsapi.org/v2/top-headlines?sources=time&apiKey="), this.setState({ channel: "TIME"})}}>TIME</p>
+                <p onClick = {()=>{ return this.getNews("https://newsapi.org/v2/top-headlines?sources=usa-today&apiKey="), this.setState({ channel: "USA Today"})}}>USA Today</p>
+                <p onClick = {()=>{ return this.getNews("https://newsapi.org/v2/top-headlines?sources=the-new-york-times&apiKey="), this.setState({ channel: "The New York Times"})}}>NY Times</p>
                 
                 
                 </div>
