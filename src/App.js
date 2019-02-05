@@ -51,19 +51,19 @@ export default class App extends Component { // no need to exposrt on the bottom
                 <div className = "navbarWrap">
                 <div className = "navbar">
                 
+                <p onClick = {()=> { return this.getNews("https://newsapi.org/v2/top-headlines?sources=axios&apiKey="), this.setState({ channel: "Axios"})}}>AXIOS</p>
                 <p onClick = {()=>{ return this.getNews("https://newsapi.org/v2/everything?q=apple&from=2019-02-02&to=2019-02-02&sortBy=popularity&apiKey="), this.setState({channel: "Apple in the News"})}}>Apple News</p>
                 <p onClick = {()=>{ return this.getNews("https://newsapi.org/v2/top-headlines?sources=abc-news&apiKey="), this.setState({channel:"ABC News"})}}>ABC</p>
                 <p onClick = {()=> { return this.getNews("https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey="), this.setState({channel: "BBC News"})}}>BBC</p>
-                <p onClick = {()=> this.getNews("https://newsapi.org/v2/top-headlines?sources=cbs-news&apiKey=")}>CBS</p>
-                <p onClick = {()=> this.getNews("https://newsapi.org/v2/everything?domains=wsj.com&apiKey=")}>Wall Street Journal</p>
-                <p onClick = {()=> this.getNews("https://newsapi.org/v2/top-headlines?sources=axios&apiKey=")}>AXIOS</p>
-                <p onClick = {()=> this.getNews("https://newsapi.org/v2/top-headlines?sources=bbc-sport&apiKey=")}>BBC Sport</p>
-                <p onClick = {()=> this.getNews("https://newsapi.org/v2/top-headlines?sources=financial-times&apiKey=")}>Financial Times</p>
-                <p onClick = {()=> this.getNews("https://newsapi.org/v2/top-headlines?sources=crypto-coins-news&apiKey=")}>Crypto Coins News</p>
-                <p onClick = {()=> this.getNews("https://newsapi.org/v2/top-headlines?sources=fox-news&apiKey=")}>FOX News</p>
-                <p onClick = {()=> { return this.getNews("https://newsapi.org/v2/top-headlines?sources=espn&apiKey="), this.setState({ channel: "ESPN News"})}}>ESPN</p>
+                <p onClick = {()=> { return this.getNews("https://newsapi.org/v2/top-headlines?sources=cbs-news&apiKey="), this.setState({ channel: "CBS News"})}}>CBS</p>
                 <p onClick = {()=>{ return this.getNews("https://newsapi.org/v2/top-headlines?sources=cnbc&apiKey="), this.setState({ channel: "CNBC News"})}}>CNBC</p>
                 <p onClick = {()=>{ return this.getNews("https://newsapi.org/v2/top-headlines?sources=daily-mail&apiKey="), this.setState({ channel: "Daily Mail News"})}}>Daily Mail</p>
+                <p onClick = {()=> { return this.getNews("https://newsapi.org/v2/everything?domains=wsj.com&apiKey="),this.setState({ channel: "Wall Street Journal"})}}>Wall Street Journal</p>
+                <p onClick = {()=> { return this.getNews("https://newsapi.org/v2/top-headlines?sources=bbc-sport&apiKey="), this.setState({ channel: "BBC Sport"})}}>BBC Sport</p>
+                <p onClick = {()=> { return this.getNews("https://newsapi.org/v2/top-headlines?sources=financial-times&apiKey="), this.setState({ channel: "Financial Times"})}}>Financial Times</p>
+                <p onClick = {()=> { return this.getNews("https://newsapi.org/v2/top-headlines?sources=crypto-coins-news&apiKey="), this.setState({ channel: "Crypto Coins News"})}}>Crypto Coins News</p>
+                <p onClick = {()=> { return this.getNews("https://newsapi.org/v2/top-headlines?sources=fox-news&apiKey="), this.setState({ channel: "FOX News"})}}>FOX News</p>
+                <p onClick = {()=> { return this.getNews("https://newsapi.org/v2/top-headlines?sources=espn&apiKey="), this.setState({ channel: "ESPN News"})}}>ESPN</p>
                 <p onClick = {()=>{ return this.getNews("https://newsapi.org/v2/top-headlines?sources=entertainment-weekly&apiKey="), this.setState({ channel: "Entertainment Weekly"})}}>Entertainment Weekly</p>
                 <p onClick = {()=>{ return this.getNews("https://newsapi.org/v2/top-headlines?sources=business-insider&apiKey="), this.setState({ channel: "Business Insider"})}}>Business Insider</p>
                 <p onClick = {()=>{ return this.getNews("https://newsapi.org/v2/top-headlines?sources=business-insider-uk&apiKey="), this.setState({ channel: "Business Insider UK"})}}>Business Insider UK</p>

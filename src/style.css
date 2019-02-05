@@ -110,7 +110,7 @@ p{
     font-size: 21px;
     font-weight: bolder;
     text-decoration: none;
-    color:rgb(255, 0, 0);
+    color:rgb(255, 37, 37);
     cursor: pointer;
     margin: 16px;
     position: relative;
@@ -118,7 +118,7 @@ p{
 }
 
 p:hover{
-    color:rgb(255, 96, 96);
+    color:rgba(255, 255, 255, 0.931);
 }
 
 
