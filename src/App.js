@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Scroll from 'react-scroll';
+import Scroll from 'react-scroll'
 import axios from 'axios'
 
 
@@ -15,6 +15,7 @@ export default class App extends Component { // no need to exposrt on the bottom
 
     
     getNews = (url) => {  
+        
         Scroll.animateScroll.scrollToTop()
         axios.get( `${url}`+ process.env.REACT_APP_CODE)
          .then(response => {
@@ -91,6 +92,7 @@ export default class App extends Component { // no need to exposrt on the bottom
                 <div className = "spaceDiv"></div>
                 
                 {article}
+           
             </div>
         )
     }
