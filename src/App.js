@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Scroll from 'react-scroll';
 import axios from 'axios'
 
 
@@ -13,9 +14,8 @@ export default class App extends Component { // no need to exposrt on the bottom
     }
 
     
-    
     getNews = (url) => {  
-        
+        Scroll.animateScroll.scrollToTop()
         axios.get( `${url}`+ process.env.REACT_APP_CODE)
          .then(response => {
             console.log(response.data.articles)
@@ -24,6 +24,7 @@ export default class App extends Component { // no need to exposrt on the bottom
             })
         })
     }
+    
     
    
    
