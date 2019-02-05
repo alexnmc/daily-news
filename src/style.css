@@ -8,7 +8,8 @@
 body{
 
       background-image: url("http://www.toyfairdailynews.info/images/Header/dailynews_logo.jpg") ;
-}
+     
+    }
 
 
 
@@ -39,6 +40,7 @@ img{
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      
      
       
 }
@@ -64,13 +66,12 @@ p{
     text-decoration: none;
     color:rgb(255, 0, 0);
     cursor: pointer;
-    margin: 20px;
+    margin: 17px;
+    position:absolute;
+    
 }
 
-p:hover{
-    color:rgb(255, 108, 108);
-    font-size: 23px;
-}
+
 
 
 
@@ -79,12 +80,9 @@ p:hover{
     color: red;
     cursor: none;
     
+    
 }
 
-.name:hover{
-    color:red;
-    font-size:21px;
-}
 
 
 .link:hover{
@@ -93,18 +91,36 @@ p:hover{
 }
 
 
+
+
 .navbar{
     display:flex;
     align-items: flex-start;
-    justify-content:space-around;
-    height: 150px;
+    height: auto;
     margin-top:40px;
     background-color: rgb(15, 15, 15);
     width:100%;
-    position: fixed;
     flex-wrap: wrap;
+    padding:10px;
+    position:fixed;
     
 }
+
+p{
+    font-size: 21px;
+    font-weight: bolder;
+    text-decoration: none;
+    color:rgb(255, 0, 0);
+    cursor: pointer;
+    margin: 16px;
+    position: relative;
+   
+}
+
+p:hover{
+    color:rgb(255, 96, 96);
+}
+
 
 .channelName{
     
@@ -123,6 +139,7 @@ a{
     font-size:20px;
     font-weight: bolder;
     color: red;
+   
     
    
 }
