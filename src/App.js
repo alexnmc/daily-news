@@ -77,7 +77,7 @@ export default class App extends Component { // no need to exposrt on the bottom
                         <p onClick = {()=> { return this.getNews("https://newsapi.org/v2/top-headlines?sources=business-insider&apiKey="), this.setState({ channel: "Business Insider"})}}>Business Insider</p>
                         <p onClick = {()=> { return this.getNews("https://newsapi.org/v2/top-headlines?sources=business-insider-uk&apiKey="), this.setState({ channel: "Business Insider UK"})}}>Business Insider UK</p>
                         <p onClick = {()=> { return this.getNews("https://newsapi.org/v2/top-headlines?sources=google-news&apiKey="), this.setState({ channel: "Google News"})}}>Google News</p>
-                        <p onClick = {()=> { return this.getNews("https://newsapi.org/v2/top-headlines?sources=fox-news&apiKey="), this.setState({ channel: "FOX News"})}}>FOX News</p>
+                        <p onClick = {()=> { return this.getNews("https://newsapi.org/v2/top-headlines?sources=nfl-news&apiKey="), this.setState({ channel: "NFL News"})}}>FOX News</p>
                         <p onClick = {()=> { return this.getNews("https://newsapi.org/v2/top-headlines?sources=independent&apiKey="), this.setState({ channel: "Independent"})}}>Independent</p>
                         <p onClick = {()=> { return this.getNews("https://newsapi.org/v2/top-headlines?sources=fox-sports&apiKey="), this.setState({ channel: "FOX Sports"})}}>FOX Sports</p>
                         <p onClick = {()=> { return this.getNews("https://newsapi.org/v2/top-headlines?sources=national-geographic&apiKey"), this.setState({ channel: "National Geographic"})}}>National Geographic</p>
