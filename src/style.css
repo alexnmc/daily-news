@@ -14,8 +14,6 @@ body{
 
 
 
-
-
 h1{
     margin-bottom:12px;
     color:rgb(190, 0, 0);
@@ -47,14 +45,15 @@ img{
      
     }
 
+
+
 .div{
     background-color: rgba(43, 42, 42, 0.925);
-   position:relative;
+    position:relative;
     
-    
-    
-   
 }
+
+
 
 .spaceDiv{
     height: 150px;
@@ -133,7 +132,7 @@ p:hover{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 56px;
+    height: 58px;
  }
 
 
