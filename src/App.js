@@ -53,7 +53,7 @@ export default class App extends Component { // no need to exposrt on the bottom
         return(
              
             <div className = "div">
-                <div>
+                <div className = "channelName2">
                     <h1 className = "channelName">{this.state.channel}</h1>
                 </div>
                 
