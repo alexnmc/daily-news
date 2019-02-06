@@ -85,8 +85,8 @@ img{
     justify-content: center;
     height: auto;
     margin-top:2px;
-    border-top: 4px solid rgb(252, 252, 252);
-    border-bottom: 4px solid rgb(252, 252, 252);
+    border-top: 3px solid rgb(252, 252, 252);
+    border-bottom: 3px solid rgb(252, 252, 252);
     background-color: rgba(3, 3, 3, 0.897);
     width:100%;
     flex-wrap: wrap;
