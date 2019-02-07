@@ -85,8 +85,8 @@ img{
     justify-content: center;
     height: auto;
     margin-top:2px;
-    border-top: 3px solid rgb(252, 252, 252);
-    border-bottom: 3px solid rgb(252, 252, 252);
+    border-top: 3px solid rgba(252, 252, 252, 0.973);
+    border-bottom: 3px solid rgba(252, 252, 252, 0.972);
     background-color: rgba(12, 12, 12, 0.945);
     width:100%;
     flex-wrap: wrap;
@@ -103,7 +103,7 @@ p{
     font-size: 22px;
     font-weight: bolder;
     text-decoration: none;
-    color:rgb(255, 17, 9);
+    color:rgb(255, 29, 21);
     cursor: pointer;
     margin: 13px;
     margin-bottom:0px;
@@ -121,7 +121,7 @@ p:hover{
 .channelName{
     
     text-align: center;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.925);
     position: fixed;
     width:100%;
     margin:auto;
