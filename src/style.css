@@ -87,7 +87,7 @@ img{
     margin-top:2px;
     border-top: 3px solid rgb(252, 252, 252);
     border-bottom: 3px solid rgb(252, 252, 252);
-    background-color: rgba(19, 19, 19, 0.945);
+    background-color: rgba(12, 12, 12, 0.945);
     width:100%;
     flex-wrap: wrap;
     padding:13px;
@@ -103,7 +103,7 @@ p{
     font-size: 22px;
     font-weight: bolder;
     text-decoration: none;
-    color:rgb(255, 29, 21);
+    color:rgb(255, 17, 9);
     cursor: pointer;
     margin: 13px;
     margin-bottom:0px;
