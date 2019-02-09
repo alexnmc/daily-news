@@ -29,7 +29,7 @@ img{
 
 .newsDiv{
 
-      border: 3px solid rgb(167, 0, 0);
+      border: 2px solid rgb(255, 0, 0);
       width:560px;
       padding:20px;
       height: auto;
@@ -85,9 +85,9 @@ img{
     justify-content: center;
     height: auto;
     margin-top:2px;
-    border-top: 3px solid rgba(252, 252, 252, 0.973);
-    border-bottom: 3px solid rgba(252, 252, 252, 0.972);
-    background-color: rgba(12, 12, 12, 0.945);
+    border-top: 2px solid rgb(252, 252, 252);
+    border-bottom: 2px solid rgb(219, 219, 219);
+    background-color: rgba(10, 10, 10, 0.918);
     width:100%;
     flex-wrap: wrap;
     padding:13px;
@@ -103,7 +103,7 @@ p{
     font-size: 22px;
     font-weight: bolder;
     text-decoration: none;
-    color:rgb(255, 29, 21);
+    color:rgb(255, 17, 9);
     cursor: pointer;
     margin: 13px;
     margin-bottom:0px;
@@ -121,7 +121,7 @@ p:hover{
 .channelName{
     
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.925);
+    background-color: rgba(255, 255, 255, 0.911);
     position: fixed;
     width:100%;
     margin:auto;
