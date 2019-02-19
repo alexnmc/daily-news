@@ -4,7 +4,7 @@ import axios from 'axios'
 
 
 
-export default class App extends Component { // no need to exposrt on the bottom of the page
+export default class App extends Component { // no need to export on the bottom of the page
     constructor(){
         super()
         this.state = {
