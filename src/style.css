@@ -91,7 +91,29 @@ img{
     
 }
 
+.close{
+    background-color:black;
+    position:relative;
+    width:20px;
+    height: 17px;
+    padding-bottom:5px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
 
+.close2{
+    color: white;
+    font-family:  'Arial Narrow Bold', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.close2:hover{
+    color: red;
+}
 
 p{
     font-size: 16px;
