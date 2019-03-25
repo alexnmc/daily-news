@@ -154,7 +154,8 @@ p{
 
 
 p:hover{
-    color:rgb(0, 0, 0);
+    color:white;
+    background-color: rgb(161, 0, 0);
     
 }
 
