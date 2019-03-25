@@ -58,7 +58,6 @@ img{
 }
 
 
-
 .name{
     color: rgb(230, 0, 0);
     cursor: none;
@@ -80,9 +79,9 @@ img{
     height: 93.5vh;
     width: 12em;
     position:fixed;
-    border-top: 2px solid rgb(252, 252, 252);
-    border-bottom: 2px solid rgb(240, 240, 240);
-    background-color: rgba(10, 10, 10, 0.918);
+    border-top: 2px solid rgb(0, 0, 0);
+    border-bottom: 2px solid rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.822);
     overflow-x: scroll;
    
 }
