@@ -9,7 +9,9 @@ body{
 
       background-image: url('./Photos/news.jpg') ;
       background-size:10%;
-      
+      display:flex;
+      flex-direction: column;
+   
 }
 
 
@@ -53,8 +55,6 @@ img{
 
 .div{
     background-color: rgba(43, 42, 42, 0.938);
-    position:relative;
-    
 }
 
 
