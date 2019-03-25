@@ -27,14 +27,10 @@ export default class App extends Component { // no need to export on the bottom 
         Scroll.animateScroll.scrollToTop()
         axios.get( `https://newsapi.org/v2/${url}&apiKey=f64c9be83f094f43a2c3954a6c1ec8aa`)
          .then(response => {
-            console.log(response.data.articles)
             this.setState({
-                articles: response.data.articles
+                articles: response.data.articles,
+                chnnel: name
             })
-        })
-
-        this.setState({
-            channel: name
         })
     }
     
