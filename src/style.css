@@ -17,7 +17,7 @@ body{
 
 h1{
     margin-bottom:12px;
-    color:rgb(190, 0, 0);
+    color:rgb(148, 0, 0);
 }
 
 
@@ -30,7 +30,7 @@ img{
 
 .newsDiv{
 
-      border: 2px solid rgb(255, 0, 0);
+      border: 2px solid rgb(197, 0, 0);
       width:560px;
       padding:20px;
       height: auto;
@@ -62,10 +62,6 @@ img{
 }
     
    
-
-
-
-
 .name{
     color: rgb(230, 0, 0);
     cursor: none;
