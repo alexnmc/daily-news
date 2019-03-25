@@ -54,7 +54,16 @@ img{
 
 .div{
     background-color: rgba(43, 42, 42, 0.938);
+   
 }
+
+.transitions{
+    transition:cubic-bezier(0.23, 1, 0.320, 1);
+}
+    
+   
+
+
 
 
 .name{
@@ -105,15 +114,29 @@ img{
 }
 
 .close2{
-    color: white;
+    color: red;
     font-family:  'Arial Narrow Bold', sans-serif;
     font-weight: 400;
     font-size: 15px;
 }
 
 .close2:hover{
-    color: red;
+    color:white;
 }
+
+
+button{
+    width:120px;
+    height: 40px;
+    font-size:17px;
+    font-family: 'verdana';
+    font-weight: bolder;
+    color: rgb(156, 0, 0);
+    background-color: white;
+    cursor: pointer;
+    position:fixed;
+}
+
 
 p{
     font-size: 16px;
@@ -131,6 +154,7 @@ p{
 
 p:hover{
     color:rgb(0, 0, 0);
+    
 }
 
 
