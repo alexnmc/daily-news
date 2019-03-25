@@ -52,17 +52,18 @@ img{
 }
 
 
+
 .div{
     background-color: rgba(43, 42, 42, 0.938);
    
 }
 
 
-   
 .name{
     color: rgb(230, 0, 0);
     cursor: none;
 }
+
 
 
 .link:hover{
@@ -100,6 +101,7 @@ img{
     
 }
 
+
 .close{
     background-color:black;
     position:relative;
@@ -109,9 +111,8 @@ img{
     display:flex;
     align-items: center;
     justify-content: center;
-    
-    
 }
+
 
 .close2{
     color: red;
@@ -119,6 +120,7 @@ img{
     font-weight: 400;
     font-size: 15px;
 }
+
 
 .close2:hover{
     color:rgb(190, 149, 149);
@@ -137,8 +139,6 @@ button{
     position:fixed;
     border: 2px solid black;
     animation: fadein 1s;
-    
-    
 }
 
 
