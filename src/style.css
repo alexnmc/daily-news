@@ -43,7 +43,7 @@ img{
       justify-content: center;
       font-family: Verdana, Tahoma, sans-serif;
      
-    }
+}
 
 
 
@@ -54,19 +54,9 @@ img{
 }
 
 
-
-.spaceDiv{
-    height: 100px;
-    background-color: rgba(255, 255, 255, 0);
-}
-
-
-
 .name{
     color: rgb(230, 0, 0);
     cursor: none;
-    
-    
 }
 
 
@@ -77,39 +67,37 @@ img{
 }
 
 
-
-
-.navbar{
+.navbarWrap{
     display:flex;
+    flex-direction:column;
     align-items: center;
     justify-content: center;
-    height: auto;
-    margin-top:2px;
+    height: 93.5vh;
+    width: 12em;
+    position:fixed;
     border-top: 2px solid rgb(252, 252, 252);
     border-bottom: 2px solid rgb(240, 240, 240);
     background-color: rgba(10, 10, 10, 0.918);
-    width:100%;
-    flex-wrap: wrap;
-    padding:13px;
-    padding-top: 0px;
-    box-sizing: border-box; 
-    position:fixed;
-    font-family:  Impact;
-    
-    
+    overflow-x: scroll;
+    padding:10px
 }
 
+.navbar{
+
+    height: 100%;
+}
+
+
+
 p{
-    font-size: 22px;
+    font-size: 17px;
     font-weight: bolder;
     text-decoration: none;
-    color:rgb(255, 17, 9);
+    color:rgb(224, 73, 68);
     cursor: pointer;
-    margin: 13px;
+    margin: 12px;
     margin-bottom:0px;
     position: relative;
-   
-   
 }
 
 

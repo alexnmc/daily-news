@@ -95,11 +95,8 @@ export default class App extends Component { // no need to export on the bottom 
                         
                     </div>
                 </div>
-                <div className = "spaceDiv">
-                
-                </div>
-                
-                {article}
+               {article}
+               <div className = "spaceDiv"></div>
            
             </div>
         )
