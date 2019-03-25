@@ -99,7 +99,6 @@ img{
 
 .navbar{
     height: 100%;
-    
 }
 
 
@@ -171,7 +170,8 @@ p:hover{
     position: fixed;
     width:100%;
     margin:auto;
-    font-size: 40px;
+    border: 6px solid rgba(255, 255, 255, 0.938);
+    font-size: 35px;
 }
 
  
@@ -179,7 +179,7 @@ p:hover{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 52px;
+    height: 56px;
 }
 
 
