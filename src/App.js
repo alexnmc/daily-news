@@ -10,7 +10,9 @@ export default class App extends Component { // no need to export on the bottom 
         this.state = {
             articles:[],
             channel: 'Please Choose A Source:',
-            toggle: true
+            toggle: true,
+            style : {animation: ''}
+           
 
         }
     }
@@ -62,13 +64,13 @@ export default class App extends Component { // no need to export on the bottom 
                 <div className = "transitions">
                 { this.state.toggle ?
 
-                <button onClick = {()=> this.setState({ toggle: false}) }>Channels</button>
+                <button onClick = {()=>  this.setState({ toggle: false, style: {animation: "fadein 2s"}})}  >Channels</button>
                 :
-                <div className = "navbarWrap">
+                <div className = "navbarWrap" style = {this.state.style}>
                
                     <div className = "navbar">
                         <div className = "close">
-                        <p  className = "close2" onClick = {()=> this.setState({ toggle: true}) }>x</p>
+                        <p  className = "close2" onClick = {()=> this.setState({ toggle: true})}>x</p>
                         </div>
                         <p onClick = {()=> { return this.getNews("top-headlines?sources=axios"), this.setState({ channel: "Axios"})}}>Axios</p>
                         <p onClick = {()=> { return this.getNews("everything?q=apple&from=2019-02-02&to=2019-02-02&sortBy=popularity"), this.setState({channel: "Apple in the News"})}}>Apple News</p>
