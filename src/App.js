@@ -29,9 +29,11 @@ export default class App extends Component { // no need to export on the bottom 
          .then(response => {
             this.setState({
                 articles: response.data.articles,
-                chnnel: name
             })
         })
+            this.setState({
+                channel: name
+            })
     }
     
     
