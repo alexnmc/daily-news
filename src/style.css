@@ -58,7 +58,7 @@ img{
 }
 
 .transitions{
-    transition:cubic-bezier(0.23, 1, 0.320, 1);
+  
 }
     
    
@@ -86,9 +86,16 @@ img{
     border-bottom: 2px solid rgb(0, 0, 0);
     background-color: rgba(255, 255, 255, 0.945);
     overflow-x: scroll;
-   
-   
+    animation: fadein 2s ;
 }
+
+
+
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
 
 
 .navbar{
@@ -132,6 +139,8 @@ button{
     cursor: pointer;
     position:fixed;
     border: 2px solid black;
+    animation: fadein 1s ;
+    
 }
 
 
