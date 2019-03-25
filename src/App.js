@@ -12,8 +12,6 @@ export default class App extends Component { // no need to export on the bottom 
             channel: 'Please Choose A Source:',
             toggle: true,
             style : {animation: ''}
-           
-
         }
     }
 
