@@ -204,17 +204,19 @@ a{
 }
 
 .newsDiv{
-    width: 72vw;
+    width: 75vw;
     height: auto;
     font-size: 8px;
     margin: 10px;
-    margin-left:25%;
+    margin-left:23%;
     margin-bottom: 20%;
     padding:5px;
+    border:1px solid red;
 }
 
 img{
     height: 29vh;
+    width: auto;
 }
 
 button{
