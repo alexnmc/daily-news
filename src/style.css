@@ -230,7 +230,9 @@ button{
 
 .navbarWrap{
     width: 25vw;
-    
+}
+.navbar{
+    width:25vw;
 }
 
 
