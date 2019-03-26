@@ -87,13 +87,13 @@ img{
     flex-direction:column;
     align-items: center;
     justify-content: center;
-    height: 93.5vh;
+    height: 87vh;
     width: 12em;
     padding: 1%;
     position:fixed;
     background-color: rgba(255, 255, 255, 0.945);
     overflow-x: scroll;
-    margin-top: 29%;
+    margin-top: 28%;
     
 }
 
