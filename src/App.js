@@ -32,7 +32,8 @@ export default class App extends Component { // no need to export on the bottom 
             })
         })
             this.setState({
-                channel: name
+                channel: name,
+                toggle: true
             })
     }
     
