@@ -213,16 +213,16 @@ a{
 
 
 .channelName{
-    font-size:24px;
+    font-size:22px;
 }
 
 .newsDiv{
     width: 75vw;
     height: auto;
     font-size: 8px;
-    margin: 10px;
-    margin-left:23%;
-    margin-bottom: 20%;
+    margin: auto;
+    margin-top: 20%;
+   
     padding:5px;
     border:1px solid rgb(201, 0, 0);
     border-radius:2px;
@@ -234,22 +234,26 @@ img{
 }
 
 button{
-    width: 21vw;
-    height: 7vh;
-    font-size: 11px;
+    width: 17vw;
+    height: 6.3vh;
+    font-size: 9px;
     font-weight: bolder;
     padding: 0px;
     display:flex;
     align-items: center;
     justify-content: center;
+    border-radius:1px;
     
 }
 
 
 .navbarWrap{
     width: 25vw;
+    margin-top: 72%;
     
 }
+
+
 .navbar{
     width: 100%;
 }
@@ -277,7 +281,7 @@ h1{
 }
 
 .spaceDiv{
-    height: 6vh;
+    height: 50px;
 }
 
 
