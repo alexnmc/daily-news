@@ -60,7 +60,7 @@ export default class App extends Component { // no need to export on the bottom 
             <div className = "div">
                 <div className = "channelName2">
                     <h1 className = "channelName">{this.state.channel}</h1>
-                </div>
+               
                 
                 <div className = "transitions">
                 { this.state.toggle ?
@@ -106,8 +106,10 @@ export default class App extends Component { // no need to export on the bottom 
                         <p onClick = {()=> this.getNews("top-headlines?sources=cbs-news", 'CBS News')}>CBS</p>
                         
                     </div>
+                    
                 </div>
                 }
+                </div>
             </div>
                {article}
                <div className = "spaceDiv"></div>
