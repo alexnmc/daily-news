@@ -248,9 +248,9 @@ button{
 
 
 .navbarWrap{
-    width: 26vw;
+    width: 26.5vw;
     margin-top: 51vh;
-    background-color: rgba(255, 255, 255, 0.897);
+    background-color: rgba(255, 255, 255, 0.918);
     
 }
 
@@ -261,7 +261,7 @@ button{
 
 
 p{
-    font-size: 10px;
+    font-size: 11px;
     margin:0;
     margin-bottom:10px;
 }
