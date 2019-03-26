@@ -218,14 +218,14 @@ a{
 }
 
 .newsDiv{
-    width: 75vw;
+    width: 75.5vw;
     height: auto;
     font-size: 8px;
     margin: auto;
     margin-top: 20%;
     padding:5px;
-    border:1px solid rgb(201, 0, 0);
-    border-radius:2px;
+    border: 0px;
+    
 }
 
 img{
@@ -249,7 +249,7 @@ button{
 
 .navbarWrap{
     width: 26vw;
-    margin-top: 242px;
+    margin-top: 51.5vh;
     background-color: rgba(255, 255, 255, 0.897);
     
 }
