@@ -221,6 +221,10 @@ button{
     width: 20vw;
     height: 7vh;
     font-size:9px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    
 }
 
 
