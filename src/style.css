@@ -105,19 +105,19 @@ img{
     background-color:black;
     position:relative;
     width:20px;
-    height: 17px;
-    padding-bottom:5px;
+    height: 20px;
     display:flex;
     align-items: center;
     justify-content: center;
+   
 }
 
 
 .close2{
     color: red;
-    font-family:  'Arial Narrow Bold', sans-serif;
+    font-family:  'arial';
     font-weight: 400;
-    font-size: 15px;
+    font-size: 17px;
     margin:auto;
 }
 
