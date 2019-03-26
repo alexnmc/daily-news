@@ -235,7 +235,7 @@ img{
 
 button{
     width: 55px;
-    height: 5vh;
+    height: 25px;
     font-size: 9px;
     font-weight: bolder;
     padding: 0px;
@@ -248,9 +248,9 @@ button{
 
 
 .navbarWrap{
-    width: 29.5vw;
+    width: 30vw;
     height: 74vh;
-    margin-top: 41vh;
+    margin-top: 45vh;
     background-color: rgba(255, 255, 255, 0.918);
     
 }
