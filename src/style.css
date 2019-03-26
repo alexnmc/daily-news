@@ -118,6 +118,7 @@ img{
     font-family:  'Arial Narrow Bold', sans-serif;
     font-weight: 400;
     font-size: 15px;
+    margin:auto;
 }
 
 
@@ -267,4 +268,10 @@ h1{
 .spaceDiv{
     height: 6vh;
 }
+
+
+
+
+
+
 }
