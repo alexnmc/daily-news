@@ -230,14 +230,17 @@ button{
 
 .navbarWrap{
     width: 25vw;
+    
 }
 .navbar{
-    width:25vw;
+    width: 100%;
 }
 
 
 p{
-    font-size: 11px;
+    font-size: 10px;
+    margin:0;
+    margin-bottom:10px;
 }
 
 a{
@@ -247,5 +250,10 @@ a{
 
 h1{
     font-size: 15px;
+}
+
+.close{
+    margin-bottom:10px;
+   
 }
 }
