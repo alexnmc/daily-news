@@ -214,13 +214,15 @@ a{
 }
 
 img{
-    height: 31vh;
+    height: 29vh;
 }
 
 button{
     width: 21vw;
     height: 7vh;
-    font-size:9px;
+    font-size: 10px;
+    font-weight: bolder;
+    padding: 0px;
     display:flex;
     align-items: center;
     justify-content: center;
@@ -250,6 +252,7 @@ a{
 
 h1{
     font-size: 15px;
+    margin: 0px;
 }
 
 .close{
