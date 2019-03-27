@@ -52,7 +52,7 @@ img{
       align-items: center;
       justify-content: center;
       font-family: Verdana, Tahoma, sans-serif;
-      animation: fadein 1s;
+      animation: fadein  2s;
      
 }
 
@@ -216,7 +216,7 @@ a{
 @media only screen and (max-width: 600px) {
 
     .div{
-        background-color: rgba(27, 27, 27, 0.918);
+        background-color: rgba(31, 30, 30, 0.931);
         
     }
 

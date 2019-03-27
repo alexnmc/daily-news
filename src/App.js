@@ -64,7 +64,7 @@ export default class App extends Component { // no need to export on the bottom 
                  <div className = "transitions">
                 { this.state.toggle ?
 
-                <button onClick = {()=>  this.setState({ toggle: false, style: {animation: "fadein 2s"}})}  >Channels</button>
+                <button onClick = {()=>  this.setState({ toggle: false, style: {animation: "fadein 1s"}})}  >Channels</button>
                 :
                 <div className = "navbarWrap" style = {this.state.style}>
                <div className = "close">
