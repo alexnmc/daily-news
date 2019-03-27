@@ -26,7 +26,7 @@ body{
 
 h1{
     margin-bottom:12px;
-    color:rgb(148, 0, 0);
+    color:rgb(172, 0, 0);
 }
 
 
@@ -64,13 +64,13 @@ img{
 
 
 .div{
-    background-color: rgba(31, 30, 30, 0.959);
+    background-color: rgba(27, 27, 27, 0.959);
     
 }
 
 
 .name{
-    color: rgb(230, 0, 0);
+    color: rgb(128, 0, 0);
     cursor: none;
 }
 
@@ -163,7 +163,7 @@ p{
     font-size: 19px;
     font-weight: bolder;
     text-decoration: none;
-    color: rgb(141, 0, 0);
+    color: rgb(155, 0, 0);
     cursor: pointer;
     margin: auto;
     margin-bottom:12px;
@@ -202,7 +202,7 @@ p:hover{
     height: 56px;
     width:100%;
     font-family: 'helvetica';
-    color: rgba(65, 0, 0, 0.767);
+   
    
     
 }
@@ -259,6 +259,7 @@ button{
     align-items: center;
     justify-content: center;
     border-radius:2px;
+    padding: auto;
     
 }
 
@@ -293,7 +294,7 @@ h1{
 
 
 h2{
-    font-size: 11px;
+    font-size: 12.5px;
     
 }
 
