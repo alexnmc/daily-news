@@ -61,8 +61,7 @@ export default class App extends Component { // no need to export on the bottom 
                 <div className = "channelName2">
                     <h1 className = "channelName">{this.state.channel}</h1>
                
-                
-                <div className = "transitions">
+                 <div className = "transitions">
                 { this.state.toggle ?
 
                 <button onClick = {()=>  this.setState({ toggle: false, style: {animation: "fadein 2s"}})}  >Channels</button>
