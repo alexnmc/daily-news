@@ -152,7 +152,7 @@ button{
     background-color: rgba(255, 255, 255, 0.849);
     cursor: pointer;
     position:fixed;
-    border: 2px solid black;
+    border: 2px solid rgba(0, 0, 0, 0.938);
     border-radius: 2px;
     margin-left: -4%;
     animation: fadein 1s;
@@ -201,6 +201,7 @@ p:hover{
     justify-content: center;
     height: 56px;
     width:100%;
+    font-family: 'helvetica'
 }
 
 
@@ -216,7 +217,7 @@ a{
 @media only screen and (max-width: 600px) {
 
     .div{
-        background-color: rgba(31, 30, 30, 0.931);
+        background-color: rgba(31, 30, 30, 0.924);
         
     }
 
@@ -251,7 +252,6 @@ button{
     height: 25px;
     font-size: 9px;
     font-weight: bolder;
-    padding: 0px;
     display:flex;
     align-items: center;
     justify-content: center;
