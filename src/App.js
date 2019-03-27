@@ -59,7 +59,7 @@ export default class App extends Component { // no need to export on the bottom 
              
             <div className = "div">
                 <div className = "channelName2">
-                    <h1 className = "channelName">{this.state.channel}</h1>
+                    <h1 className = "channelName" onClick = {() => Scroll.animateScroll.scrollToTop()}>{this.state.channel}</h1>
                
                  <div className = "transitions">
                 { this.state.toggle ?

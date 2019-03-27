@@ -186,6 +186,7 @@ p:hover{
     margin:auto;
     border: 6px solid rgba(255, 255, 255, 0.938);
     font-size: 35px;
+    cursor: grab;
 }
 
  
