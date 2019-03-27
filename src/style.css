@@ -92,7 +92,7 @@ img{
     padding: 1%;
     position:fixed;
     background-color: rgba(255, 255, 255, 0.979);
-    overflow-x: scroll;
+    overflow-x: hidden;
     margin-top: 48vh;
     
 }
