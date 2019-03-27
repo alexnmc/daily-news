@@ -52,7 +52,7 @@ img{
       align-items: center;
       justify-content: center;
       font-family: Verdana, Tahoma, sans-serif;
-      animation: fadein 2s;
+      animation: fadein 1s;
      
 }
 
@@ -64,7 +64,7 @@ img{
 
 
 .div{
-    background-color: rgba(43, 42, 42, 0.95);
+    background-color: rgba(31, 30, 30, 0.959);
     
 }
 
@@ -216,7 +216,7 @@ a{
 @media only screen and (max-width: 600px) {
 
     .div{
-        background-color: rgba(43, 42, 42, 0.877);
+        background-color: rgba(27, 27, 27, 0.918);
         
     }
 
@@ -310,9 +310,8 @@ h2{
 
 .close2{
     color:rgba(255, 255, 255, 0.883);
-   
-    
 }
+
 
 .spaceDiv{
     height: 65px;
