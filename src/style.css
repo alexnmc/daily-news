@@ -160,7 +160,7 @@ p{
     font-size: 19px;
     font-weight: bolder;
     text-decoration: none;
-    color: rgb(161, 0, 0);
+    color: rgb(141, 0, 0);
     cursor: pointer;
     margin: auto;
     margin-bottom:12px;
@@ -198,9 +198,9 @@ p:hover{
 
 
 a{
-    font-size:20px;
+    font-size:18px;
     font-weight: bolder;
-    color: red;
+    color: rgb(207, 31, 0);
 }
 
 

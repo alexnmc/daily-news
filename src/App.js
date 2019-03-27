@@ -76,12 +76,11 @@ export default class App extends Component { // no need to export on the bottom 
                         <p onClick = {()=> this.getNews("everything?q=apple&from=2019-02-02&to=2019-02-02&sortBy=popularity", "Apple in the news")}>Apple News</p>
                         <p onClick = {()=> this.getNews("top-headlines?sources=abc-news", "ABC News")}>ABC </p>
                         <p onClick = {()=> this.getNews("top-headlines?sources=bbc-news", "BBC News")}>BBC News</p>
+                        <p onClick = {()=> this.getNews("top-headlines?sources=bbc-sport", 'BBC Sport')}>BBC Sport</p>
                         <p onClick = {()=> this.getNews("top-headlines?sources=cbs-news", 'CBS News')}>CBS</p>
                         <p onClick = {()=> this.getNews("top-headlines?sources=cnn","CNN")}>CNN</p>
                         <p onClick = {()=> this.getNews("top-headlines?sources=cnbc", "CNBC News")}>CNBC </p>
                         <p onClick = {()=> this.getNews("top-headlines?sources=daily-mail", "Daily Mail News")}>Daily Mail</p>
-                        <p onClick = {()=> this.getNews("everything?domains=wsj.com", 'Wall Street Journal')}>Wall Street Journal</p>
-                        <p onClick = {()=> this.getNews("top-headlines?sources=bbc-sport", 'BBC Sport')}>BBC Sport</p>
                         <p onClick = {()=> this.getNews("top-headlines?sources=financial-times", 'Financial Times')}>Financial Times</p>
                         <p onClick = {()=> this.getNews("top-headlines?sources=crypto-coins-news", 'Crypto Coins News')}>Crypto News</p>
                         <p onClick = {()=> this.getNews("top-headlines?sources=fox-news", 'FOX News')}>FOX News</p>
@@ -98,6 +97,7 @@ export default class App extends Component { // no need to export on the bottom 
                         <p onClick = {()=> this.getNews("top-headlines?sources=newsweek", 'Newsweek')}>Newsweek</p>
                         <p onClick = {()=> this.getNews("top-headlines?sources=news24", 'NEWS 24')}>NEWS 24</p>
                         <p onClick = {()=> this.getNews("top-headlines?sources=the-economist", 'The Economist')}>The Economist</p>
+                        <p onClick = {()=> this.getNews("everything?domains=wsj.com", 'Wall Street Journal')}>Wall Street Journal</p>
                         <p onClick = {()=> this.getNews("top-headlines?sources=the-washington-times", 'The Washington Times')}>The Washington Times</p>
                         <p onClick = {()=> this.getNews("top-headlines?sources=the-washington-post", 'The Washingtom Post')}>The Washington Post</p>
                         <p onClick = {()=> this.getNews("top-headlines?sources=time", 'TIME')}>TIME</p>
