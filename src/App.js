@@ -73,7 +73,6 @@ export default class App extends Component { // no need to export on the bottom 
                     <div className = "navbar">
                         
                         <p  className = 'axios' onClick = {()=> this.getNews("top-headlines?sources=axios", "Axios")}>Axios</p>
-                        <p onClick = {()=> this.getNews("everything?q=apple&from=2019-02-02&to=2019-02-02&sortBy=popularity", "Apple News")}>Apple News</p>
                         <p onClick = {()=> this.getNews("top-headlines?sources=abc-news", "ABC News")}>ABC </p>
                         <p onClick = {()=> this.getNews("top-headlines?sources=bbc-news", "BBC News")}>BBC News</p>
                         <p onClick = {()=> this.getNews("top-headlines?sources=bbc-sport", 'BBC Sport')}>BBC Sport</p>
@@ -81,6 +80,7 @@ export default class App extends Component { // no need to export on the bottom 
                         <p onClick = {()=> this.getNews("top-headlines?sources=cnn","CNN")}>CNN</p>
                         <p onClick = {()=> this.getNews("top-headlines?sources=cnbc", "CNBC News")}>CNBC </p>
                         <p onClick = {()=> this.getNews("top-headlines?sources=daily-mail", "Daily Mail News")}>Daily Mail</p>
+                        <p onClick = {()=> this.getNews("top-headlines?sources=reuters", "Reuters")}>Reuters</p>
                         <p onClick = {()=> this.getNews("top-headlines?sources=financial-times", 'Financial Times')}>Financial Times</p>
                         <p onClick = {()=> this.getNews("top-headlines?sources=crypto-coins-news", 'Crypto Coins News')}>Crypto News</p>
                         <p onClick = {()=> this.getNews("top-headlines?sources=fox-news", 'FOX News')}>FOX News</p>
