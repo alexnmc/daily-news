@@ -257,7 +257,7 @@ button{
     width: 35vw;
     height: 74vh;
     margin-top: 42vh;
-    background-color: rgba(255, 255, 255, 0.938);
+    background-color: rgba(255, 255, 255, 0.966);
     
 }
 
@@ -283,7 +283,15 @@ h2{
 
 .close{
     margin-bottom:10px;
+    height:auto;
+    background-color: rgb(126, 0, 0);
+    
+}
+
+.close2{
+    color:rgba(255, 255, 255, 0.883);
    
+    
 }
 
 .spaceDiv{
