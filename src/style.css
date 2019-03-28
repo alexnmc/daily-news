@@ -148,12 +148,12 @@ button{
     font-size:16px;
     font-family: 'verdana';
     font-weight: bolder;
-    color: rgb(156, 0, 0);
-    background-color: rgba(255, 255, 255, 0.849);
+    color: rgba(241, 241, 241, 0.959);
+    background-color:  rgb(175, 0, 0);
     cursor: pointer;
     position:fixed;
-    border: 2px solid rgba(0, 0, 0, 0.938);
-    border-radius: 2px;
+    border: 1px solid rgba(0, 0, 0, 0.938);
+    border-radius: 3px;
     margin-left: -4%;
     animation: fadein 1s;
 }
@@ -258,7 +258,7 @@ button{
     display:flex;
     align-items: center;
     justify-content: center;
-    border-radius:2px;
+    border-radius:3px;
     padding: auto;
     
 }
