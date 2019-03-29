@@ -62,14 +62,12 @@ export default class App extends Component { // no need to export on the bottom 
                     <h1 className = "channelName" onClick = {() => Scroll.animateScroll.scrollToTop()}>{this.state.channel}</h1>
                
                  <div className = "transitions">
-                { this.state.toggle ?
-
-                <button onClick = {()=>  this.setState({ toggle: false, style: {animation: "fadein 1s"}})}  >Channels</button>
-                :
+                 <button onClick = {()=>  this.setState( prevState =>{ return{ toggle: !prevState.toggle, style: {animation: "fadein 1s"}}})}  >Channels</button>
+                
+                 { this.state.toggle ?
+                
                 <div className = "navbarWrap" style = {this.state.style}>
-               <div className = "close">
-                            <p  className = "close2" onClick = {()=> this.setState({ toggle: true})}>x</p>
-              </div>
+                    
                     <div className = "navbar">
                         
                         <p  className = 'axios' onClick = {()=> this.getNews("top-headlines?sources=axios", "Axios")}>Axios</p>
@@ -106,6 +104,9 @@ export default class App extends Component { // no need to export on the bottom 
                     </div>
                     
                 </div>
+
+            :
+            null
                 }
                 </div>
             </div>
