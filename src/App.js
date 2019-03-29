@@ -69,7 +69,6 @@ export default class App extends Component { // no need to export on the bottom 
                 <div className = "navbarWrap" style = {this.state.style}>
                     
                     <div className = "navbar">
-                        
                         <p  className = 'axios' onClick = {()=> this.getNews("top-headlines?sources=axios", "Axios")}>Axios</p>
                         <p onClick = {()=> this.getNews("top-headlines?sources=abc-news", "ABC News")}>ABC </p>
                         <p onClick = {()=> this.getNews("top-headlines?sources=bbc-news", "BBC News")}>BBC News</p>
