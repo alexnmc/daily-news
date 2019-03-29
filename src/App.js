@@ -31,9 +31,12 @@ export default class App extends Component { // no need to export on the bottom 
                 articles: response.data.articles,
             })
         })
-            this.setState({
-                channel: name,
-                toggle: true
+            this.setState(prevState=>{
+               
+               return{ 
+                    channel: name,
+                    toggle: !prevState.toggle
+                }
             })
     }
     
@@ -62,7 +65,7 @@ export default class App extends Component { // no need to export on the bottom 
                     <h1 className = "channelName" onClick = {() => Scroll.animateScroll.scrollToTop()}>{this.state.channel}</h1>
                
                  <div className = "transitions">
-                 <button onClick = {()=>  this.setState( prevState =>{ return{ toggle: !prevState.toggle, style: {animation: "fadein 1s"}}})}  >Channels</button>
+                 <button onClick = {()=>  this.setState( prevState =>{return{ toggle: !prevState.toggle, style: {animation: "fadein 1s"}}})}  >Channels</button>
                 
                  { this.state.toggle ?
                 
