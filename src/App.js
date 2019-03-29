@@ -18,7 +18,7 @@ export default class App extends Component { // no need to export on the bottom 
     
     componentDidMount(){
 
-       return this.getNews("top-headlines?sources=axios", 'Choose a source:') 
+       return this.getNews('everything?q=weather&from=2019-02-28&sortBy=publishedAt', 'Choose a source:') 
     }
 
 
