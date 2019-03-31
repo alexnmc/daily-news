@@ -279,10 +279,15 @@ img{
     justify-content: center;
     border-radius:3px;
     padding: auto;
-    
-    
 }
 
+.button1{
+    margin-left: -1%
+}
+
+.button2{
+    margin-left:1%
+}
 
 .navbarWrap2,
 .navbarWrap{
