@@ -51,7 +51,7 @@ img{
 .newsDiv{
 
       border: 2px solid rgb(95, 0, 0);
-      width:39.5vw;
+      width: 40vw;
       padding:18px;
       height: auto;
       font-size: 12px;
@@ -118,7 +118,7 @@ img{
     align-items: flex-start;
     justify-content: flex-start;
     height: 90vh;
-    width: 11.5em;
+    width: 12em;
     padding: 1%;
     position:fixed;
     background-color: rgba(255, 255, 255, 0.979);

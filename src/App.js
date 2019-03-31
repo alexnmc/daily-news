@@ -94,26 +94,51 @@ export default class App extends Component { // no need to export on the bottom 
                             <h1 className = "channelName" onClick = {() => Scroll.animateScroll.scrollToTop()}>{this.state.channel}</h1>
                     
                         <div className = "button2Wrap">
-                            <button  className = "button2" onClick = {()=>  this.setState( prevState =>{return{ toggle2: !prevState.toggle2, toggle:false}})} >Category</button>
+                            <button  className = "button2" onClick = {()=>  this.setState( prevState =>{return{ toggle2: !prevState.toggle2, toggle:false}})} >Country</button>
                             
                             { this.state.toggle2 ?
                             
                             <div className = "navbarWrap2">
                                 <div className = "navbar">
                                 
-                                <p onClick = {()=> this.getNews2("everything?q=bitcoin&from=2019-02-28&sortBy=publishedAt", "Bitcoin")}>Bitcoin</p>
-                                <p onClick = {()=> this.getNews2("everything?q=weather&from=2019-02-28&sortBy=publishedAt", "Weather")}>Weather</p>
-                                <p onClick = {()=> this.getNews2("top-headlines?country=us&category=entertainment", "Entertainment")}>Entertainment</p>
-                                <p onClick = {()=> this.getNews2("everything?q=finances&from=2019-02-28&sortBy=publishedAt", "Finance")}>Finance</p>
-                                <p onClick = {()=> this.getNews2("everything?q=business&from=2019-02-28&sortBy=publishedAt", "Business")}>Business</p>
-                                <p onClick = {()=> this.getNews2("everything?q=travel&from=2019-02-28&sortBy=publishedAt", "Travel")}>Travel</p>
-                                <p onClick = {()=> this.getNews2("top-headlines?country=us&category=health", "Health")}>Health</p>
-                                <p onClick = {()=> this.getNews2("everything?q=food&from=2019-02-28&sortBy=publishedAt", "Food")}>Food</p>
-                                <p onClick = {()=> this.getNews2("top-headlines?country=us&category=technology", "Technology")}>Technology</p>
-                                <p onClick = {()=> this.getNews2("everything?q=social&from=2019-02-28&sortBy=publishedAt", "Social")}>Social</p>
-                                <p onClick = {()=> this.getNews2("everything?q=religion&from=2019-02-28&sortBy=publishedAt", "Religion")}>Religion</p>
-                                <p onClick = {()=> this.getNews2("everything?q=world&from=2019-02-28&sortBy=publishedAt", "World")}>World</p>
+                               
+                                <p onClick = {()=> this.getNews2("top-headlines?country=ar", "Argentina")}>Argentina</p>
+                                <p onClick = {()=> this.getNews2("top-headlines?country=au", "Australia")}>Australia</p>
+                                <p onClick = {()=> this.getNews2("top-headlines?country=at", "Austria")}>Austria</p>
+                                <p onClick = {()=> this.getNews2("top-headlines?country=af", "Afganistan")}>Afganistan</p>
                                 
+                                <p onClick = {()=> this.getNews2("top-headlines?country=be", "Belgium")}>Belgium</p>
+                                <p onClick = {()=> this.getNews2("top-headlines?country=br", "Brazil")}>Brazil</p>
+                                <p onClick = {()=> this.getNews2("top-headlines?country=bg", "Bulgaria")}>Bulgaria</p>
+                                
+                                <p onClick = {()=> this.getNews2("top-headlines?country=co", "Colombia")}>Colombia</p>
+                                <p onClick = {()=> this.getNews2("top-headlines?country=cn", "China")}>China</p>
+                                
+                                <p onClick = {()=> this.getNews2("top-headlines?country=fr", "France")}>France</p>
+                                
+                                <p onClick = {()=> this.getNews2("top-headlines?country=de", "Germany")}>Germany</p>
+                                
+                                <p onClick = {()=> this.getNews2("top-headlines?country=hu", "Hungary")}>Hungary</p>
+                                
+                                <p onClick = {()=> this.getNews2("top-headlines?country=it", "Italy")}>Italy</p>
+                                
+                                <p onClick = {()=> this.getNews2("top-headlines?country=il", "Israel")}>Israel</p>
+                                
+                                <p onClick = {()=> this.getNews2("top-headlines?country=jp", "Japan")}>Japan</p>
+                                
+                                <p onClick = {()=> this.getNews2("top-headlines?country=ro", "Romania")}>Romania</p>
+                                
+                                <p onClick = {()=> this.getNews2("top-headlines?country=ru", "Russia")}>Russia</p>
+                                <p onClick = {()=> this.getNews2("top-headlines?country=ro", "Romania")}>Romania</p>
+                                
+                                <p onClick = {()=> this.getNews2("top-headlines?country=se", "Sweeden")}>Sweeden</p>
+                                <p onClick = {()=> this.getNews2("top-headlines?country=ch", "Swiss")}>Swiss</p>
+                                
+                                
+                                
+                                
+                                
+                               
                                 
                                 </div>
                             </div>
