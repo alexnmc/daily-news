@@ -128,7 +128,9 @@ export default class App extends Component { // no need to export on the bottom 
                                 
                                 <p onClick = {()=> this.getNews2("top-headlines?country=jp", "Japan")}>Japan</p>
                                 
-                                <p onClick = {()=> this.getNews2("top-headlines?country=ro", "Romania")}>Romania</p>
+                                <p onClick = {()=> this.getNews2("top-headlines?country=pl", "Polland")}>Polland</p>
+                                
+                                <p onClick = {()=> this.getNews2("top-headlines?country=pt", "Portugal")}>Portugal</p>
                                 
                                 <p onClick = {()=> this.getNews2("top-headlines?country=ru", "Russia")}>Russia</p>
                                 <p onClick = {()=> this.getNews2("top-headlines?country=ro", "Romania")}>Romania</p>
