@@ -118,13 +118,13 @@ img{
     align-items: flex-start;
     justify-content: flex-start;
     height: 90vh;
-    width: 12em;
+    width: 11.5em;
     padding: 1%;
     position:fixed;
     background-color: rgba(255, 255, 255, 0.979);
     overflow-x: hidden;
     margin-top: 49vh;
-    border-left: 2px solid rgb(95, 0, 0);
+    border-right: 2px solid rgb(95, 0, 0);
     border-top: 2px solid rgb(95, 0, 0);
     border-bottom: 2px solid rgb(95, 0, 0);
     animation: fadein 1s;
