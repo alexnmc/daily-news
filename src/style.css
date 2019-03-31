@@ -23,6 +23,8 @@ body{
     height: 100%;
 }
 
+
+
 .button2Wrap{
     display: flex;
     align-items: center;
@@ -253,7 +255,7 @@ a{
 }
 
 .newsDiv{
-    width: 95vw;
+    width: 97vw;
     height: auto;
     margin: auto;
     margin-top: 20%;
