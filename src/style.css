@@ -253,7 +253,7 @@ a{
 }
 
 .newsDiv{
-    width: 78vw;
+    width: 95vw;
     height: auto;
     margin: auto;
     margin-top: 20%;
@@ -263,7 +263,7 @@ a{
 }
 
 img{
-    height: 28%;
+    height: 100%;
     width: 100%;
    
 }
@@ -303,7 +303,7 @@ img{
 
 
 p{
-    font-size: 15px;
+    font-size: 95%;
     margin-bottom:13px;
 }
 
@@ -315,13 +315,13 @@ a{
 
 
 h1{
-    font-size: 14px;
+    font-size: 17px;
     margin: 0px;
 }
 
 
 h2{
-    font-size: 13px;
+    font-size: 15px;
     
 }
 
