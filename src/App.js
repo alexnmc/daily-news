@@ -18,8 +18,14 @@ export default class App extends Component { // no need to export on the bottom 
 
     
     componentDidMount(){
-       console.log(this.state.toggle)
-       return this.getNews('everything?q=weather&from=2019-02-28&sortBy=publishedAt', 'Choose a source') 
+       
+        axios.get( `https://newsapi.org/v2/everything?q=weather&from=2019-02-28&sortBy=publishedAt&apiKey=f64c9be83f094f43a2c3954a6c1ec8aa`)
+         .then(response => {
+            this.setState({
+                articles: response.data.articles,
+                
+            })
+        })
     }
 
 
@@ -36,6 +42,8 @@ export default class App extends Component { // no need to export on the bottom 
                
                return{ 
                     channel: name,
+                    toggle: !prevState.toggle,
+                   
                    
                 }
             })
@@ -43,6 +51,24 @@ export default class App extends Component { // no need to export on the bottom 
             console.log(this.state.toggle)
     }
     
+
+    getNews2 = (url, name) => {  
+        
+        Scroll.animateScroll.scrollToTop()
+        axios.get( `https://newsapi.org/v2/${url}&apiKey=f64c9be83f094f43a2c3954a6c1ec8aa`)
+         .then(response => {
+            this.setState({
+                articles: response.data.articles,
+            })
+        })
+            this.setState(prevState=>{
+               
+               return{ 
+                    channel: name,
+                    toggle2: !prevState.toggle2,
+                }
+            })
+    }
     
    
     render(){
@@ -68,25 +94,25 @@ export default class App extends Component { // no need to export on the bottom 
                             <h1 className = "channelName" onClick = {() => Scroll.animateScroll.scrollToTop()}>{this.state.channel}</h1>
                     
                         <div className = "button2Wrap">
-                            <button  className = "button2" onClick = {()=>  this.setState( prevState =>{return{ toggle2: !prevState.toggle2}})} >Category</button>
+                            <button  className = "button2" onClick = {()=>  this.setState( prevState =>{return{ toggle2: !prevState.toggle2, toggle:false}})} >Category</button>
                             
                             { this.state.toggle2 ?
                             
                             <div className = "navbarWrap2">
                                 <div className = "navbar">
                                 
-                                <p onClick = {()=> this.getNews("everything?q=bitcoin&from=2019-02-28&sortBy=publishedAt", "Bitcoin")}>Bitcoin</p>
-                                <p onClick = {()=> this.getNews("everything?q=weather&from=2019-02-28&sortBy=publishedAt", "Weather")}>Weather</p>
-                                <p onClick = {()=> this.getNews("top-headlines?country=us&category=entertainment", "Entertainment")}>Entertainment</p>
-                                <p onClick = {()=> this.getNews("everything?q=finances&from=2019-02-28&sortBy=publishedAt", "Finance")}>Finance</p>
-                                <p onClick = {()=> this.getNews("everything?q=business&from=2019-02-28&sortBy=publishedAt", "Business")}>Business</p>
-                                <p onClick = {()=> this.getNews("everything?q=travel&from=2019-02-28&sortBy=publishedAt", "Travel")}>Travel</p>
-                                <p onClick = {()=> this.getNews("top-headlines?country=us&category=health", "Health")}>Health</p>
-                                <p onClick = {()=> this.getNews("everything?q=food&from=2019-02-28&sortBy=publishedAt", "Food")}>Food</p>
-                                <p onClick = {()=> this.getNews("top-headlines?country=us&category=technology", "Technology")}>Technology</p>
-                                <p onClick = {()=> this.getNews("everything?q=social&from=2019-02-28&sortBy=publishedAt", "Social")}>Social</p>
-                                <p onClick = {()=> this.getNews("everything?q=religion&from=2019-02-28&sortBy=publishedAt", "Religion")}>Religion</p>
-                                <p onClick = {()=> this.getNews("everything?q=world&from=2019-02-28&sortBy=publishedAt", "World")}>World</p>
+                                <p onClick = {()=> this.getNews2("everything?q=bitcoin&from=2019-02-28&sortBy=publishedAt", "Bitcoin")}>Bitcoin</p>
+                                <p onClick = {()=> this.getNews2("everything?q=weather&from=2019-02-28&sortBy=publishedAt", "Weather")}>Weather</p>
+                                <p onClick = {()=> this.getNews2("top-headlines?country=us&category=entertainment", "Entertainment")}>Entertainment</p>
+                                <p onClick = {()=> this.getNews2("everything?q=finances&from=2019-02-28&sortBy=publishedAt", "Finance")}>Finance</p>
+                                <p onClick = {()=> this.getNews2("everything?q=business&from=2019-02-28&sortBy=publishedAt", "Business")}>Business</p>
+                                <p onClick = {()=> this.getNews2("everything?q=travel&from=2019-02-28&sortBy=publishedAt", "Travel")}>Travel</p>
+                                <p onClick = {()=> this.getNews2("top-headlines?country=us&category=health", "Health")}>Health</p>
+                                <p onClick = {()=> this.getNews2("everything?q=food&from=2019-02-28&sortBy=publishedAt", "Food")}>Food</p>
+                                <p onClick = {()=> this.getNews2("top-headlines?country=us&category=technology", "Technology")}>Technology</p>
+                                <p onClick = {()=> this.getNews2("everything?q=social&from=2019-02-28&sortBy=publishedAt", "Social")}>Social</p>
+                                <p onClick = {()=> this.getNews2("everything?q=religion&from=2019-02-28&sortBy=publishedAt", "Religion")}>Religion</p>
+                                <p onClick = {()=> this.getNews2("everything?q=world&from=2019-02-28&sortBy=publishedAt", "World")}>World</p>
                                 
                                 
                                 </div>
@@ -100,7 +126,7 @@ export default class App extends Component { // no need to export on the bottom 
                         </div>
                         
                         <div className = "transitions">
-                            <button className = " button1" onClick = {()=>  this.setState( prevState =>{return{ toggle: !prevState.toggle, style: {animation: "fadein 1s"}}})}  >Channels</button>
+                            <button className = " button1" onClick = {()=>  this.setState( prevState =>{return{ toggle: !prevState.toggle, toggle2:false,  style: {animation: "fadein 1s"}}})}  >Channels</button>
                         
                         
                             { this.state.toggle ?
