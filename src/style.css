@@ -268,7 +268,8 @@ img{
    
 }
 
-button{
+.button1,
+.button2{
     width: 55px;
     height: 25px;
     font-size: 9px;
@@ -278,6 +279,7 @@ button{
     justify-content: center;
     border-radius:3px;
     padding: auto;
+    
     
 }
 
