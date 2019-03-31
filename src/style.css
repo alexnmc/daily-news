@@ -270,9 +270,9 @@ img{
 
 .button1,
 .button2{
-    width: 55px;
-    height: 25px;
-    font-size: 9px;
+    width: 19vw;
+    height: 30px;
+    font-size: 12px;
     font-weight: bolder;
     display:flex;
     align-items: center;

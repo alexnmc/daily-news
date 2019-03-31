@@ -9,7 +9,7 @@ export default class App extends Component { // no need to export on the bottom 
         super()
         this.state = {
             articles:[],
-            channel: 'Choose A Source',
+            channel: 'Choose a Source',
             toggle: false,
             toggle2: false,
             style : {animation: ''}
@@ -155,7 +155,7 @@ export default class App extends Component { // no need to export on the bottom 
                         </div>
                         
                         <div className = "transitions">
-                            <button className = " button1" onClick = {()=>  this.setState( prevState =>{return{ toggle: !prevState.toggle, toggle2:false,  style: {animation: "fadein 1s"}}})}  >Channels</button>
+                            <button className = " button1" onClick = {()=>  this.setState( prevState =>{return{ toggle: !prevState.toggle, toggle2:false,  style: {animation: "fadein 1s"}}})}  >Channel</button>
                         
                         
                             { this.state.toggle ?
