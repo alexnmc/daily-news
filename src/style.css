@@ -197,8 +197,8 @@ p{
  
  float:left;
  margin-left:45vh;
- color: rgb(146, 146, 146);
-
+ color: rgb(117, 117, 117);
+ cursor:pointer
  
   
 }
@@ -338,6 +338,7 @@ p{
 .topP{
     margin-left: 35vh;
     font-size: 13px;
+  
 }
 
 a{
