@@ -68,19 +68,20 @@ export default class App extends Component { // no need to export on the bottom 
                             <h1 className = "channelName" onClick = {() => Scroll.animateScroll.scrollToTop()}>{this.state.channel}</h1>
                     
                         <div className = "button2Wrap">
-                            <button  className = "button2" onClick = {()=>  this.setState( prevState =>{return{ toggle2: !prevState.toggle2}})}  >Topic</button>
+                            <button  className = "button2" onClick = {()=>  this.setState( prevState =>{return{ toggle2: !prevState.toggle2}})} >Category</button>
                             
                             { this.state.toggle2 ?
                             
                             <div className = "navbarWrap2">
                                 <div className = "navbar">
+                                
                                 <p onClick = {()=> this.getNews("everything?q=bitcoin&from=2019-02-28&sortBy=publishedAt", "Bitcoin")}>Bitcoin</p>
                                 <p onClick = {()=> this.getNews("everything?q=weather&from=2019-02-28&sortBy=publishedAt", "Weather")}>Weather</p>
-                                <p onClick = {()=> this.getNews("everything?q=music&from=2019-02-28&sortBy=publishedAt", "Music")}>Music</p>
+                                <p onClick = {()=> this.getNews("top-headlines?country=us&category=entertainment", "Entertainment")}>Entertainment</p>
                                 <p onClick = {()=> this.getNews("everything?q=finances&from=2019-02-28&sortBy=publishedAt", "Finance")}>Finance</p>
                                 <p onClick = {()=> this.getNews("everything?q=business&from=2019-02-28&sortBy=publishedAt", "Business")}>Business</p>
                                 <p onClick = {()=> this.getNews("everything?q=travel&from=2019-02-28&sortBy=publishedAt", "Travel")}>Travel</p>
-                                <p onClick = {()=> this.getNews("everything?q=health&from=2019-02-28&sortBy=publishedAt", "Health")}>Health</p>
+                                <p onClick = {()=> this.getNews("top-headlines?country=us&category=health", "Health")}>Health</p>
                                 <p onClick = {()=> this.getNews("everything?q=food&from=2019-02-28&sortBy=publishedAt", "Food")}>Food</p>
                                 <p onClick = {()=> this.getNews("everything?q=technology&from=2019-02-28&sortBy=publishedAt", "Technology")}>Technology</p>
                                 <p onClick = {()=> this.getNews("everything?q=social&from=2019-02-28&sortBy=publishedAt", "Social")}>Social</p>
