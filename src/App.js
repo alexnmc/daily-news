@@ -91,7 +91,7 @@ export default class App extends Component { // no need to export on the bottom 
                <h2 className = "name" onClick = {this.closing}>{item.source.name}</h2>
                <div className = "bottom">
                <a className = "link" onClick = {this.closing} href={item.url}>read more</a>
-               <a className = "topP" onClick = {()=> Scroll.animateScroll.scrollToTop()}>top</a>
+               <div className = "topP" onClick = {()=> Scroll.animateScroll.scrollToTop()}></div>
                </div>
             </div>
         )
