@@ -29,6 +29,8 @@ export default class App extends Component { // no need to export on the bottom 
     }
 
 
+    
+    
     getNews = (url, name) => {  
         
         Scroll.animateScroll.scrollToTop()
@@ -43,15 +45,13 @@ export default class App extends Component { // no need to export on the bottom 
                return{ 
                     channel: name,
                     toggle: !prevState.toggle,
-                   
-                   
                 }
             })
-
-            console.log(this.state.toggle)
     }
     
 
+    
+    
     getNews2 = (url, name) => {  
         
         Scroll.animateScroll.scrollToTop()
