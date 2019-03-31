@@ -9,7 +9,7 @@ export default class App extends Component { // no need to export on the bottom 
         super()
         this.state = {
             articles:[],
-            channel: 'Please Choose A Source',
+            channel: 'Choose A Source',
             toggle: false,
             toggle2: false,
             style : {animation: ''}
