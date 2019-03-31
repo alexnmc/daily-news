@@ -83,7 +83,7 @@ export default class App extends Component { // no need to export on the bottom 
                                 <p onClick = {()=> this.getNews("everything?q=travel&from=2019-02-28&sortBy=publishedAt", "Travel")}>Travel</p>
                                 <p onClick = {()=> this.getNews("top-headlines?country=us&category=health", "Health")}>Health</p>
                                 <p onClick = {()=> this.getNews("everything?q=food&from=2019-02-28&sortBy=publishedAt", "Food")}>Food</p>
-                                <p onClick = {()=> this.getNews("everything?q=technology&from=2019-02-28&sortBy=publishedAt", "Technology")}>Technology</p>
+                                <p onClick = {()=> this.getNews("top-headlines?country=us&category=technology", "Technology")}>Technology</p>
                                 <p onClick = {()=> this.getNews("everything?q=social&from=2019-02-28&sortBy=publishedAt", "Social")}>Social</p>
                                 <p onClick = {()=> this.getNews("everything?q=religion&from=2019-02-28&sortBy=publishedAt", "Religion")}>Religion</p>
                                 <p onClick = {()=> this.getNews("everything?q=world&from=2019-02-28&sortBy=publishedAt", "World")}>World</p>
