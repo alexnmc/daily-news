@@ -50,7 +50,14 @@ export default class App extends Component { // no need to export on the bottom 
     }
     
 
-    
+    closing = () => {
+        this.setState({toggle: false,
+                        toggle2: false
+        })
+    }
+
+     
+
     
     getNews2 = (url, name) => {  
         
@@ -77,19 +84,22 @@ export default class App extends Component { // no need to export on the bottom 
             
         return(
             
-            <div className = "newsDiv">
-               <h1> {item.title}</h1>
-               <img src={ item.urlToImage} alt = ''/>
-               <h2> {item.description}</h2>
-               <h2 className = "name">{item.source.name}</h2>
-               <a className = "link" href={item.url}>click here</a>
+            <div className = "newsDiv"  onClick = {this.closing}>
+               <h1> {item.title} </h1>
+               <img src={ item.urlToImage} alt = '' onClick = {this.closing}/>
+               <h2 onClick = {this.closing}> {item.description} </h2>
+               <h2 className = "name" onClick = {this.closing}>{item.source.name}</h2>
+               <div className = "bottom">
+               <a className = "link" onClick = {this.closing} href={item.url}>read more</a>
+               <a className = "topP" onClick = {()=> Scroll.animateScroll.scrollToTop()}>top</a>
+               </div>
             </div>
         )
     })
        
         return(
              
-            <div className = "div">
+            <div className = "div" >
                 <div className = "channelName2">
                             <h1 className = "channelName" onClick = {() => Scroll.animateScroll.scrollToTop()}>{this.state.channel}</h1>
                     
@@ -205,8 +215,9 @@ export default class App extends Component { // no need to export on the bottom 
                         </div>        
                 
                     </div>
-                    
+                        
                         {article}
+                        
                         <div className = "spaceDiv"></div>
             </div>
         )

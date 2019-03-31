@@ -191,9 +191,32 @@ p{
     font-weight: 700;
 }
 
+
+
+.topP{
+ 
+ float:left;
+ margin-left:45vh;
+ color: rgb(146, 146, 146);
+
+ 
+  
+}
+
+.bottom{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
 .axios{
     margin-top: 3%;
 }
+
+
 
 p:hover{
     color:white;
@@ -229,9 +252,11 @@ p:hover{
 
 
 a{
-    font-size:18px;
+    font-size:17px;
     font-weight: bolder;
     color: rgb(0, 0, 0);
+   
+   
 }
 
 
