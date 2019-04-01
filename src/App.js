@@ -34,7 +34,7 @@ import {withButton} from './ButtonProvider'
                 
                 <div className = "newsDiv"  onClick = {this.props.closing} key={Math.random()}>
                     <h1> {item.title} </h1>
-                    <img src={ item.urlToImage} alt = '' onClick = {this.closing}/>
+                    <img src={ item.urlToImage} alt = '' onClick = {this.props.closing}/>
                     <h2 onClick = {this.props.closing}> {item.description} </h2>
                     <h2 className = "name" onClick = {this.props.closing}>{item.source.name}</h2>
                     <div className = "bottom">
