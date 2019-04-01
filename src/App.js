@@ -124,19 +124,36 @@ export default class App extends Component { // no need to export on the bottom 
                                     <p onClick = {()=> this.getNews2("top-headlines?country=cz", "Czech Republic")}>Czech Republic</p>
                                     
                                     <p onClick = {()=> this.getNews2("top-headlines?country=co", "Colombia")}>Colombia</p>
-                                    <p onClick = {()=> this.getNews2("top-headlines?country=cn", "China")}>China</p>
-                                    
+                                    <p onClick = {()=> this.getNews2("top-headlines?country=eg", "China")}>China</p>
+                                    <p onClick = {()=> this.getNews2("top-headlines?country=eg", "Egypt")}>Egypt</p>
+                                   
                                     <p onClick = {()=> this.getNews2("top-headlines?country=fr", "France")}>France</p>
                                     
                                     <p onClick = {()=> this.getNews2("top-headlines?country=de", "Germany")}>Germany</p>
+                                    <p onClick = {()=> this.getNews2("top-headlines?country=gr", "Greece")}>Greece</p>
+                                    <p onClick = {()=> this.getNews2("top-headlines?country=hk", "Honk Kong")}>Honk Kong</p>
                                     
                                     <p onClick = {()=> this.getNews2("top-headlines?country=hu", "Hungary")}>Hungary</p>
                                     
                                     <p onClick = {()=> this.getNews2("top-headlines?country=it", "Italy")}>Italy</p>
+                                    <p onClick = {()=> this.getNews2("top-headlines?country=id", "Indonesia")}>Indonesia</p>
+                                    <p onClick = {()=> this.getNews2("top-headlines?country=ie", "Ireland")}>Ireland</p>
+                                    
+                                    <p onClick = {()=> this.getNews2("top-headlines?country=in", "India")}>India</p>
                                     
                                     <p onClick = {()=> this.getNews2("top-headlines?country=il", "Israel")}>Israel</p>
                                     
                                     <p onClick = {()=> this.getNews2("top-headlines?country=jp", "Japan")}>Japan</p>
+                                    <p onClick = {()=> this.getNews2("top-headlines?country=kr", "Korea")}>Korea</p>
+                                    <p onClick = {()=> this.getNews2("top-headlines?country=lv", "Latvia")}>Latvia</p>
+                                    <p onClick = {()=> this.getNews2("top-headlines?country=lt", "Lithuania")}>Lithuania</p>
+                                    <p onClick = {()=> this.getNews2("top-headlines?country=my", "Malaysia")}>Malaysia</p>
+                                    <p onClick = {()=> this.getNews2("top-headlines?country=mx", "Mexico")}>Mexico</p>
+                                    <p onClick = {()=> this.getNews2("top-headlines?country=ma", "Morocco")}>Morocco</p>
+                                    <p onClick = {()=> this.getNews2("top-headlines?country=nl", "Netherlands")}>Netherlands</p>
+                                    <p onClick = {()=> this.getNews2("top-headlines?country=nz", "New Zealand")}>New Zealand</p>
+                                    <p onClick = {()=> this.getNews2("top-headlines?country=ng", "Nigeria")}>Nigeria</p>
+                                    <p onClick = {()=> this.getNews2("top-headlines?country=no", "Norway")}>Norway</p>
                                     
                                     <p onClick = {()=> this.getNews2("top-headlines?country=pl", "Poland")}>Poland</p>
                                     
@@ -144,12 +161,23 @@ export default class App extends Component { // no need to export on the bottom 
                                     
                                     <p onClick = {()=> this.getNews2("top-headlines?country=ru", "Russia")}>Russia</p>
                                     <p onClick = {()=> this.getNews2("top-headlines?country=ro", "Romania")}>Romania</p>
-                                    
+                                    <p onClick = {()=> this.getNews2("top-headlines?country=sa", "Saudi Arabia")}>Saudi Arabia</p>
+                                    <p onClick = {()=> this.getNews2("top-headlines?country=rs", "Serbia")}>Serbia</p>
+                                    <p onClick = {()=> this.getNews2("top-headlines?country=sg", "Singapore")}>Singapore</p>
+                                    <p onClick = {()=> this.getNews2("top-headlines?country=sl", "Slovakia")}>Slovakia</p>
+                                    <p onClick = {()=> this.getNews2("top-headlines?country=si", "Slovenia")}>Slovenia</p>
+                                    <p onClick = {()=> this.getNews2("top-headlines?country=za", "South Africa")}>South Africa</p>
                                     <p onClick = {()=> this.getNews2("top-headlines?country=se", "Sweeden")}>Sweeden</p>
                                     <p onClick = {()=> this.getNews2("top-headlines?country=ch", "Swiss")}>Swiss</p>
-                                    
-                                    
-                                 </div>
+                                    <p onClick = {()=> this.getNews2("top-headlines?country=tw", "Taiwan")}>Taiwan</p>
+                                    <p onClick = {()=> this.getNews2("top-headlines?country=th", "Thailand")}>Thailand</p>
+                                    <p onClick = {()=> this.getNews2("top-headlines?country=tr", "Turkey")}>Turkey</p>
+                                    <p onClick = {()=> this.getNews2("top-headlines?country=ua", "Ukraine")}>Ukraine</p>
+                                    <p onClick = {()=> this.getNews2("top-headlines?country=ae", "United Arab Emirates")}>United Arab Emirates</p>
+                                    <p onClick = {()=> this.getNews2("top-headlines?country=gb", "United Kingdom")}>United Kingdom</p>
+                                    <p onClick = {()=> this.getNews2("top-headlines?country=us", "USA")}>USA</p>
+                                    <p onClick = {()=> this.getNews2("top-headlines?country=ve", "Venezuela")}>Venezuela</p>
+                                </div>
                             </div>
                         
                                 :
