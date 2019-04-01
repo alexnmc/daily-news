@@ -104,7 +104,7 @@ img{
     width: 12em;
     padding: 1%;
     position:fixed;
-    background-color: rgb(248, 248, 248);
+    background-color: rgb(255, 255, 255);
     overflow-x: hidden;
     margin-top: 49vh;
     border: 2px solid rgb(95, 0, 0);
@@ -123,7 +123,7 @@ img{
     width: 12em;
     padding: 1%;
     position:fixed;
-    background-color: rgb(248, 248, 248);
+    background-color: rgb(255, 255, 255);
     overflow-x: hidden;
     margin-top: 49vh;
     border: 2px solid rgb(95, 0, 0);
@@ -326,7 +326,6 @@ img{
     margin-top: 42vh;
     padding: 2.5%;
     box-sizing: border-box;
-    background-color: rgba(255, 255, 255, 0.966);
     border: 0px;
     margin-left:0px;
     
