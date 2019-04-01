@@ -11,10 +11,7 @@ import {withButton} from './ButtonProvider'
         super(props)
        
         this.state = {
-            articles:[],
-            channel: 'Hello World',
-            toggle: this.props.toggle,
-            toggle2: this.props.toggle2,
+            
            
         }
     }
@@ -41,7 +38,7 @@ import {withButton} from './ButtonProvider'
                     <h2 onClick = {this.props.closing}> {item.description} </h2>
                     <h2 className = "name" onClick = {this.props.closing}>{item.source.name}</h2>
                     <div className = "bottom">
-                        <a className = "link" onClick = {this.props.closing} href={item.url}>read more</a>
+                        <a className = "link"  href={item.url}>read more</a>
                         <div className = "topP" onClick = {()=> Scroll.animateScroll.scrollToTop()}></div>
                     </div>
                 </div>
