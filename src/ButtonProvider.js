@@ -71,25 +71,32 @@ class ButtonProvider extends Component {
 }
         
     
-    handleToggle = () =>  this.setState( prevState =>{   
+    handleToggle = (e) =>{
+    e.preventDefault()
+        this.setState( prevState =>{   
+                return{ 
+                    toggle: !prevState.toggle, 
+                    toggle2:false
+                }
+        })
+    }
+    
+    
+    
+    handleToggle2 = (e) => {
+    e.preventDefault()
+        this.setState( prevState =>{   
             return{ 
-                 toggle: !prevState.toggle, 
-                 toggle2:false
+                toggle2: !prevState.toggle2, 
+                toggle: false
             }
-    })
-    
-    
-    
-    
-    handleToggle2 = () =>  this.setState( prevState =>{   
-        return{ 
-             toggle2: !prevState.toggle2, 
-             toggle: false
-        }
-    })
+        })
+    }
 
-
-    closing = () => {
+    
+    
+    closing = (e) => {
+        e.preventDefault()
         this.setState({
             toggle: false,
             toggle2: false

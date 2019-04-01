@@ -17,7 +17,6 @@ import {withButton} from './ButtonProvider'
             toggle2: this.props.toggle2,
            
         }
-        
     }
 
     
