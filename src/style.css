@@ -107,9 +107,8 @@ img{
     background-color: rgba(255, 255, 255, 0.979);
     overflow-x: hidden;
     margin-top: 49vh;
-    border-left: 2px solid rgb(95, 0, 0);
-    border-top: 2px solid rgb(95, 0, 0);
-    border-bottom: 2px solid rgb(95, 0, 0);
+    border: 2px solid rgb(95, 0, 0);
+    margin-left: -7%;
     
 }
 
@@ -126,10 +125,9 @@ img{
     background-color: rgba(255, 255, 255, 0.979);
     overflow-x: hidden;
     margin-top: 49vh;
-    border-right: 2px solid rgb(95, 0, 0);
-    border-top: 2px solid rgb(95, 0, 0);
-    border-bottom: 2px solid rgb(95, 0, 0);
+    border: 2px solid rgb(95, 0, 0);
     animation: fadein 1s;
+    margin-left: 7%;
     
 }
 
@@ -159,7 +157,7 @@ img{
     position:fixed;
     border: 1px solid rgba(0, 0, 0, 0.938);
     border-radius: 3px;
-    margin-left: -4%;
+    margin-left: -10%;
     animation: fadein 1s;
 }
 
@@ -175,7 +173,7 @@ img{
     position:fixed;
     border: 1px solid rgba(0, 0, 0, 0.938);
     border-radius: 3px;
-    margin-left: 4%;
+    margin-left: 10%;
     animation: fadein 1s;
 }
 
