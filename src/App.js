@@ -32,11 +32,11 @@ import {withButton} from './ButtonProvider'
             
             return(
                 
-                <div className = "newsDiv"  onClick = {this.props.closing} key={Math.random()}>
+                <div className = "newsDiv"  key={Math.random()}>
                     <h1> {item.title} </h1>
-                    <img src={ item.urlToImage} alt = '' onClick = {this.props.closing}/>
-                    <h2 onClick = {this.props.closing}> {item.description} </h2>
-                    <h2 className = "name" onClick = {this.props.closing}>{item.source.name}</h2>
+                    <img src={ item.urlToImage} alt = '' />
+                    <h2 > {item.description} </h2>
+                    <h2 className = "name" >{item.source.name}</h2>
                     <div className = "bottom">
                         <a className = "link"  href={item.url}>read more</a>
                         <div className = "topP" onClick = {()=> Scroll.animateScroll.scrollToTop()}></div>
