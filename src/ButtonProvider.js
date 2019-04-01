@@ -71,8 +71,8 @@ class ButtonProvider extends Component {
 }
         
     
-    handleToggle = (e) =>{
-    e.preventDefault()
+    handleToggle = () =>{
+    
         this.setState( prevState =>{   
                 return{ 
                     toggle: !prevState.toggle, 
@@ -83,8 +83,8 @@ class ButtonProvider extends Component {
     
     
     
-    handleToggle2 = (e) => {
-    e.preventDefault()
+    handleToggle2 = () => {
+    
         this.setState( prevState =>{   
             return{ 
                 toggle2: !prevState.toggle2, 
@@ -95,8 +95,8 @@ class ButtonProvider extends Component {
 
     
     
-    closing = (e) => {
-        e.preventDefault()
+    closing = () => {
+        
         this.setState({
             toggle: false,
             toggle2: false
