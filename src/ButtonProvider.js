@@ -89,8 +89,8 @@ class ButtonProvider extends Component {
         
     
     
-    handleToggle = (e) =>{
-        e.preventDefault()
+    handleToggle = () =>{
+       
         this.setOverflow()  
     this.setState( prevState =>{   
                 return{ 
@@ -104,8 +104,8 @@ class ButtonProvider extends Component {
     
     
     
-    handleToggle2 = (e) => {
-        e.preventDefault()
+    handleToggle2 = () => {
+       
         this.setOverflow()
         this.setState( prevState =>{   
             return{ 
@@ -118,8 +118,8 @@ class ButtonProvider extends Component {
 
     
     
-    closing = (e) => {
-        e.preventDefault()
+    closing = () => {
+       
        // document.ontouchmove= function(e){ return true }
         document.body.style.overflow = "scroll"
         this.setState({
