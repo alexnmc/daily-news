@@ -22,11 +22,11 @@ class ButtonProvider extends Component {
     
     
    setOverflow = () => {
-     //document.body.style.overflow = 'hidden'
-     if(this.state.toggle === this.state.toggle2){ document.body.style.overflow = "hidden" }
+     
+    if(this.state.toggle === this.state.toggle2){ document.body.style.overflow = "hidden" }
    }
     
-    
+   
     
     getMount = (url, name) => {
        
