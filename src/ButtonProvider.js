@@ -7,6 +7,7 @@ const ButtonContext = React.createContext()
 
 
 class ButtonProvider extends Component {
+    
     constructor(){
         super()
         this.state = {
@@ -14,14 +15,19 @@ class ButtonProvider extends Component {
             channel: '',
             toggle: false,
             toggle2: false,
-            
+           
         }
     }
     
     
+   setOverflow = () => {
+    this.state.toggle || this.state.toggle2 ? document.body.style.overflow = "scroll" : document.body.style.overflow = "hidden"
+   }
+    
+    
     
     getMount = (url, name) => {
-    
+       
         axios.get( `https://newsapi.org/v2/top-headlines?country=us&apiKey=f64c9be83f094f43a2c3954a6c1ec8aa`)
             .then(response => {
                 this.setState({
@@ -52,8 +58,6 @@ class ButtonProvider extends Component {
                    
                 }
             })
-
-           
     }
    
 
@@ -80,35 +84,42 @@ class ButtonProvider extends Component {
         
     
     handleToggle = () =>{
-   
-        this.setState( prevState =>{   
+     
+    this.setState( prevState =>{   
                 return{ 
                     toggle: !prevState.toggle, 
-                    toggle2:false
+                    toggle2:false,
+                   
                 }
         })
+        this.setOverflow()
+        
     }
     
     
     
     handleToggle2 = () => {
-    
+        
         this.setState( prevState =>{   
             return{ 
                 toggle2: !prevState.toggle2, 
-                toggle: false
+                toggle: false,
+                overflow: 'hidden'
             }
         })
+
+        this.setOverflow()
     }
 
     
     
     closing = () => {
-        
+        document.body.style.overflow = "scroll"
         this.setState({
             toggle: false,
             toggle2: false
         })
+       
     }
     
     
