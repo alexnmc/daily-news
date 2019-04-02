@@ -6,7 +6,7 @@ const Button2 =(props)=> {
     
     return(
             <div className = "transitions">
-            <button className = " button1" onClick = {props.handleToggle}  >Channel</button>
+            <button className = " button1" onClick = {props.handleToggle}>Source</button>
             { props.toggle ?
             
                 <div className = "navbarWrap" >

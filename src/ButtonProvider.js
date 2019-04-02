@@ -13,20 +13,23 @@ class ButtonProvider extends Component {
             articles:[],
             channel: '',
             toggle: false,
-            toggle2: false
+            toggle2: false,
+            
         }
     }
     
     
     
-    getMount = () => {axios.get( `https://newsapi.org/v2/top-headlines?country=us&apiKey=f64c9be83f094f43a2c3954a6c1ec8aa`)
-    .then(response => {
-       this.setState({
-           articles: response.data.articles,
-           channel: 'USA'
-           
-       })
-   })
+    getMount = (url, name) => {
+    
+        axios.get( `https://newsapi.org/v2/top-headlines?country=us&apiKey=f64c9be83f094f43a2c3954a6c1ec8aa`)
+            .then(response => {
+                this.setState({
+                    articles: response.data.articles,
+                    channel: 'USA'
+                    
+            })
+        })
    }
 
     
@@ -38,6 +41,7 @@ class ButtonProvider extends Component {
          .then(response => {
             this.setState({
                 articles: response.data.articles,
+    
             })
         })
             this.setState(prevState=>{
@@ -45,8 +49,11 @@ class ButtonProvider extends Component {
                return{ 
                     channel: name,
                     toggle: !prevState.toggle,
+                   
                 }
             })
+
+           
     }
    
 
@@ -60,15 +67,16 @@ class ButtonProvider extends Component {
                 articles: response.data.articles,
             })
         })
-            this.setState(prevState=>{
+            this.setState(prevState=>{  
                
                return{ 
                     channel: name,
                     toggle2: !prevState.toggle2,
+                    
                 }
             })
-    
-}
+         
+    }
         
     
     handleToggle = () =>{
@@ -117,6 +125,7 @@ class ButtonProvider extends Component {
                     handleToggle: this.handleToggle,
                     handleToggle2 : this.handleToggle2,
                     closing: this.closing,
+
                     ...this.state
                     
                 }}>

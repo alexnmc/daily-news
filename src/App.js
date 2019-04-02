@@ -18,8 +18,8 @@ import {withButton} from './ButtonProvider'
 
     
     componentDidMount(){
-     
-        this.props.getMount()
+      
+        this.props.getMount(this.props.url2, this.props.channel)
     }
    
 
