@@ -118,7 +118,8 @@ class ButtonProvider extends Component {
 
     
     
-    closing = () => {
+    closing = (e) => {
+        e.preventDefault()
        // document.ontouchmove= function(e){ return true }
         document.body.style.overflow = "scroll"
         this.setState({
