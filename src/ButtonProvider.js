@@ -16,12 +16,14 @@ class ButtonProvider extends Component {
             toggle: false,
             toggle2: false,
            
+           
         }
     }
     
     
    setOverflow = () => {
-    this.state.toggle || this.state.toggle2 ? document.body.style.overflow = "scroll" : document.body.style.overflow = "hidden"
+     //document.body.style.overflow = 'hidden'
+     if(this.state.toggle === this.state.toggle2){ document.body.style.overflow = "hidden" }
    }
     
     
@@ -85,31 +87,28 @@ class ButtonProvider extends Component {
         
     
     handleToggle = () =>{
-        this.setOverflow()
+        
     this.setState( prevState =>{   
                 return{ 
                     toggle: !prevState.toggle, 
                     toggle2:false,
-                   
                 }
         })
        
-        
+        this.setOverflow()
     }
     
     
     
     handleToggle2 = () => {
-        this.setOverflow()
+        
         this.setState( prevState =>{   
             return{ 
                 toggle2: !prevState.toggle2, 
                 toggle: false,
-                
             }
         })
-
-        
+        this.setOverflow()
     }
 
     
