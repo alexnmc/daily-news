@@ -304,15 +304,15 @@ img{
 .button1,
 .button2{
     width: 19vw;
-    height: 30px;
-    font-size: 12px;
+    height: 33px;
+    font-size: 0.8em;
     font-weight: bolder;
     display:flex;
     align-items: center;
     justify-content: center;
     border-radius: 2px;
     padding: auto;
-    border:0px
+    border:1px solid rgb(156, 0, 0);
 }
 
 
