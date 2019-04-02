@@ -28,7 +28,7 @@ class ButtonProvider extends Component {
     
    
     
-    getMount = (url, name) => {
+    getMount = () => {
        
         axios.get( `https://newsapi.org/v2/top-headlines?country=us&apiKey=f64c9be83f094f43a2c3954a6c1ec8aa`)
             .then(response => {
@@ -89,7 +89,8 @@ class ButtonProvider extends Component {
         
     
     
-    handleToggle = () =>{
+    handleToggle = (e) =>{
+        e.preventDefault()
         this.setOverflow()  
     this.setState( prevState =>{   
                 return{ 
@@ -103,7 +104,8 @@ class ButtonProvider extends Component {
     
     
     
-    handleToggle2 = () => {
+    handleToggle2 = (e) => {
+        e.preventDefault()
         this.setOverflow()
         this.setState( prevState =>{   
             return{ 
