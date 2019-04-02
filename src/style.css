@@ -139,6 +139,7 @@ img{
 
 .navbar{
     height: 100%;
+    width: 100%
     
 }
 
@@ -338,7 +339,7 @@ img{
 
 
 p{
-    font-size: 95%;
+    font-size: 4.4vmin;
     margin-bottom:13px;
 }
 
