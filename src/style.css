@@ -53,7 +53,7 @@ img{
 .newsDiv{
 
       border: 2px solid rgb(95, 0, 0);
-      width: 50vw;
+      width: 47vw;
       padding:18px;
       height: auto;
       font-size: 12px;
@@ -106,7 +106,7 @@ img{
     margin-top: 49vh;
     border: 2px solid rgb(95, 0, 0);
     animation: fadein 1s;
-    margin-left: -5%;
+    margin-left: -4%;
     
 }
 
@@ -125,7 +125,7 @@ img{
     margin-top: 49vh;
     border: 2px solid rgb(95, 0, 0);
     animation: fadein 1s;
-    margin-left: 5%;
+    margin-left: 4%;
     
 }
 
@@ -145,7 +145,7 @@ img{
 
 
 .button1{
-    width: 10em;
+    width: 8em;
     height: 32px;
     font-size:16px;
     font-family: 'verdana';
@@ -161,7 +161,7 @@ img{
 }
 
 .button2{
-    width: 10em;
+    width: 8em;
     height: 32px;
     font-size:16px;
     font-family: 'verdana';
