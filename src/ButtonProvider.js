@@ -89,7 +89,7 @@ class ButtonProvider extends Component {
         
     
     handleToggle = () =>{
-        
+        this.setOverflow()  
     this.setState( prevState =>{   
                 return{ 
                     toggle: !prevState.toggle, 
@@ -97,20 +97,20 @@ class ButtonProvider extends Component {
                 }
         })
        
-        this.setOverflow()
+        
     }
     
     
     
     handleToggle2 = () => {
-        
+        this.setOverflow()
         this.setState( prevState =>{   
             return{ 
                 toggle2: !prevState.toggle2, 
                 toggle: false,
             }
         })
-        this.setOverflow()
+       
     }
 
     
