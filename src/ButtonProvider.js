@@ -22,7 +22,7 @@ class ButtonProvider extends Component {
     
     
    setOverflow = () => {
-    document.getElementsByClassName('div').ontouchmove = function(e){ e.preventDefault()}
+    document.html.ontouchmove = function(e){ e.preventDefault()}
     if(this.state.toggle === this.state.toggle2){ document.body.style.overflow = "hidden" }
    }
     
@@ -84,7 +84,7 @@ class ButtonProvider extends Component {
                 }
             })
             document.body.style.overflow = 'scroll'
-            document.getElementsByClassName('div').ontouchmove= function(e){ return true }
+            document.html.ontouchmove= function(e){ return true }
     }
         
     
@@ -117,7 +117,7 @@ class ButtonProvider extends Component {
     
     
     closing = () => {
-        document.getElementsByClassName('div').ontouchmove= function(e){ return true }
+        document.html.ontouchmove= function(e){ return true }
         document.body.style.overflow = "scroll"
         this.setState({
             toggle: false,
