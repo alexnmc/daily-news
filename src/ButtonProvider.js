@@ -21,9 +21,10 @@ class ButtonProvider extends Component {
     }
     
     
-   
+    // disable scroll for safari ios = document.ontouchmove = function(event){event.preventdefault()}
+    
+    
     getMount = () => {
-       
         axios.get( `https://newsapi.org/v2/top-headlines?country=us&apiKey=f64c9be83f094f43a2c3954a6c1ec8aa`)
             .then(response => {
                 this.setState({
@@ -32,7 +33,7 @@ class ButtonProvider extends Component {
                     
             })
         })
-   }
+    }
 
     
    
@@ -71,10 +72,9 @@ class ButtonProvider extends Component {
         })
             this.setState(prevState=>{  
                
-               return{ 
+               return { 
                     channel: name,
                     toggle2: !prevState.toggle2,
-                    
                 }
             })
             document.body.style.overflow = 'scroll'
@@ -85,16 +85,14 @@ class ButtonProvider extends Component {
     
     handleToggle = () =>{
        
-    this.state.toggle  ? document.body.style.overflow = 'scroll' : document.body.style.overflow = 'hidden'
+    this.state.toggle ? document.body.style.overflow = 'scroll' : document.body.style.overflow = 'hidden'
     
     this.setState( prevState =>{   
-                return{ 
+                return { 
                     toggle: !prevState.toggle, 
                     toggle2: false,
                 }
         })
-       
-        
     }
     
     
@@ -104,25 +102,22 @@ class ButtonProvider extends Component {
      this.state.toggle2 ? document.body.style.overflow = 'scroll' : document.body.style.overflow = 'hidden'
         
         this.setState( prevState =>{   
-            return{ 
+            return { 
                 toggle2: !prevState.toggle2, 
                 toggle: false,
             }
         })
-       
     }
 
     
     
     closing = () => {
-       
        // document.ontouchmove= function(e){ return true }
         document.body.style.overflow = "scroll"
         this.setState({
             toggle: false,
             toggle2: false
         })
-       
     }
     
     
