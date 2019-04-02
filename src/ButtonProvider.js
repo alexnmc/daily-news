@@ -58,6 +58,7 @@ class ButtonProvider extends Component {
                    
                 }
             })
+            document.body.style.overflow = 'scroll'
     }
    
 
@@ -79,12 +80,12 @@ class ButtonProvider extends Component {
                     
                 }
             })
-         
+            document.body.style.overflow = 'scroll'
     }
         
     
     handleToggle = () =>{
-     
+        this.setOverflow()
     this.setState( prevState =>{   
                 return{ 
                     toggle: !prevState.toggle, 
@@ -92,23 +93,23 @@ class ButtonProvider extends Component {
                    
                 }
         })
-        this.setOverflow()
+       
         
     }
     
     
     
     handleToggle2 = () => {
-        
+        this.setOverflow()
         this.setState( prevState =>{   
             return{ 
                 toggle2: !prevState.toggle2, 
                 toggle: false,
-                overflow: 'hidden'
+                
             }
         })
 
-        this.setOverflow()
+        
     }
 
     
