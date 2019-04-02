@@ -32,9 +32,9 @@ import {withButton} from './ButtonProvider'
             
             return(
                 
-                <div className = "newsDiv"  key={Math.random()}>
-                    <h1> {item.title} </h1>
-                    <img src={ item.urlToImage} alt = '' />
+                <div className = "newsDiv" onClick = {this.props.closing} key={Math.random()}>
+                    <h1  > {item.title} </h1>
+                    <img  src={ item.urlToImage} alt = '' />
                     <h2 > {item.description} </h2>
                     <h2 className = "name" >{item.source.name}</h2>
                     <div className = "bottom">
