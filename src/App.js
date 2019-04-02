@@ -49,7 +49,7 @@ import {withButton} from './ButtonProvider'
         return(
             <div className = "div" >
                 <div className = "channelName2" >
-                    <h1 onClick = {this.props.closing} className = "channelName">{this.props.channel}</h1>
+                    <h1 className = "channelName" >{this.props.channel} </h1>
                     <Button1/>
                     <Button2/>
                 </div>

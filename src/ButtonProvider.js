@@ -21,13 +21,7 @@ class ButtonProvider extends Component {
     }
     
     
-   setOverflow = () => {
-    //document.ontouchmove = function(e){ e.preventDefault()}
-    if(this.state.toggle === this.state.toggle2){ document.body.style.overflow = "hidden" }
-   }
-    
    
-    
     getMount = () => {
        
         axios.get( `https://newsapi.org/v2/top-headlines?country=us&apiKey=f64c9be83f094f43a2c3954a6c1ec8aa`)
@@ -91,11 +85,12 @@ class ButtonProvider extends Component {
     
     handleToggle = () =>{
        
-        this.setOverflow()  
+    this.state.toggle  ? document.body.style.overflow = 'scroll' : document.body.style.overflow = 'hidden'
+    
     this.setState( prevState =>{   
                 return{ 
                     toggle: !prevState.toggle, 
-                    toggle2:false,
+                    toggle2: false,
                 }
         })
        
@@ -106,7 +101,8 @@ class ButtonProvider extends Component {
     
     handleToggle2 = () => {
        
-        this.setOverflow()
+     this.state.toggle2 ? document.body.style.overflow = 'scroll' : document.body.style.overflow = 'hidden'
+        
         this.setState( prevState =>{   
             return{ 
                 toggle2: !prevState.toggle2, 
