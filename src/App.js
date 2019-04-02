@@ -6,26 +6,21 @@ import {withButton} from './ButtonProvider'
 
 
 
- class App extends Component { // no need to export on the bottom of the page
+ class App extends Component { 
     constructor(props){
         super(props)
        
         this.state = {
-            
-           
+            read: "I don't even need state"
         }
     }
 
     
     componentDidMount(){
-        
-        this.props.getMount()
+         this.props.getMount()
     }
    
 
-    
-
-     
     render(){
     
         const article = this.props.articles.map(item => {
