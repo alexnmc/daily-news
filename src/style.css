@@ -53,7 +53,7 @@ img{
 .newsDiv{
 
       border: 2px solid rgb(95, 0, 0);
-      width: 40vw;
+      width: 50vw;
       padding:18px;
       height: auto;
       font-size: 12px;
@@ -106,7 +106,7 @@ img{
     margin-top: 49vh;
     border: 2px solid rgb(95, 0, 0);
     animation: fadein 1s;
-    margin-left: -7%;
+    margin-left: -5%;
     
 }
 
@@ -125,7 +125,7 @@ img{
     margin-top: 49vh;
     border: 2px solid rgb(95, 0, 0);
     animation: fadein 1s;
-    margin-left: 7%;
+    margin-left: 5%;
     
 }
 
@@ -145,8 +145,8 @@ img{
 
 
 .button1{
-    width:100px;
-    height: 36px;
+    width: 10em;
+    height: 32px;
     font-size:16px;
     font-family: 'verdana';
     font-weight: bolder;
@@ -156,13 +156,13 @@ img{
     position:fixed;
     border: 1px solid rgba(0, 0, 0, 0.938);
     border-radius: 5px;
-    margin-left: -10%;
+    margin-left: -6%;
     
 }
 
 .button2{
-    width:100px;
-    height: 36px;
+    width: 10em;
+    height: 32px;
     font-size:16px;
     font-family: 'verdana';
     font-weight: bolder;
@@ -172,7 +172,7 @@ img{
     position:fixed;
     border: 1px solid rgba(0, 0, 0, 0.938);
     border-radius: 5px;
-    margin-left: 10%;
+    margin-left: 6%;
     
 }
 
@@ -261,7 +261,7 @@ a{
 
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
 
     .div{
         background-color: rgba(31, 30, 30, 0.924);
@@ -393,3 +393,9 @@ h2{
 }
 
 }
+
+
+
+    
+
+
