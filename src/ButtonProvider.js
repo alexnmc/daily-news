@@ -22,7 +22,7 @@ class ButtonProvider extends Component {
     
     
    setOverflow = () => {
-    document.ontouchmove = function(e){ e.preventDefault()}
+    //document.ontouchmove = function(e){ e.preventDefault()}
     if(this.state.toggle === this.state.toggle2){ document.body.style.overflow = "hidden" }
    }
     
@@ -61,7 +61,7 @@ class ButtonProvider extends Component {
                 }
             })
             document.body.style.overflow = 'scroll'
-            document.ontouchmove= function(e){ return true }
+            //document.ontouchmove= function(e){ return true }
     }
    
 
@@ -84,7 +84,7 @@ class ButtonProvider extends Component {
                 }
             })
             document.body.style.overflow = 'scroll'
-            document.ontouchmove= function(e){ return true }
+           // document.ontouchmove= function(e){ return true }
     }
         
     
@@ -117,7 +117,7 @@ class ButtonProvider extends Component {
     
     
     closing = () => {
-        document.ontouchmove= function(e){ return true }
+       // document.ontouchmove= function(e){ return true }
         document.body.style.overflow = "scroll"
         this.setState({
             toggle: false,
