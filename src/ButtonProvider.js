@@ -15,21 +15,23 @@ class ButtonProvider extends Component {
             channel: '',
             toggle: false,
             toggle2: false,
-           
+            url: localStorage.getItem("url") || "",
+            name: localStorage.getItem("name") || "",
            
         }
     }
-    
+         
     
     // disable scroll for safari ios = document.ontouchmove = function(event){event.preventdefault()}
     
     
     getMount = () => {
-        axios.get( `https://newsapi.org/v2/top-headlines?country=us&apiKey=f64c9be83f094f43a2c3954a6c1ec8aa`)
+        console.log(this.state.url)
+        axios.get( `https://newsapi.org/v2/${this.state.url}&apiKey=f64c9be83f094f43a2c3954a6c1ec8aa`)
             .then(response => {
                 this.setState({
                     articles: response.data.articles,
-                    channel: 'USA'
+                    channel: this.state.name
                     
             })
         })
@@ -38,7 +40,8 @@ class ButtonProvider extends Component {
     
    
    getNews = (url, name) => {  
-        
+        localStorage.setItem("url", url)
+        localStorage.setItem("name", name)
         Scroll.animateScroll.scrollToTop()
         axios.get( `https://newsapi.org/v2/${url}&apiKey=f64c9be83f094f43a2c3954a6c1ec8aa`)
          .then(response => {
@@ -52,7 +55,6 @@ class ButtonProvider extends Component {
                return{ 
                     channel: name,
                     toggle: !prevState.toggle,
-                   
                 }
             })
             document.body.style.overflow = 'scroll'
@@ -62,7 +64,8 @@ class ButtonProvider extends Component {
 
     
     getNews2 = ( url, name) => {  
-       
+        localStorage.setItem("url", url) // return to the last page if you leave the site
+        localStorage.setItem("name", name)
         Scroll.animateScroll.scrollToTop()
         axios.get( `https://newsapi.org/v2/${url}&apiKey=f64c9be83f094f43a2c3954a6c1ec8aa`)
          .then(response => {

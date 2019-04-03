@@ -11,13 +11,14 @@ import {withButton} from './ButtonProvider'
         super(props)
        
         this.state = {
-            read: "I don't even need state"
+            
         }
     }
 
     
     componentDidMount(){
          this.props.getMount()
+         
     }
    
 
