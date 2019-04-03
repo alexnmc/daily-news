@@ -15,8 +15,8 @@ class ButtonProvider extends Component {
             channel: '',
             toggle: false,
             toggle2: false,
-            url: localStorage.getItem("url") || "",
-            name: localStorage.getItem("name") || "",
+            url: localStorage.getItem("url") || "top-headlines?country=us",
+            name: localStorage.getItem("name") || "News for You",
            
         }
     }
