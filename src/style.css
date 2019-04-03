@@ -228,11 +228,12 @@ p:hover{
     
     text-align: center;
     background-color: rgba(255, 255, 255, 0.938);
-    position: fixed;
     width:100%;
+    height: auto;
     margin:auto;
-    border: 10px solid rgba(255, 255, 255, 0.76);
+    border: 12px solid rgba(255, 255, 255, 0.76);
     font-size: 28px;
+    position:fixed;
     
 }
 
@@ -241,13 +242,12 @@ p:hover{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 56px;
+    height: 58px;
     width:100%;
     font-family: 'helvetica';
    
-   
-    
 }
+
 
 
 a{
@@ -269,12 +269,12 @@ a{
 
 .channelName{
     font-size: 20px;
-    border:10px solid rgba(255, 255, 255, 0.63);
+    border: 3.2vh solid rgba(255, 255, 255, 0.63);
 }
 
 
 .channelName2{
-    height: 48px;
+    height: 12.5vh;
 }
 
 
@@ -328,7 +328,7 @@ img{
 .navbarWrap{
     width: 35vw;
     height: 74vh;
-    margin-top: 42vh;
+    margin-top: 43.5vh;
     padding: 2.5%;
     box-sizing: border-box;
     border: 0px;
