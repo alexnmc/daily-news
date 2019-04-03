@@ -14,7 +14,7 @@ class ButtonProvider extends Component {
             channel: '',
             toggle: false,
             toggle2: false,
-            url: localStorage.getItem("url") || "top-headlines?country=us",
+            url: localStorage.getItem("url") || "us",
             name: localStorage.getItem("name") || "News for You",
            
         }
@@ -25,8 +25,9 @@ class ButtonProvider extends Component {
     
     
     getMount = () => {
-        
-        axios.get( `https://newsapi.org/v2/${this.state.url}&apiKey=f64c9be83f094f43a2c3954a6c1ec8aa`)
+        let source = ''
+        this.state.url.length > 2 ? source = 'sources' : source = 'country'
+        axios.get( `https://newsapi.org/v2/top-headlines?${source}=${this.state.url}&apiKey=f64c9be83f094f43a2c3954a6c1ec8aa`)
             .then(response => {
                 this.setState({
                     articles: response.data.articles,
@@ -41,7 +42,7 @@ class ButtonProvider extends Component {
         localStorage.setItem("url", url)
         localStorage.setItem("name", name)
         Scroll.animateScroll.scrollToTop()
-        axios.get( `https://newsapi.org/v2/${url}&apiKey=f64c9be83f094f43a2c3954a6c1ec8aa`)
+        axios.get( `https://newsapi.org/v2/top-headlines?sources=${url}&apiKey=f64c9be83f094f43a2c3954a6c1ec8aa`)
          .then(response => {
             this.setState({
                 articles: response.data.articles,
@@ -60,7 +61,7 @@ class ButtonProvider extends Component {
    
 
     
-    getNews2 = ( url, name) => {  
+    getNews2 = (url, name) => {  
         localStorage.setItem("url", url) // return to the last page if you leave the site
         localStorage.setItem("name", name)
         Scroll.animateScroll.scrollToTop()
