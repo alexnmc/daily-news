@@ -152,8 +152,8 @@ img{
     background-color:  rgb(175, 0, 0);
     cursor: pointer;
     position:fixed;
-    border: 2px solid rgb(85, 0, 0);
-    border-radius: 4px;
+    border: 2px solid rgb(119, 0, 0);
+    border-radius: 3px;
     margin-left: -6%;
     
 }
@@ -168,8 +168,8 @@ img{
     background-color:  rgb(175, 0, 0);
     cursor: pointer;
     position:fixed;
-    border: 2px solid  rgb(85, 0, 0);
-    border-radius: 4px;
+    border: 2px solid  rgb(119, 0, 0);
+    border-radius: 3px;
     margin-left: 6%;
     
 }
