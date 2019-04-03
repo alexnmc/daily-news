@@ -38,7 +38,7 @@ class ButtonProvider extends Component {
         localStorage.setItem("url", url)
         localStorage.setItem("name", name)
         Scroll.animateScroll.scrollToTop()
-        axios.get( `https://newsapi.org/v2/top-headlines?sources=${url}&apiKey=f64c9be83f094f43a2c3954a6c1ec8aa`)
+        axios.get( `https://newsapi.org/v2/everything?sources=${url}&apiKey=f64c9be83f094f43a2c3954a6c1ec8aa`)
          .then(response => {
             this.setState({
                 articles: response.data.articles,
