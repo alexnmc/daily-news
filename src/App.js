@@ -6,10 +6,9 @@ import {withButton} from './ButtonProvider'
 
 
 
- class App extends Component { 
+class App extends Component { 
     constructor(props){
         super(props)
-       
         this.state = {
             
         }
@@ -17,8 +16,7 @@ import {withButton} from './ButtonProvider'
 
     
     componentDidMount(){
-         this.props.getMount()
-         
+        this.props.getMount()
     }
    
 
@@ -26,8 +24,7 @@ import {withButton} from './ButtonProvider'
     
         const article = this.props.articles.map(item => {
             
-            return(
-                
+            return (
                 <div className = "newsDiv" onClick = {this.props.closing} key={Math.random()}>
                     <h1  > {item.title} </h1>
                     <img  src={ item.urlToImage} alt = '' />
@@ -39,10 +36,10 @@ import {withButton} from './ButtonProvider'
                     </div>
                 </div>
             )
-    })
+        })
        
         
-        return(
+        return (
             <div className = "div" >
                 <div className = "channelName2" >
                     <h1 className = "channelName" >{this.props.channel} </h1>
@@ -52,9 +49,9 @@ import {withButton} from './ButtonProvider'
                     {article}
                 <div className = "spaceDiv"></div>
             </div>
-           
         )   
     }
 }
 
- export default  withButton(App)
+ 
+export default  withButton(App)

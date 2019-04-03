@@ -5,7 +5,6 @@ import Scroll from 'react-scroll'
 const ButtonContext = React.createContext()
 
 
-
 class ButtonProvider extends Component {
     
     constructor(){
@@ -26,20 +25,19 @@ class ButtonProvider extends Component {
     
     
     getMount = () => {
-        console.log(this.state.url)
+        
         axios.get( `https://newsapi.org/v2/${this.state.url}&apiKey=f64c9be83f094f43a2c3954a6c1ec8aa`)
             .then(response => {
                 this.setState({
                     articles: response.data.articles,
                     channel: this.state.name
-                    
             })
         })
     }
 
     
    
-   getNews = (url, name) => {  
+    getNews = (url, name) => {  
         localStorage.setItem("url", url)
         localStorage.setItem("name", name)
         Scroll.animateScroll.scrollToTop()
@@ -51,8 +49,7 @@ class ButtonProvider extends Component {
             })
         })
             this.setState(prevState=>{
-               
-               return{ 
+                return{ 
                     channel: name,
                     toggle: !prevState.toggle,
                 }
@@ -67,15 +64,14 @@ class ButtonProvider extends Component {
         localStorage.setItem("url", url) // return to the last page if you leave the site
         localStorage.setItem("name", name)
         Scroll.animateScroll.scrollToTop()
-        axios.get( `https://newsapi.org/v2/${url}&apiKey=f64c9be83f094f43a2c3954a6c1ec8aa`)
+        axios.get( `https://newsapi.org/v2/top-headlines?country=${url}&apiKey=f64c9be83f094f43a2c3954a6c1ec8aa`)
          .then(response => {
             this.setState({
                 articles: response.data.articles,
             })
         })
             this.setState(prevState=>{  
-               
-               return { 
+                return { 
                     channel: name,
                     toggle2: !prevState.toggle2,
                 }
@@ -89,7 +85,6 @@ class ButtonProvider extends Component {
     handleToggle = () =>{
        
     this.state.toggle ? document.body.style.overflow = 'scroll' : document.body.style.overflow = 'hidden'
-    
     this.setState( prevState =>{   
                 return { 
                     toggle: !prevState.toggle, 
@@ -103,7 +98,6 @@ class ButtonProvider extends Component {
     handleToggle2 = () => {
        
      this.state.toggle2 ? document.body.style.overflow = 'scroll' : document.body.style.overflow = 'hidden'
-        
         this.setState( prevState =>{   
             return { 
                 toggle2: !prevState.toggle2, 
@@ -126,20 +120,16 @@ class ButtonProvider extends Component {
     
     render() {
 
-        
         return (
             <ButtonContext.Provider
                 value={{
-                   
                     getNews: this.getNews,
                     getNews2: this.getNews2,
                     getMount: this.getMount,
                     handleToggle: this.handleToggle,
                     handleToggle2 : this.handleToggle2,
                     closing: this.closing,
-
                     ...this.state
-                    
                 }}>
                 {this.props.children}
             </ButtonContext.Provider>
