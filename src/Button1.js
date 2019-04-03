@@ -2,7 +2,7 @@ import React from 'react'
 import {withButton} from './ButtonProvider'
 
 
-const Button1 = (props) => {
+    const Button1 = (props) => {
 
         return (
            <div className = "button2Wrap">

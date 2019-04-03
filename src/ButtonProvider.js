@@ -19,10 +19,7 @@ class ButtonProvider extends Component {
            
         }
     }
-         
-    
     // disable scroll for safari ios = document.ontouchmove = function(event){event.preventdefault()}
-    
     
     getMount = () => {
         let source = ''
@@ -37,7 +34,6 @@ class ButtonProvider extends Component {
     }
 
     
-   
     getNews = (url, name) => {  
         localStorage.setItem("url", url)
         localStorage.setItem("name", name)

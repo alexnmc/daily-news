@@ -51,7 +51,6 @@ const Button2 = (props) => {
             
             </div> 
         )
-    
 }
                
 
