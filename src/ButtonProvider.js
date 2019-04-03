@@ -14,7 +14,7 @@ class ButtonProvider extends Component {
             channel: '',
             toggle: false,
             toggle2: false,
-            url: localStorage.getItem("url") || "us",
+            url: localStorage.getItem("url") || "us", //returns to the last page viewed
             name: localStorage.getItem("name") || "News for You",
            
         }
@@ -58,7 +58,7 @@ class ButtonProvider extends Component {
 
     
     getNews2 = (url, name) => {  
-        localStorage.setItem("url", url) // return to the last page if you leave the site
+        localStorage.setItem("url", url) 
         localStorage.setItem("name", name)
         Scroll.animateScroll.scrollToTop()
         axios.get( `https://newsapi.org/v2/top-headlines?country=${url}&apiKey=f64c9be83f094f43a2c3954a6c1ec8aa`)
@@ -79,22 +79,20 @@ class ButtonProvider extends Component {
         
     
     
-    handleToggle = () =>{
-       
-    this.state.toggle ? document.body.style.overflow = 'scroll' : document.body.style.overflow = 'hidden'
-    this.setState( prevState =>{   
-                return { 
-                    toggle: !prevState.toggle, 
-                    toggle2: false,
-                }
+    handleToggle = () => {
+        this.state.toggle ? document.body.style.overflow = 'scroll' : document.body.style.overflow = 'hidden'
+        this.setState( prevState =>{   
+                    return { 
+                        toggle: !prevState.toggle, 
+                        toggle2: false,
+                    }
         })
     }
     
     
     
     handleToggle2 = () => {
-       
-     this.state.toggle2 ? document.body.style.overflow = 'scroll' : document.body.style.overflow = 'hidden'
+        this.state.toggle2 ? document.body.style.overflow = 'scroll' : document.body.style.overflow = 'hidden'
         this.setState( prevState =>{   
             return { 
                 toggle2: !prevState.toggle2, 
