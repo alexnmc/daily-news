@@ -22,7 +22,7 @@ class ButtonProvider extends Component {
     // disable scroll for safari ios = document.ontouchmove = function(event){event.preventdefault()}
     
     getMount = () => {
-        let source = ''
+        let source = 'country'
         this.state.url.length > 2 ? source = 'sources' : source = 'country'
         axios.get( `https://newsapi.org/v2/top-headlines?${source}=${this.state.url}&apiKey=f64c9be83f094f43a2c3954a6c1ec8aa`)
             .then(response => {
