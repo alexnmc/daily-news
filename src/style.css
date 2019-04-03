@@ -269,12 +269,12 @@ a{
 
 .channelName{
     font-size: 20px;
-    border: 3.2vh solid rgba(255, 255, 255, 0.63);
+    border: 3vh solid rgba(255, 255, 255, 0.63);
 }
 
 
 .channelName2{
-    height: 12.5vh;
+    height: 12vh;
 }
 
 
@@ -328,7 +328,7 @@ img{
 .navbarWrap{
     width: 35vw;
     height: 74vh;
-    margin-top: 43.5vh;
+    margin-top: 43vh;
     padding: 2.5%;
     box-sizing: border-box;
     border: 0px;
