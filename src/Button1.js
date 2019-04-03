@@ -21,7 +21,7 @@ const Button1 =(props)=>{
                     <p onClick = {()=> props.getNews2("top-headlines?country=cu", "Cuba")}>Cuba</p>
                     <p onClick = {()=> props.getNews2("top-headlines?country=cz", "Czech Republic")}>Czech Republic</p>
                     <p onClick = {()=> props.getNews2("top-headlines?country=co", "Colombia")}>Colombia</p>
-                    <p onClick = {()=> props.getNews2("top-headlines?country=eg", "China")}>China</p>
+                    <p onClick = {()=> props.getNews2("top-headlines?country=cn", "China")}>China</p>
                     <p onClick = {()=> props.getNews2("top-headlines?country=eg", "Egypt")}>Egypt</p>
                     <p onClick = {()=> props.getNews2("top-headlines?country=fr", "France")}>France</p>
                     <p onClick = {()=> props.getNews2("top-headlines?country=de", "Germany")}>Germany</p>
