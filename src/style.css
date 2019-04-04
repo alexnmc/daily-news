@@ -263,7 +263,6 @@ a{
 
     .div{
         background-color: rgba(31, 30, 30, 0.924);
-        
     }
 
 
@@ -274,7 +273,7 @@ a{
 
 
 .channelName2{
-    height: 11vh;
+    height: 10.3vh;
 }
 
 
@@ -285,7 +284,6 @@ a{
     margin-top: 20%;
     padding:8px;
     border: 0px;
-    
 }
 
 
@@ -293,8 +291,8 @@ img{
     height: 100%;
     width: 100%;
     margin:5px;
-   
 }
+
 
 .button1,
 .button2{
@@ -313,13 +311,11 @@ img{
 
 .button1{
     margin-left: -2%;
-   
 }
 
 
 .button2{
     margin-left: 2%;
-    
 }
 
 
@@ -332,7 +328,6 @@ img{
     box-sizing: border-box;
     border: 0px;
     margin-left:0px;
-    
 }
 
 
@@ -346,13 +341,10 @@ p{
     margin-left:170px;
     height: 27px;
     width:27px;
-  
 }
 
 a{
     font-size: 14px;
-    
-   
 }
 
 
@@ -364,7 +356,6 @@ h1{
 
 h2{
     font-size: 15px;
-    
 }
 
 
