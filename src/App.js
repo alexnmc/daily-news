@@ -22,21 +22,22 @@ class App extends Component {
         this.props.getMount()
     }
    
+    
     renderSpinner() {
         return ( 
             <div className = "opening2">
-            <div className = "opening">
-            <div className = "loading">
-            <Opening/>
-            </div>
-            </div>
+                <div className = "opening">
+                    <div className = "loading">
+                        <Opening/>
+                    </div>
+                </div>
             </div>
         )
     }
 
+    
     render(){
         
-       
         const article = this.props.articles.map(item => {
             
             return (
@@ -51,26 +52,25 @@ class App extends Component {
                     </div>
                 </div>
             )
-        })
+    })
        
         
         return (
             this.props.status == 'REQUEST' ? 
         
-            this.renderSpinner() 
-
-        :
-            <div className = "div" >
-               
-                <div className = "channelName2" >
-                    <h1 className = "channelName" >{this.props.channel} </h1>
-                    <Button1/>
-                    <Button2/>
+                this.renderSpinner() //loading animation 
+                :
+                <div className = "div" >
+                
+                    <div className = "channelName2" >
+                        <h1 className = "channelName" >{this.props.channel} </h1>
+                        <Button1/>
+                        <Button2/>
+                    </div>
+                    
+                        {article}
+                    <div className = "spaceDiv"></div>
                 </div>
-                  
-                    {article}
-                <div className = "spaceDiv"></div>
-            </div>
         )   
     }
 }
