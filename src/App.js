@@ -26,9 +26,7 @@ class App extends Component {
         return ( 
             <div className = "opening2">
                 <div className = "opening">
-                    <div className = "loading">
-                        <Opening/>
-                    </div>
+                    <Opening/>
                 </div>
             </div>
         )
