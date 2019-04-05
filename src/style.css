@@ -6,7 +6,6 @@
 
 
 body{
-     
       background-image: url('./Photos/news.jpg') ;
       background-size:10%;
       display:flex;
@@ -103,6 +102,8 @@ img{
 
 .div{
     background-color: rgba(20, 20, 20, 0.959);
+    height: 100%;
+    width: auto;
 }
 
 
