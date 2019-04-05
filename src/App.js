@@ -3,6 +3,8 @@ import Scroll from 'react-scroll'
 import Button1 from './Button1'
 import Button2 from './Button2'
 import {withButton} from './ButtonProvider'
+import Opening from './Opening'
+
 
 
 
@@ -14,14 +16,23 @@ class App extends Component {
         }
     }
 
-    
+   
     componentDidMount(){
+       
         this.props.getMount()
     }
    
+    renderSpinner() {
+        return ( 
+            <div className = "opening">
+            <Opening/>
+            </div>
+        )
+    }
 
     render(){
-    
+        
+       
         const article = this.props.articles.map(item => {
             
             return (
@@ -40,12 +51,19 @@ class App extends Component {
        
         
         return (
+            this.props.status == 'REQUEST' ? 
+        
+            this.renderSpinner() 
+
+        :
             <div className = "div" >
+               
                 <div className = "channelName2" >
                     <h1 className = "channelName" >{this.props.channel} </h1>
                     <Button1/>
                     <Button2/>
                 </div>
+                  
                     {article}
                 <div className = "spaceDiv"></div>
             </div>

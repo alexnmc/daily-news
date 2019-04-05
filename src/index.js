@@ -9,11 +9,7 @@ import ButtonProvider from './ButtonProvider'
 
 ReactDOM.render(
         <ButtonProvider>
-       
-
-         <App/>
-        
-        
+        <App/>
         </ButtonProvider>,
     
 document.getElementById('root'))

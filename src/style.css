@@ -13,6 +13,15 @@ body{
       flex-direction: column;
 }
 
+.opening{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    position:fixed;
+}
 
 .transitions{
     display: flex;

@@ -10,6 +10,7 @@ class ButtonProvider extends Component {
     constructor(){
         super()
         this.state = {
+            status: 'REQUEST',
             articles:[],
             channel: '',
             toggle: false,
@@ -21,13 +22,15 @@ class ButtonProvider extends Component {
     }
     // disable scroll for safari ios = document.ontouchmove = function(event){event.preventdefault()}
     
+    
     getMount = () => {
         
         axios.get( `https://newsapi.org/v2/top-headlines?${this.state.url.length > 2 ? 'sources' : 'country'}=${this.state.url}&apiKey=f64c9be83f094f43a2c3954a6c1ec8aa`)
             .then(response => {
                 this.setState({
                     articles: response.data.articles,
-                    channel: this.state.name
+                    channel: this.state.name,
+                    status: 'SUCCESS'
             })
         })
     }
@@ -123,6 +126,7 @@ class ButtonProvider extends Component {
                     handleToggle: this.handleToggle,
                     handleToggle2 : this.handleToggle2,
                     closing: this.closing,
+                    
                     ...this.state
                 }}>
                 {this.props.children}
