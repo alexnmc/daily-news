@@ -24,8 +24,10 @@ class App extends Component {
    
     renderSpinner() {
         return ( 
+            <div className = "opening2">
             <div className = "opening">
             <Opening/>
+            </div>
             </div>
         )
     }
