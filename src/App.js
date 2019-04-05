@@ -18,8 +18,7 @@ class App extends Component {
 
    
     componentDidMount(){
-       
-        this.props.getMount()
+       this.props.getMount()
     }
    
     
@@ -56,7 +55,7 @@ class App extends Component {
        
         
         return (
-            this.props.status == 'REQUEST' ? 
+            this.props.status === 'REQUEST' ? 
         
                 this.renderSpinner() //loading animation 
                 :
