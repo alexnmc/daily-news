@@ -13,9 +13,9 @@ const Button2 = (props) => {
                     <div className = "navbar">
                         <p className = 'live' onClick = {()=> props.showVideo('https://www.youtube.com/watch?v=lrX6ktLg8WQ', 'SKY NEWS LIVE')}>Sky News LIVE</p>
                         <p className = 'live' onClick = {()=> props.showVideo('https://www.youtube.com/watch?v=5avbHxRppxo', 'EURONEWS LIVE')}>Euronews LIVE</p>
-                        <p className = 'live' onClick = {()=> props.showVideo('https://www.youtube.com/watch?v=hNJ5v-5vHk0', 'NBC-2 LIVE')}>NBC-2  LIVE </p>
-                        <p className = 'live' onClick = {()=> props.showVideo('https://www.youtube.com/watch?v=IukZ7gOGPj8', 'ABC-7 SWFL LIVE')}>ABC-7 SWFL LIVE</p>
-                        <p className = 'live' onClick = {()=> props.showVideo('https://www.youtube.com/watch?v=NvqKZHpKs-g', 'DW News LIVE')}>DW News  LIVE</p>
+                        <p className = 'live' onClick = {()=> props.showVideo('https://www.youtube.com/watch?v=hNJ5v-5vHk0', 'NBC-2 LIVE')}>NBC-2 News LIVE </p>
+                        <p className = 'live' onClick = {()=> props.showVideo('https://www.youtube.com/watch?v=IukZ7gOGPj8', 'ABC-7 SWFL LIVE')}>ABC-7 News LIVE</p>
+                        <p className = 'live' onClick = {()=> props.showVideo('https://www.youtube.com/watch?v=NvqKZHpKs-g', 'DW News LIVE')}>DW News LIVE</p>
                         
                         <p onClick = {()=> props.getNews("axios", "Axios")}>Axios</p>
                         <p onClick = {()=> props.getNews("abc-news", "ABC News")}>ABC </p>
