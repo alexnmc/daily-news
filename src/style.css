@@ -259,8 +259,15 @@ p{
 }
 
 
-.axios{
-    margin-top: 3%;
+.live{
+    background-color: rgb(136, 0, 0);
+    color:rgb(240, 240, 240);
+    padding: 2px;
+    border: 1px solid  rgb(141, 0, 0);
+}
+
+.live:hover{
+    color: rgb(255, 160, 160);
 }
 
 
