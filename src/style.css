@@ -171,6 +171,7 @@ img{
     animation: fadein2 1s;
     margin-left: -4%;
     display:none;
+   
     
 }
 
@@ -189,6 +190,7 @@ img{
     border: 2px solid rgb(95, 0, 0);
     animation: fadein 1s;
     margin-left:4%;
+   
     
 }
 

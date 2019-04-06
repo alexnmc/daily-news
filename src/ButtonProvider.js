@@ -66,7 +66,7 @@ class ButtonProvider extends Component {
             this.setState(prevState=>{
                 return{ 
                     channel: name,
-                    toggle: !prevState.toggle,
+                    toggle2: !prevState.toggle2,
                     video: 'off'
                 }
             })
