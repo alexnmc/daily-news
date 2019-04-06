@@ -99,6 +99,14 @@ img{
 }
 
 
+.video{
+    height: 100vh;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
 
 .div{
     background-color: rgba(20, 20, 20, 0.959);
@@ -188,6 +196,8 @@ img{
     
 }
 
+
+
 .button2{
     width: 8em;
     height: 32px;
@@ -203,6 +213,8 @@ img{
     margin-left: 6%;
     
 }
+
+
 
 p{
     font-size: 19px;
@@ -283,7 +295,7 @@ p:hover{
 a{
     font-size:17px;
     font-weight: bolder;
-    color: rgb(0, 12, 44);
+    color: rgb(37, 37, 37);
 }
 
 

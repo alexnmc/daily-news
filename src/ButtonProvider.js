@@ -15,7 +15,7 @@ class ButtonProvider extends Component {
             channel: '',
             toggle: false,
             toggle2: false,
-            url: localStorage.getItem("url") || "us", //returns to the last page viewed
+            url: localStorage.getItem("url") || 'us', //returns to the last page viewed
             name: localStorage.getItem("name") || "Top Headlines",
            
         }

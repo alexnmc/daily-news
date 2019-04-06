@@ -22,7 +22,7 @@ class App extends Component {
     }
    
     
-    renderSpinner() {
+    loadingAnimation() {
         return ( 
             <div className = "opening2">
                 <div className = "opening">
@@ -55,7 +55,7 @@ class App extends Component {
         return (
             this.props.status === 'REQUEST' ? 
         
-                this.renderSpinner() //loading animation 
+                this.loadingAnimation() //loading animation 
                 :
                 <div className = "div" >
                 
