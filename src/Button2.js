@@ -11,7 +11,11 @@ const Button2 = (props) => {
             
                 <div className = "navbarWrap" >
                     <div className = "navbar">
-                        <p onClick = {props.showVideo}>SKY NEWS-LIVE</p>
+                        <p onClick = {()=> props.showVideo('https://www.youtube.com/watch?v=lrX6ktLg8WQ', 'SKY NEWS LIVE')}>SKY NEWS LIVE</p>
+                        <p onClick = {()=> props.showVideo('https://www.youtube.com/watch?v=5avbHxRppxo', 'EURONEWS LIVE')}>Euronews LIVE</p>
+                        <p onClick = {()=> props.showVideo('https://www.youtube.com/watch?v=hNJ5v-5vHk0', 'NBC-2 LIVE')}>NBC-2 LIVE</p>
+                        <p onClick = {()=> props.showVideo('https://www.youtube.com/watch?v=IukZ7gOGPj8', 'ABC-7 SWFL LIVE')}>ABC-7 LIVE</p>
+                        
                         <p  className = 'axios' onClick = {()=> props.getNews("axios", "Axios")}>Axios</p>
                         <p onClick = {()=> props.getNews("abc-news", "ABC News")}>ABC </p>
                         <p onClick = {()=> props.getNews("bbc-news", "BBC News")}>BBC News</p>

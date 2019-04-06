@@ -1,15 +1,16 @@
 import React from 'react'
 import ReactPlayer from 'react-player'
+import {withButton} from './ButtonProvider'
 
-const Video = () => {
+const Video = (props) => {
 
     return(
  <div className = 'video'>
     <div className = 'videoWrap'>
-        <ReactPlayer className = 'reactPlayer' url='https://www.youtube.com/watch?v=lrX6ktLg8WQ' height='100%' width='100%' playing />
+        <ReactPlayer className = 'reactPlayer' url={props.videoUrl} height='100%' width='100%' playing />
     </div>
  </div>  
     )
 }
 
-export default Video
+export default withButton(Video)

@@ -17,19 +17,21 @@ class ButtonProvider extends Component {
             toggle2: false,
             url: localStorage.getItem("url") || 'us', //returns to the last page viewed
             name: localStorage.getItem("name") || "Top Headlines",
-            video: 'off'
+            video: 'off',
+            videoUrl: ''
            
         }
     }
     // disable scroll for safari ios = document.ontouchmove = function(event){event.preventdefault()}
     
     
-    showVideo = () => {
+    showVideo = (url, name) => {
           this.setState(prevState => {
            return{
              video: 'on',
              toggle: !prevState.toggle,
-             channel: 'SKY NEWS LIVE'
+             channel: name,
+             videoUrl: url
            }
           })
     }
