@@ -59,7 +59,7 @@ body{
     align-items: center;
     justify-content: flex-start;
     width:100%;
-    height: 100%;
+    height: auto;
     position: absolute;
 
 }
@@ -85,7 +85,8 @@ img{
       height: auto;
       font-size: 12px;
       margin:auto;
-      margin-top: 8%;
+      margin-bottom: 5%;
+      margin-top:8%;
       background-color: white;
       display:flex;
       flex-direction: column;
@@ -95,9 +96,7 @@ img{
 }
 
 
-.spaceDiv{
-    height: 100px;
-}
+
 
 
 .video{
@@ -119,7 +118,6 @@ img{
     background-color: rgba(20, 20, 20, 0.959);
     height: 100%;
     width: 100%;
-    padding-bottom :65px;
 }
 
 
