@@ -96,7 +96,28 @@ img{
 }
 
 
+.topHead{
+    position: fixed;
+    background-color:  rgb(161, 0, 0);
+    color:rgb(240, 240, 240);
+    padding: 3px;
+    width: 9.4em;
+    font-size: 20px;
+}
 
+.topHead2{
+    
+    background-color:  rgb(161, 0, 0);
+    color:rgb(240, 240, 240);
+    padding: 3px;
+    width: 9.4em;
+    height: 2em;
+    font-size: 20px;
+}
+
+.argentina{
+    margin-top:35%
+}
 
 
 .video{
@@ -161,7 +182,6 @@ img{
     justify-content: flex-start;
     height: 90vh;
     width: 12em;
-    padding: 1%;
     position:fixed;
     background-color: rgba(255, 255, 255, 0.945);
     overflow-x: hidden;
@@ -237,6 +257,8 @@ p{
     margin-bottom:12px;
     font-family: 'helvetica';
     font-weight: 700;
+    padding:2px;
+    padding-left:5%;
 }
 
 
@@ -251,6 +273,7 @@ p{
  background-image: url('./Photos/top.png');
  background-size: cover;
  background-position: center;
+
  
   
 }
@@ -387,10 +410,32 @@ img{
     width: 35vw;
     height: 74vh;
     margin-top: 42.5vh;
-    padding: 2.5%;
+    padding: 0px;
     box-sizing: border-box;
     border: 0px;
     margin-left:0px;
+}
+
+.live{
+    margin: 6%;
+}
+
+.topHead{
+    width:35vw;
+    font-size: 4.5vw;
+    height: auto;
+}
+
+
+.topHead2{
+    width:35vw;
+    font-size: 4.5vw;
+    height: auto;
+}
+
+
+.argentina{
+    margin-top: 40%
 }
 
 

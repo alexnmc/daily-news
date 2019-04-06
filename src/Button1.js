@@ -6,12 +6,13 @@ import {withButton} from './ButtonProvider'
 
         return (
            <div className = "button2Wrap">
-            <button  className = "button2" onClick = {props.handleToggle2 }>Country</button>
+            <button  className = "button2" onClick = {props.handleToggle2 }>Read</button>
             { props.toggle2 ?
             
                 <div className = "navbarWrap2">
                     <div className = "navbar">
-                        <p onClick = {()=> props.getNews2("ar", "Argentina")}>Argentina</p>
+                        <p className = 'topHead'>Top headlines from:</p>
+                        <p className = 'argentina' onClick = {()=> props.getNews2("ar", "Argentina")}>Argentina</p>
                         <p onClick = {()=> props.getNews2("au", "Australia")}>Australia</p>
                         <p onClick = {()=> props.getNews2("at", "Austria")}>Austria</p>
                         <p onClick = {()=> props.getNews2("be", "Belgium")}>Belgium</p>
@@ -64,6 +65,38 @@ import {withButton} from './ButtonProvider'
                         <p onClick = {()=> props.getNews2("gb", "United Kingdom")}>United Kingdom</p>
                         <p onClick = {()=> props.getNews2("us", "USA")}>USA</p>
                         <p onClick = {()=> props.getNews2("ve", "Venezuela")}>Venezuela</p>
+                        <p className = 'topHead2'>News channels:</p>
+                        <p onClick = {()=> props.getNews("axios", "Axios")}>Axios</p>
+                        <p onClick = {()=> props.getNews("abc-news", "ABC News")}>ABC </p>
+                        <p onClick = {()=> props.getNews("bbc-news", "BBC News")}>BBC News</p>
+                        <p onClick = {()=> props.getNews("bbc-sport", 'BBC Sport')}>BBC Sport</p>
+                        <p onClick = {()=> props.getNews("cbs-news", 'CBS News')}>CBS</p>
+                        <p onClick = {()=> props.getNews("cnn","CNN")}>CNN</p>
+                        <p onClick = {()=> props.getNews("cnbc", "CNBC News")}>CNBC </p>
+                        <p onClick = {()=> props.getNews("daily-mail", "Daily Mail News")}>Daily Mail</p>
+                        <p onClick = {()=> props.getNews("reuters", "Reuters")}>Reuters</p>
+                        <p onClick = {()=> props.getNews("financial-times", 'Financial Times')}>Financial Times</p>
+                        <p onClick = {()=> props.getNews("crypto-coins-news", 'Crypto Coins News')}>Crypto News</p>
+                        <p onClick = {()=> props.getNews("fox-news", 'FOX News')}>FOX News</p>
+                        <p onClick = {()=> props.getNews("espn", 'ESPN News')}>ESPN</p>
+                        <p onClick = {()=> props.getNews("entertainment-weekly", 'Entertaiment Weekly')}>Entertainment Weekly</p>
+                        <p onClick = {()=> props.getNews("business-insider", 'Businsess Insider')}>Business Insider</p>
+                        <p onClick = {()=> props.getNews("business-insider-uk", 'Business Insider UK')}>Business Insider UK</p>
+                        <p onClick = {()=> props.getNews("google-news" , 'Google News')}>Google News</p>
+                        <p onClick = {()=> props.getNews("nfl-news", 'NFL News')}>NFL News</p>
+                        <p onClick = {()=> props.getNews("independent", 'Independent')}>Independent</p>
+                        <p onClick = {()=> props.getNews("fox-sports", 'FOX Sports')}>FOX Sports</p>
+                        <p onClick = {()=> props.getNews("national-geographic", 'National Georgraphic')}>National Geographic</p>
+                        <p onClick = {()=> props.getNews("mtv-news", 'MTV News')}>MTV News</p>
+                        <p onClick = {()=> props.getNews("newsweek", 'Newsweek')}>Newsweek</p>
+                        <p onClick = {()=> props.getNews("news24", 'NEWS 24')}>NEWS 24</p>
+                        <p onClick = {()=> props.getNews("the-economist", 'The Economist')}>The Economist</p>
+                        <p onClick = {()=> props.getNews("the-wall-street-journal", 'Wall Street Journal')}>Wall Street Journal</p>
+                        <p onClick = {()=> props.getNews("the-washington-times", 'Washington Times')}>The Washington Times</p>
+                        <p onClick = {()=> props.getNews("the-washington-post", 'Washington Post')}>The Washington Post</p>
+                        <p onClick = {()=> props.getNews("time", 'TIME')}>TIME</p>
+                        <p onClick = {()=> props.getNews("usa-today", 'USA Today')}>USA Today</p>
+                        <p onClick = {()=> props.getNews("the-new-york-times", ' NY Times')}>New York Times</p>
                     </div>
                 </div>
         
