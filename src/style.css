@@ -109,6 +109,12 @@ img{
    
 }
 
+.videoWrap{
+    width: 60%;
+    height: 60%;
+    
+}
+
 .div{
     background-color: rgba(20, 20, 20, 0.959);
     height: 100%;
@@ -430,6 +436,12 @@ h2{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.videoWrap{
+    
+    width: 97%;
+    height: auto;
     
 }
 
