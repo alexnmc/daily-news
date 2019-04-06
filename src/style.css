@@ -453,6 +453,7 @@ h2{
 
 .video{
     overflow: hidden;
+    display: flex;
 }
 
 .videoWrap{
@@ -460,7 +461,8 @@ h2{
     height: 100%;
     border: 3px solid white;
     border-bottom:7px solid white;
-    
+    margin:auto;
+    overflow: hidden;
 }
 
 }
