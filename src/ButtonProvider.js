@@ -18,7 +18,8 @@ class ButtonProvider extends Component {
             url: localStorage.getItem("url") || 'us', //returns to the last page viewed
             name: localStorage.getItem("name") || "Top Headlines",
             video: 'off',
-            videoUrl: ''
+            videoUrl: '',
+            style:{display: ''}
            
         }
     }
@@ -104,6 +105,7 @@ class ButtonProvider extends Component {
                     return { 
                         toggle: !prevState.toggle, 
                         toggle2: false,
+                        style:{display:'block'}
                     }
         })
     }
@@ -116,6 +118,7 @@ class ButtonProvider extends Component {
             return { 
                 toggle2: !prevState.toggle2, 
                 toggle: false,
+                style:{display:'block'}
             }
         })
     }
