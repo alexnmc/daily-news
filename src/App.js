@@ -4,6 +4,7 @@ import Button1 from './Button1'
 import Button2 from './Button2'
 import {withButton} from './ButtonProvider'
 import Opening from './Opening'
+import Video from './Video'
 
 
 
@@ -55,7 +56,7 @@ class App extends Component {
         return (
             this.props.status === 'REQUEST' ? 
         
-                this.loadingAnimation() //loading animation 
+                this.loadingAnimation() 
                 :
                 <div className = "div" >
                 
@@ -64,8 +65,11 @@ class App extends Component {
                         <Button1/>
                         <Button2/>
                     </div>
+                        {this.props.video === 'on' ?
+                         <Video/>
+                         :
+                         article}
                     
-                        {article}
                     <div className = "spaceDiv"></div>
                 </div>
         )   

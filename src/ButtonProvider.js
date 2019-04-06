@@ -17,10 +17,22 @@ class ButtonProvider extends Component {
             toggle2: false,
             url: localStorage.getItem("url") || 'us', //returns to the last page viewed
             name: localStorage.getItem("name") || "Top Headlines",
+            video: 'off'
            
         }
     }
     // disable scroll for safari ios = document.ontouchmove = function(event){event.preventdefault()}
+    
+    
+    showVideo = () => {
+          this.setState(prevState => {
+           return{
+             video: 'on',
+             toggle: !prevState.toggle,
+             channel: 'SKY NEWS LIVE'
+           }
+          })
+    }
     
     
     getMount = () => {
@@ -30,7 +42,8 @@ class ButtonProvider extends Component {
                 this.setState({
                     articles: response.data.articles,
                     channel: this.state.name,
-                    status: 'SUCCESS'
+                    status: 'SUCCESS',
+                    video: 'off',
             })
         })
     }
@@ -51,6 +64,7 @@ class ButtonProvider extends Component {
                 return{ 
                     channel: name,
                     toggle: !prevState.toggle,
+                    video: 'off'
                 }
             })
             document.body.style.overflow = 'scroll'
@@ -73,17 +87,18 @@ class ButtonProvider extends Component {
                 return { 
                     channel: name,
                     toggle2: !prevState.toggle2,
+                    video: 'off'
                 }
             })
             document.body.style.overflow = 'scroll'
            // document.ontouchmove= function(e){ return true }
-    }
+        }
         
     
     
     handleToggle = () => {
         this.state.toggle ? document.body.style.overflow = 'scroll' : document.body.style.overflow = 'hidden'
-        this.setState( prevState =>{   
+        this.setState( prevState => {   
                     return { 
                         toggle: !prevState.toggle, 
                         toggle2: false,
@@ -95,7 +110,7 @@ class ButtonProvider extends Component {
     
     handleToggle2 = () => {
         this.state.toggle2 ? document.body.style.overflow = 'scroll' : document.body.style.overflow = 'hidden'
-        this.setState( prevState =>{   
+        this.setState( prevState => {   
             return { 
                 toggle2: !prevState.toggle2, 
                 toggle: false,
@@ -126,6 +141,7 @@ class ButtonProvider extends Component {
                     handleToggle: this.handleToggle,
                     handleToggle2 : this.handleToggle2,
                     closing: this.closing,
+                    showVideo: this.showVideo,
                     
                     ...this.state
                 }}>

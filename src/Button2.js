@@ -11,6 +11,7 @@ const Button2 = (props) => {
             
                 <div className = "navbarWrap" >
                     <div className = "navbar">
+                        <p onClick = {props.showVideo}>SKY NEWS-LIVE</p>
                         <p  className = 'axios' onClick = {()=> props.getNews("axios", "Axios")}>Axios</p>
                         <p onClick = {()=> props.getNews("abc-news", "ABC News")}>ABC </p>
                         <p onClick = {()=> props.getNews("bbc-news", "BBC News")}>BBC News</p>
