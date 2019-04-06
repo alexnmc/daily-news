@@ -110,12 +110,12 @@ img{
 
 .videoWrap{
     width: 60%;
-    height: 60%;
+    height: 59%;
     
 }
 
 .div{
-    background-color: rgba(20, 20, 20, 0.959);
+    background-color: hsla(0, 0%, 8%, 0.964);
     height: 100%;
     width: 100%;
 }
@@ -317,7 +317,7 @@ a{
 @media only screen and (max-width: 700px) {
 
     .div{
-        background-color: rgba(31, 30, 30, 0.924);
+        background-color: rgba(22, 22, 22, 0.945);
         
     }
 
