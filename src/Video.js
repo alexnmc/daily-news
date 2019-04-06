@@ -5,7 +5,7 @@ const Video = () => {
 
     return(
  <div className = 'video'>
-    <ReactPlayer url='https://www.youtube.com/watch?v=lrX6ktLg8WQ' height='60%' width='70%' playing />
+    <ReactPlayer className = 'reactPlayer' url='https://www.youtube.com/watch?v=lrX6ktLg8WQ' height='65%' width='65%' playing />
  </div>  
     )
 }
