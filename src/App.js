@@ -55,7 +55,7 @@ class App extends Component {
         
         return (
             this.props.status === 'REQUEST' ? 
-        
+                
                 this.loadingAnimation() 
                 :
                 <div className = "div" >
