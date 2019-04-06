@@ -68,9 +68,8 @@ class App extends Component {
                         {this.props.video === 'on' ?
                          <Video/>
                          :
-                         article}
-                    
-                    <div className = "spaceDiv"></div>
+                         article
+                        }
                 </div>
         )   
     }

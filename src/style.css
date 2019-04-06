@@ -10,6 +10,7 @@ body{
       background-size:10%;
       display:flex;
       flex-direction: column;
+      
 }
 
 .opening{
@@ -105,13 +106,14 @@ img{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(20, 20, 20, 0.267);
+   
 }
 
 .div{
     background-color: rgba(20, 20, 20, 0.959);
     height: 100%;
-    width: auto;
+    width: 100%;
+    padding-bottom :65px;
 }
 
 
@@ -305,6 +307,7 @@ a{
 
     .div{
         background-color: rgba(31, 30, 30, 0.924);
+        
     }
 
 
@@ -419,9 +422,7 @@ h2{
 }
 
 
-.spaceDiv{
-    height: 65px;
-}
+
 
 .video{
     height: 100vh;
@@ -429,7 +430,7 @@ h2{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(20, 20, 20, 0.267);
+    
 }
 
 }
