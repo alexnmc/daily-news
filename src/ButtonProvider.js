@@ -19,7 +19,8 @@ class ButtonProvider extends Component {
             name: localStorage.getItem("name") || "Top Headlines",
             video: 'off',
             videoUrl: '',
-            style:{ animation:''}
+            style:{ animation:''},
+            div:{ overflow: 'scroll'}
            
            
         }
@@ -69,10 +70,11 @@ class ButtonProvider extends Component {
                 return{ 
                     channel: name,
                     toggle2: !prevState.toggle2,
-                    video: 'off'
+                    video: 'off',
+                    div:{ overflow: 'scroll'}
                 }
             })
-            document.body.style.overflow = 'scroll'
+           
             //document.ontouchmove= function(e){ return true }
     }
    
@@ -92,17 +94,18 @@ class ButtonProvider extends Component {
                 return { 
                     channel: name,
                     toggle2: !prevState.toggle2,
-                    video: 'off'
+                    video: 'off',
+                    div:{ overflow: 'scroll'}
                 }
             })
-            document.body.style.overflow = 'scroll'
+            
            // document.ontouchmove= function(e){ return true }
         }
         
     
     
     handleToggle = () => {
-        this.state.toggle ? document.body.style.overflow = 'scroll' : document.body.style.overflow = 'hidden'
+        this.state.toggle ? this.setState({ div:{ overflow: 'scroll'}}) : this.setState({ div:{ overflow: 'hidden'}}) 
         this.setState( prevState => {   
                     return { 
                         toggle: !prevState.toggle, 
@@ -116,7 +119,7 @@ class ButtonProvider extends Component {
     
     
     handleToggle2 = () => {
-        this.state.toggle2 ? document.body.style.overflow = 'scroll' : document.body.style.overflow = 'hidden'
+        this.state.toggle2 ? this.setState({ div:{ overflow: 'scroll'}}) : this.setState({ div:{ overflow: 'hidden'}}) 
         this.setState( prevState => {   
             return { 
                 toggle2: !prevState.toggle2, 

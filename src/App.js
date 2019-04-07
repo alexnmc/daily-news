@@ -58,7 +58,7 @@ class App extends Component {
                 
                 this.loadingAnimation() 
                 :
-                <div className = "div" >
+                <div className = "div"  style = {this.props.div}>
                 
                     <div className = "channelName2" >
                         <h1 className = "channelName" >{this.props.channel} </h1>
