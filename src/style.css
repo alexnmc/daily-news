@@ -144,8 +144,8 @@ img{
 
 
 @-webkit-keyframes videoIn {
-    from { opacity: 0; margin-left: -80%}
-    to   { opacity:1; margin-left: 0px}
+    from {  margin-left: -80%}
+    to   {  margin-left: 0px}
 }
 
 
@@ -480,8 +480,8 @@ img{
 }
 
 @-webkit-keyframes videoIn {
-    from { opacity: 0; margin-left: -120%}
-    to   { opacity:1; margin-left: 0px}
+    from {  margin-left: -120%}
+    to   {  margin-left: 0px}
 }
 
 
