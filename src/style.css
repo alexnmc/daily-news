@@ -170,7 +170,7 @@ img{
     overflow-x: hidden;
     margin-top: 49vh;
     border: 2px solid rgb(95, 0, 0);
-    animation: fadein2 1s, fade 3.5s;
+    animation: fadein2 1s, fade 3s;
     margin-left: -4%;
 }
 
@@ -187,7 +187,7 @@ img{
     overflow-x: hidden;
     margin-top: 49vh;
     border: 2px solid rgb(95, 0, 0);
-    animation: fadein 1s, fade 3.5s;
+    animation: fadein 1s, fade 3s;
     margin-left:4%;
    
     
