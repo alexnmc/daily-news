@@ -480,7 +480,7 @@ img{
 }
 
 @-webkit-keyframes videoIn {
-    from { opacity: 0; margin-left: -20%}
+    from { opacity: 0; margin-left: -40%}
     to   { opacity:1; margin-left: 0px}
 }
 
