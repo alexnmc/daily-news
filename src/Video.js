@@ -5,7 +5,7 @@ import {withButton} from './ButtonProvider'
 const Video = (props) => {
 
     return(
- <div className = 'video'>
+ <div className = 'video' style={props.style}>
     <div className = 'videoWrap' style={props.style}>
         <ReactPlayer className = 'reactPlayer' url={props.videoUrl} height='100%' width='100%' playing />
     </div>
