@@ -9,7 +9,7 @@ const Button2 = (props) => {
             <button className = " button1" onClick = {props.handleToggle}>Watch</button>
             { props.toggle ?
             
-                <div className = "navbarWrap" style = {props.style}>
+                <div className = "navbarWrap" >
                     <div className = "navbar">
                         <p className = 'live' onClick = {()=> props.showVideo('https://www.youtube.com/watch?v=lrX6ktLg8WQ', 'SKY NEWS LIVE')}>Sky News LIVE</p>
                         <p className = 'live' onClick = {()=> props.showVideo('https://www.youtube.com/watch?v=5avbHxRppxo', 'EURONEWS LIVE')}>Euronews LIVE</p>

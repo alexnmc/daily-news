@@ -19,7 +19,7 @@ class ButtonProvider extends Component {
             name: localStorage.getItem("name") || "Top Headlines",
             video: 'off',
             videoUrl: '',
-            style:{display: ''}
+           
            
         }
     }
@@ -104,8 +104,8 @@ class ButtonProvider extends Component {
         this.setState( prevState => {   
                     return { 
                         toggle: !prevState.toggle, 
-                        toggle2: false,
-                        style:{display:'block'}
+                        toggle2: false
+                        
                     }
         })
     }
@@ -117,8 +117,8 @@ class ButtonProvider extends Component {
         this.setState( prevState => {   
             return { 
                 toggle2: !prevState.toggle2, 
-                toggle: false,
-                style:{display:'block'}
+                toggle: false
+               
             }
         })
     }

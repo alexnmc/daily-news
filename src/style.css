@@ -13,6 +13,14 @@ body{
       
 }
 
+
+.div{
+    background-color: hsla(0, 0%, 8%, 0.964);
+    height: 100%;
+    width: 100%;
+}
+
+
 .opening{
     display:flex;
     align-items: center;
@@ -135,12 +143,6 @@ img{
     
 }
 
-.div{
-    background-color: hsla(0, 0%, 8%, 0.964);
-    height: 100%;
-    width: 100%;
-}
-
 
 .name{
     color: rgb(128, 0, 0);
@@ -170,9 +172,6 @@ img{
     border: 2px solid rgb(95, 0, 0);
     animation: fadein2 1s;
     margin-left: -4%;
-    display:none;
-   
-    
 }
 
 
