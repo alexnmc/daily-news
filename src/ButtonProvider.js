@@ -34,7 +34,7 @@ class ButtonProvider extends Component {
              toggle: !prevState.toggle,
              channel: name,
              videoUrl: url,
-             style:{ animation: 'videoIn 1s'}
+             style:{ animation: 'videoIn 2s'}
            }
           })
     }
