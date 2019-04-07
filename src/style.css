@@ -421,7 +421,7 @@ img{
     box-sizing: border-box;
     border: 0px;
     margin-left:0px;
-    animation: fadein2 1s, fade 1.4s;
+    animation: fadein2 1s, fade 1.3s;
     
 }
 
@@ -434,7 +434,7 @@ img{
     box-sizing: border-box;
     border: 0px;
     margin-left:0px;
-    animation: fadein 1s, fade 1.4s;
+    animation: fadein 1s, fade 1.3s;
     
 }
 
