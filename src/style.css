@@ -479,6 +479,10 @@ img{
     to   { margin-left: 0%}
 }
 
+@-webkit-keyframes videoIn {
+    from { opacity: 0; margin-left: -20%}
+    to   { opacity:1; margin-left: 0px}
+}
 
 
 p{
