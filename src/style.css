@@ -482,7 +482,7 @@ img{
 }
 
 @-webkit-keyframes videoIn {
-    from {  margin-left: 500px}
+    from {  margin-left: 700px}
     to   {  margin-left: 0px}
 }
 
