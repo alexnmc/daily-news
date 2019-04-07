@@ -66,7 +66,9 @@ class App extends Component {
                         <Button2/>
                     </div>
                         {this.props.video === 'on' ?
+                         <div className = 'video2' style={this.props.style}>
                          <Video/>
+                         </div>
                          :
                          article
                         }
