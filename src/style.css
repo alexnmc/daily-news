@@ -143,6 +143,13 @@ img{
     
 }
 
+@-webkit-keyframes videoIn {
+    from { opacity: 0; margin-left: -100%}
+    to   { opacity:1; margin-left: 0px}
+}
+
+
+
 
 .name{
     color: rgb(128, 0, 0);
@@ -523,8 +530,6 @@ h2{
 
     height: 75vh;
     width: 100vw;
-   
-   
 }
 
 

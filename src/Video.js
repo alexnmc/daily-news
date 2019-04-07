@@ -6,7 +6,7 @@ const Video = (props) => {
 
     return(
  <div className = 'video'>
-    <div className = 'videoWrap'>
+    <div className = 'videoWrap' style={props.style}>
         <ReactPlayer className = 'reactPlayer' url={props.videoUrl} height='100%' width='100%' playing />
     </div>
  </div>  
