@@ -484,7 +484,7 @@ img{
 }
 
 @-webkit-keyframes videoIn {
-    from {  margin-top: -300%}
+    from {  margin-top: -1200px}
     to   {  margin-top: 0%}
 }
 
