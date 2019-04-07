@@ -166,7 +166,7 @@ img{
     width: 12em;
     padding: 1%;
     position:fixed;
-    background-color: rgba(255, 255, 255, 0.945);
+    background-color: rgba(255, 255, 255, 0.959);
     overflow-x: hidden;
     margin-top: 49vh;
     border: 2px solid rgb(95, 0, 0);
@@ -183,7 +183,7 @@ img{
     height: 90vh;
     width: 12em;
     position:fixed;
-    background-color: rgba(255, 255, 255, 0.945);
+    background-color: rgba(255, 255, 255, 0.959);
     overflow-x: hidden;
     margin-top: 49vh;
     border: 2px solid rgb(95, 0, 0);
