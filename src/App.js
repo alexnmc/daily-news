@@ -66,11 +66,9 @@ class App extends Component {
                         <Button2/>
                     </div>
                         {this.props.video === 'on' ?
-                         
-                         <Video/>
-                         
-                         :
-                         article
+                            <Video/>
+                            :
+                            article
                         }
                 </div>
         )   
