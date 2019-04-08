@@ -60,8 +60,8 @@ class App extends Component {
                 :
                 <div className = "div" >
                 
-                    <div className = "channelName2" >
-                        <h1 className = "channelName" >{this.props.channel} </h1>
+                    <div className = "channelName2">
+                        <h1 className = "channelName" >{this.props.channel}</h1>
                         <Button1/>
                         <Button2/>
                     </div>

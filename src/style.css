@@ -16,7 +16,7 @@ body{
 
 
 .div{
-    background-color: hsla(0, 0%, 8%, 0.964);
+    background-color: hsla(0, 1%, 8%, 0.970);
     height: 100%;
     width: 100%;
 }
@@ -77,7 +77,7 @@ body{
 
 h1{
     margin-bottom:7px;
-    color:rgb(172, 0, 0);
+    color:rgb(155, 0, 0);
 }
 
 
@@ -293,10 +293,9 @@ p{
  background-image: url('./Photos/top.png');
  background-size: cover;
  background-position: center;
-
- 
-  
 }
+
+
 
 .bottom{
     display: flex;
@@ -314,6 +313,7 @@ p{
     border: 1px solid  rgb(141, 0, 0);
     margin-top:15px;
 }
+
 
 .live:hover{
     color: rgb(197, 151, 151);
@@ -338,6 +338,7 @@ p:hover{
     border: 12px solid rgba(255, 255, 255, 0.76);
     font-size: 28px;
     position:fixed;
+    color: rgb(172,0,0)
     
 }
 
