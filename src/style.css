@@ -429,10 +429,9 @@ img{
 
 .navbarWrap{
     width: 35vw;
-    height: 100vh;
-    margin-top: 55.5vh;
+    height: 80vh;
+    margin-top: 46.5vh;
     padding: 0px;
-    box-sizing: border-box;
     border: 0px;
     margin-left:0px;
     animation: fadein2 1s, fade 1.2s;
@@ -443,17 +442,21 @@ img{
 .navbarWrap2{
     width: 35vw;
     height: 100vh;
-    margin-top: 55.5vh;
+    margin-top: 56.5vh;
     padding: 0px;
-    box-sizing: border-box;
     border: 0px;
     margin-left:0px;
     animation: fadein 1s, fade 1.2s;
 }
 
+.navbar{
+    height: 100%;
+    width: 100%;
+}
 
 .live{
-    margin: 6%;
+    margin: 8px;
+   
 }
 
 .topHead{
