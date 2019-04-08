@@ -147,12 +147,15 @@ img{
 }
 
 
-@-webkit-keyframes videoIn {
-    from {  margin-left: -120%}
+@-webkit-keyframes videoIn2 {
+    from {  margin-left: -150%}
     to   {  margin-left: 0px}
 }
 
-
+@-webkit-keyframes videoIn{
+    from {  margin-right: -150%}
+    to   {  margin-right: 0px}
+}
 
 
 .name{
@@ -488,6 +491,10 @@ img{
     to   {  margin-top: 0%}
 }
 
+@-webkit-keyframes videoIn2 {
+    from {  margin-top: 1000px}
+    to   {  margin-top: 0px}
+}
 
 p{
     font-size: 4.5vw;

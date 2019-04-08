@@ -20,7 +20,7 @@ class ButtonProvider extends Component {
             video: 'off',
             videoUrl: '',
             style:{ animation:''},
-            
+            animationToggle: true
            
            
         }
@@ -29,13 +29,14 @@ class ButtonProvider extends Component {
     
     
     showVideo = (url, name) => {
-          this.setState(prevState => {
+        this.state.animationToggle ? this.setState({ style:{ animation: 'videoIn 1s'} }) : this.setState({ style:{ animation: 'videoIn2 1s'} })
+           this.setState(prevState => {
            return{
              video: 'on',
              toggle: !prevState.toggle,
              channel: name,
              videoUrl: url,
-             style:{ animation: 'videoIn 1s'}
+             animationToggle: !prevState.animationToggle,
            }
           })
     }
