@@ -45,7 +45,7 @@ class App extends Component {
                     <h2 > {item.description} </h2>
                     <h2 className = "name" >{item.source.name}</h2>
                     <div className = "bottom">
-                        <a className = "link"  href={item.url}>read more</a>
+                        <a className = "link"  href={item.url} onClick = {this.props.stopScroll}>read more</a>
                         <div className = "topP" onClick = {()=> Scroll.animateScroll.scrollToTop()}></div>
                     </div>
                 </div>

@@ -153,7 +153,6 @@ class ButtonProvider extends Component {
                     handleToggle2 : this.handleToggle2,
                     closing: this.closing,
                     showVideo: this.showVideo,
-                    
                     ...this.state
                 }}>
                 {this.props.children}
