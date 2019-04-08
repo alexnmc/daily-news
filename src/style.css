@@ -429,8 +429,8 @@ img{
 
 .navbarWrap{
     width: 35vw;
-    height: 78vh;
-    margin-top: 44.5vh;
+    height: 77vh;
+    margin-top: 44vh;
     padding: 0px;
     border: 0px;
     margin-left:0px;
@@ -508,6 +508,7 @@ p{
     margin-left:170px;
     height: 27px;
     width:27px;
+    
 }
 
 a{
