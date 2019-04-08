@@ -429,8 +429,8 @@ img{
 
 .navbarWrap{
     width: 35vw;
-    height: 90vh;
-    margin-top: 50.5vh;
+    height: 100vh;
+    margin-top: 55.5vh;
     padding: 0px;
     box-sizing: border-box;
     border: 0px;
@@ -442,14 +442,13 @@ img{
 
 .navbarWrap2{
     width: 35vw;
-    height: 90vh;
-    margin-top: 50.5vh;
+    height: 100vh;
+    margin-top: 55.5vh;
     padding: 0px;
     box-sizing: border-box;
     border: 0px;
     margin-left:0px;
     animation: fadein 1s, fade 1.2s;
-    
 }
 
 
