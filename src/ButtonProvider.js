@@ -20,7 +20,8 @@ class ButtonProvider extends Component {
             video: 'off',
             videoUrl: '',
             style:{ animation:''},
-            animationToggle: true
+            animationToggle: true,
+            newsDiv:{ animation: ''}
            
            
         }
@@ -51,6 +52,7 @@ class ButtonProvider extends Component {
                     channel: this.state.name,
                     status: 'SUCCESS',
                     video: 'off',
+                    
             })
         })
     }
@@ -109,8 +111,8 @@ class ButtonProvider extends Component {
                     return { 
                         toggle: !prevState.toggle, 
                         toggle2: false,
-                        style:{ animation:''}
-                        
+                        style:{ animation:''},
+                        newsDiv: { animation: ''}
                     }
         })
     }

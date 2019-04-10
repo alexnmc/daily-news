@@ -39,12 +39,12 @@ class App extends Component {
         const article = this.props.articles.map(item => {
             
             return (
-                <div className = "newsDiv" onClick = {this.props.closing} key={Math.random()}>
+                <div className = "newsDiv" onClick = {this.props.closing} key={Math.random()} style = {this.props.newsDiv}>
                     <h1  > {item.title} </h1>
                     <img  src={ item.urlToImage} alt = '' />
                     <h2 > {item.description} </h2>
                     <h2 className = "name" >{item.source.name}</h2>
-                    <div className = "bottom">
+                    <div className = "bottom" >
                         <a className = "link"  href={item.url} onClick = {this.props.stopScroll}>read more</a>
                         <div className = "topP" onClick = {()=> Scroll.animateScroll.scrollToTop()}></div>
                     </div>
