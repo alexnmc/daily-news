@@ -111,7 +111,9 @@ img{
     background-color:  rgb(161, 0, 0);
     color:rgb(240, 240, 240);
     padding: 3px;
-    width: 9.4em;
+    padding-top: 6px;
+    width: 9.8em;
+    height:2em;
     font-size: 20px;
 }
 
@@ -120,13 +122,15 @@ img{
     background-color:  rgb(161, 0, 0);
     color:rgb(240, 240, 240);
     padding: 3px;
-    width: 9.4em;
+    padding-top:6px;
+    width: 9.8em;
     height: 2em;
     font-size: 20px;
 }
 
+
 .argentina{
-    margin-top:35%
+    margin-top:27%
 }
 
 
@@ -177,7 +181,7 @@ img{
     align-items: flex-end;
     justify-content: flex-start;
     height: 90vh;
-    width: 12em;
+    width: 12.5em;
     padding: 1%;
     position:fixed;
     background-color: rgba(255, 255, 255, 0.959);
@@ -195,7 +199,7 @@ img{
     align-items: flex-start;
     justify-content: flex-start;
     height: 90vh;
-    width: 12em;
+    width: 12.5em;
     position:fixed;
     background-color: rgba(255, 255, 255, 0.959);
     overflow-x: hidden;
@@ -224,16 +228,16 @@ img{
     to   {  opacity: 1}
 }
 
+
 .navbar{
     height: 100%;
     width: 100%
-    
 }
 
 
 .button1{
-    width: 8em;
-    height: 32px;
+    width: 8.5em;
+    height: 32.2px;
     font-size:16px;
     font-family: 'verdana';
     font-weight: bolder;
@@ -250,8 +254,8 @@ img{
 
 
 .button2{
-    width: 8em;
-    height: 32px;
+    width: 8.5em;
+    height: 32.5px;
     font-size:16px;
     font-family: 'verdana';
     font-weight: bolder;
@@ -268,7 +272,7 @@ img{
 
 
 p{
-    font-size: 19px;
+    font-size: 20px;
     font-weight: bolder;
     text-decoration: none;
     color: rgb(155, 0, 0);
