@@ -39,7 +39,7 @@ class App extends Component {
         const article = this.props.articles.map(item => {
             
             return (
-                <div className = "newsDiv" onClick = {this.props.closing} key={Math.random()} style = {this.props.newsDiv}>
+                <div className = "newsDiv" onClick = {this.props.closing} key={Math.random()}>
                     <h1  > {item.title} </h1>
                     <img  src={ item.urlToImage} alt = '' />
                     <h2 > {item.description} </h2>
