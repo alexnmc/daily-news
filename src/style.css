@@ -461,12 +461,12 @@ img{
 }
 
 @-webkit-keyframes videoIn {
-    from {  margin-top: -1200px}
+    from {  margin-top: -250vh}
     to   {  margin-top: 0%}
 }
 
 @-webkit-keyframes videoIn2 {
-    from {  margin-top: 1000px}
+    from {  margin-top: 250vh}
     to   {  margin-top: 0px}
 }
 
