@@ -40,11 +40,11 @@ class App extends Component {
             
             return (
                 <div className = "newsDiv" onClick = {this.props.closing} key={Math.random()}>
-                    <h1  > {item.title} </h1>
-                    <img  src={ item.urlToImage} alt = '' />
-                    <h2 > {item.description} </h2>
-                    <h2 className = "name" >{item.source.name}</h2>
-                    <div className = "bottom" >
+                    <h1> {item.title} </h1>
+                    <img src={ item.urlToImage} alt = ''/>
+                    <h2> {item.description} </h2>
+                    <h2 className = "name">{item.source.name}</h2>
+                    <div className = "bottom">
                         <a className = "link"  href={item.url} onClick = {this.props.stopScroll}>read more</a>
                         <div className = "topP" onClick = {()=> Scroll.animateScroll.scrollToTop()}></div>
                     </div>
@@ -58,7 +58,7 @@ class App extends Component {
                 
                 this.loadingAnimation() 
                 :
-                <div className = "div" >
+                <div className = "div">
                 
                     <div className = "channelName2">
                         <h1 className = "channelName" >{this.props.channel}</h1>
