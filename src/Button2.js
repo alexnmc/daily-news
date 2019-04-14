@@ -22,7 +22,6 @@ const Button2 = (props) => {
                         <p className = 'live' onClick = {()=> props.showVideo('https://www.youtube.com/watch?v=IukZ7gOGPj8', 'ABC-7 SWFL LIVE')}>ABC-7 News LIVE</p>
                         <p className = 'live' onClick = {()=> props.showVideo('https://www.youtube.com/watch?v=vsWmAxq6-cA ', 'Vatican News LIVE')}>Vatican News LIVE</p>
                         <p className = 'live' onClick = {()=> props.showVideo('https://www.youtube.com/watch?v=hejIEb0FPBc ', 'Newsmax TV LIVE')}>Newsmax TV LIVE</p>
-                       
                     </div>
                 </div>
 
