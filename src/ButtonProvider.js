@@ -21,7 +21,7 @@ class ButtonProvider extends Component {
             videoUrl: '',
             style:{ animation:''},
             animationToggle: true,
-            newsDiv: this.split ? { width: '39vw'} : {width:''},
+            newsDiv: this.split ? {width: '39vw'} : {},
             split: false,
           
            
@@ -38,7 +38,7 @@ class ButtonProvider extends Component {
             }
         })
 
-        this.state.split ? this.setState({ newsDiv: {width: '44vw'}}) : this.setState({ newsDiv: { width: '39vw'}})
+        this.state.split ? this.setState({ newsDiv: { width: '44vw'}}) : this.setState({ newsDiv: { width: '39vw', fontSize: '11px'}})
     }
     
     
