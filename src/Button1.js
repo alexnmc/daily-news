@@ -64,7 +64,7 @@ import {withButton} from './ButtonProvider'
                     <p onClick = {()=> props.getNews2("gb", "United Kingdom")}>United Kingdom</p>
                     <p onClick = {()=> props.getNews2("us", "USA")}>USA</p>
                     <p onClick = {()=> props.getNews2("ve", "Venezuela")}>Venezuela</p>
-                <p className = 'topHead2'>News channels:</p>
+                <p className = 'topHead2'></p>
                     <p onClick = {()=> props.getNews("abc-news", "ABC News")}>ABC </p>
                     <p onClick = {()=> props.getNews("axios", "Axios")}>Axios</p>
                     <p onClick = {()=> props.getNews("bbc-news", "BBC News")}>BBC News</p>
