@@ -21,8 +21,8 @@ class ButtonProvider extends Component {
             videoUrl: '',
             style:{ animation:''},
             animationToggle: true,
-            newsDiv:{ width: '39vw'},
-            split: true,
+            newsDiv: this.split ? { width: '39vw'} : {width:''},
+            split: false,
           
            
            

@@ -591,6 +591,12 @@ h2{
     border-bottom:7px solid white;
 }
 
+
+.div2,
+.splitP{
+    visibility: hidden;
+}
+
 }
 
 
