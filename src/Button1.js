@@ -26,7 +26,7 @@ import {withButton} from './ButtonProvider'
                     <p onClick = {()=> props.getNews2("fr", "France")}>France</p>
                     <p onClick = {()=> props.getNews2("de", "Germany")}>Germany</p>
                     <p onClick = {()=> props.getNews2("gr", "Greece")}>Greece</p>
-                    <p onClick = {()=> props.getNews2("hk", "Honk Kong")}>Honk Kong</p>
+                    <p onClick = {()=> props.getNews2("hk", "Hong Kong")}>Hong Kong</p>
                     <p onClick = {()=> props.getNews2("hu", "Hungary")}>Hungary</p>
                     <p onClick = {()=> props.getNews2("it", "Italy")}>Italy</p>
                     <p onClick = {()=> props.getNews2("id", "Indonesia")}>Indonesia</p>
