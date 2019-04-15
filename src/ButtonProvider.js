@@ -22,8 +22,8 @@ class ButtonProvider extends Component {
             animationToggle: true,
             newsDiv: this.split ? {width: '39vw'} : null,
             split: false,
-            videoName:'',
-            sourceName: '',
+            videoName:'Sky News Live',
+            sourceName: localStorage.getItem("name") ,
             channel: ''
             
            

@@ -390,6 +390,26 @@ p:hover{
     font-family: 'helvetica';
 }
 
+.channelName3{
+    width:100%;
+    height: 58px;
+    margin-left:3.5%;
+    font-family: 'helvetica';
+    position: fixed;
+}
+
+
+.channelName4{
+   
+    font-family: 'helvetica';
+    
+}
+
+
+
+
+
+
 
 
 a{
