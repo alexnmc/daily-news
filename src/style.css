@@ -19,12 +19,14 @@ body{
     width: 100%;
 }
 
+
 .div2{
     background-color: hsla(0, 1%, 8%, 0.970);
     height: 100%;
     width: 100%;
     position:fixed;
 }
+
 
 .splitScreen{
    
@@ -37,17 +39,15 @@ body{
 
 
 .split2{
-   
     width: 60vw;
     height: auto;
     display: flex;
     align-items: center;
-    animation: videoIn 2s;
+    animation: videoIn 2.5s;
 }
 
 
 .splitP{
-    
     display:flex;
     align-items: center;
     justify-content: center;

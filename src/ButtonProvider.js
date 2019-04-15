@@ -21,7 +21,7 @@ class ButtonProvider extends Component {
             videoUrl: '',
             style:{ animation:''},
             animationToggle: true,
-            newsDiv: this.split ? {width: '39vw'} : {},
+            newsDiv: this.split ? {width: '39vw'} : null,
             split: false,
           
            
@@ -34,7 +34,7 @@ class ButtonProvider extends Component {
         this.setState(prevState => {
             return {
                 split: !prevState.split,
-                video: !prevState.video
+                video: !prevState.video,
             }
         })
 
