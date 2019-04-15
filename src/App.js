@@ -76,6 +76,7 @@ class App extends Component {
                 
                 <div className = 'splitScreen'>
                         <div className = 'split1' ref = {this.myRef}>
+                            <h1 className = 'channelName2'>{this.props.sourceName}</h1>
                             {this.props.status === 'REQUEST' ? 
                                 
                                 this.loadingAnimation() 

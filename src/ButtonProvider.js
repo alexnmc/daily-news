@@ -12,7 +12,6 @@ class ButtonProvider extends Component {
         this.state = {
             status: 'REQUEST',
             articles:[],
-            channel: '',
             toggle: false,
             toggle2: false,
             url: localStorage.getItem("url") || 'us', //returns to the last page viewed
@@ -23,8 +22,10 @@ class ButtonProvider extends Component {
             animationToggle: true,
             newsDiv: this.split ? {width: '39vw'} : null,
             split: false,
-          
-           
+            videoName:'',
+            sourceName: '',
+            channel: ''
+            
            
         }
     }
@@ -35,23 +36,27 @@ class ButtonProvider extends Component {
             return {
                 split: !prevState.split,
                 video: !prevState.video,
+                
             }
         })
 
-        this.state.split ? this.setState({ newsDiv: { width: '44vw'}}) : this.setState({ newsDiv: { width: '39vw', fontSize: '11px'}})
+    this.state.split ? this.setState(prevState => { return { newsDiv: { width: '44vw', fontSize: '12px'}, channel: this.state.sourceName || this.state.name }}) : this.setState(prevState=>{ return{ newsDiv: { width: '39vw', fontSize: '11px'} } } )
+   
     }
-    
     
     
     showVideo = (url, name) => {
         this.state.animationToggle ? this.setState({ style:{ animation: 'videoIn 1s'} }) : this.setState({ style:{ animation: 'videoIn2 1s'} })
-           this.setState(prevState => {
+        
+        this.setState(prevState => {
            return{
              video: 'on',
              toggle: !prevState.toggle,
-             channel: name,
              videoUrl: url,
              animationToggle: !prevState.animationToggle,
+             videoName: name,
+             channel: name
+             
            }
           })
     }
@@ -71,7 +76,7 @@ class ButtonProvider extends Component {
         })
     }
 
-    
+
     getNews = (url, name) => {  
         localStorage.setItem("url", url)
         localStorage.setItem("name", name)
@@ -83,15 +88,19 @@ class ButtonProvider extends Component {
     
             })
         })
+            
             this.setState(prevState=>{
                 return{ 
-                    channel: name,
                     toggle2: !prevState.toggle2,
-                    video: 'off'
+                    video: 'off',
+                    sourceName: name,
+                    channel: name
+                    
                 }
             })
+
+           
             document.body.style.overflow = 'scroll'
-            //document.ontouchmove= function(e){ return true }
     }
    
 
@@ -110,11 +119,14 @@ class ButtonProvider extends Component {
                 return { 
                     channel: name,
                     toggle2: !prevState.toggle2,
-                    video: 'off'
+                    video: 'off',
+                    sourceName: name
+                    
                 }
             })
+           
             document.body.style.overflow = 'scroll'
-           // document.ontouchmove= function(e){ return true }
+           
         }
         
     
