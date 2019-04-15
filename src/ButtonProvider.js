@@ -21,12 +21,26 @@ class ButtonProvider extends Component {
             videoUrl: '',
             style:{ animation:''},
             animationToggle: true,
-            newsDiv:{ animation: ''}
+            newsDiv:{ width: '39vw'},
+            split: true,
+          
            
            
         }
     }
-    // disable scroll for safari ios = document.ontouchmove = function(event){event.preventdefault()}
+   
+    splitScreen = () => {
+
+        this.setState(prevState => {
+            return {
+                split: !prevState.split,
+                video: !prevState.video
+            }
+        })
+
+        this.state.split ? this.setState({ newsDiv: {width: '44vw'}}) : this.setState({ newsDiv: { width: '39vw'}})
+    }
+    
     
     
     showVideo = (url, name) => {
@@ -154,6 +168,7 @@ class ButtonProvider extends Component {
                     handleToggle2 : this.handleToggle2,
                     closing: this.closing,
                     showVideo: this.showVideo,
+                    splitScreen: this.splitScreen,
                     ...this.state
                 }}>
                 {this.props.children}

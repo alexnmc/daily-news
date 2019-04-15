@@ -5,6 +5,7 @@ import Button2 from './Button2'
 import {withButton} from './ButtonProvider'
 import Opening from './Opening'
 import Video from './Video'
+import Video2 from './Video2'
 
 
 
@@ -12,7 +13,9 @@ import Video from './Video'
 class App extends Component { 
     constructor(props){
         super(props)
+        this.myRef = React.createRef()
         this.state = {
+            
             
         }
     }
@@ -23,7 +26,7 @@ class App extends Component {
     }
    
     
-    loadingAnimation() {
+    loadingAnimation = () => {
         return ( 
             <div className = "opening2">
                 <div className = "opening">
@@ -33,20 +36,26 @@ class App extends Component {
         )
     }
 
+   
+    scrolling = () => {
+        Scroll.animateScroll.scrollToTop()
+        if(this.props.split){return this.myRef.current.scrollTo({top: 0, behavior: 'smooth'})}
+    }
+    
     
     render(){
         
         const article = this.props.articles.map(item => {
             
             return (
-                <div className = "newsDiv" onClick = {this.props.closing} key={Math.random()}>
+                <div className = "newsDiv" onClick = {this.props.closing} key={Math.random()} style = {this.props.newsDiv}>
                     <h1> {item.title} </h1>
                     <img src={ item.urlToImage} alt = ''/>
                     <h2> {item.description} </h2>
                     <h2 className = "name">{item.source.name}</h2>
                     <div className = "bottom">
                         <a className = "link"  href={item.url} onClick = {this.props.stopScroll}>read more</a>
-                        <div className = "topP" onClick = {()=> Scroll.animateScroll.scrollToTop()}></div>
+                        <div className = "topP" onClick = {()=> this.scrolling()}></div>
                     </div>
                 </div>
             )
@@ -54,14 +63,48 @@ class App extends Component {
        
         
         return (
-            this.props.status === 'REQUEST' ? 
+        
+        <div className = 'MAIN'> 
+            {this.props.split ?
+                <div className = 'div2'>
+                    <div className = "channelName2">
+                        <h1 className = "channelName" >{this.props.channel}</h1>
+                        <div className = 'splitP' onClick={ ()=> this.props.splitScreen() }>I</div>
+                        <Button1/>
+                        <Button2/>                
+                    </div>
+                
+                <div className = 'splitScreen'>
+                        <div className = 'split1' ref = {this.myRef}>
+                            {this.props.status === 'REQUEST' ? 
+                                
+                                this.loadingAnimation() 
+                                :
+
+                             article
+                               
+                            }
+                        </div>
+                        
+                        <div className = 'split2'>
+                            <Video2/>
+                        </div>
+                </div>
+                </div>
+      
+            
+        :     
+            
+        this.props.status === 'REQUEST' ? 
                 
                 this.loadingAnimation() 
                 :
+
                 <div className = "div">
                 
                     <div className = "channelName2">
                         <h1 className = "channelName" >{this.props.channel}</h1>
+                        <div className = 'splitP' onClick={()=> this.props.splitScreen()}>I</div>
                         <Button1/>
                         <Button2/>
                     </div>
@@ -71,6 +114,9 @@ class App extends Component {
                             article
                         }
                 </div>
+                }
+                </div>
+                
         )   
     }
 }
