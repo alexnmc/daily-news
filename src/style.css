@@ -233,12 +233,11 @@ img{
     flex-direction:column;
     padding: 1%;
     height: 90vh;
-    width: 12.5em;
+    width: 12.2em;
     position:fixed;
     background-color: rgba(255, 255, 255, 0.959);
     overflow-x: hidden;
     margin-top: 49vh;
-    border: 1px solid rgba(95, 0, 0, 0);
     animation: fadein2 1s, fade 2.8s;
     margin-left: -4%;
 }
@@ -248,12 +247,11 @@ img{
     display:flex;
     flex-direction:column;
     height: 90vh;
-    width: 12.5em;
+    width: 12.2em;
     position:fixed;
     background-color: rgba(255, 255, 255, 0.959);
     overflow-x: hidden;
     margin-top: 49vh;
-    border: 1px solid rgba(95, 0, 0, 0);
     animation: fadein 1s, fade 2.2s;
     margin-left:4%;
 }
