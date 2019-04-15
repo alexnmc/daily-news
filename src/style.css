@@ -38,8 +38,9 @@ body{
 
 
 .split2{
-    width: 60vw;
+    width: 59vw;
     height: auto;
+    overflow: scroll;
     display: flex;
     align-items: center;
     animation: videoIn 2.5s;
@@ -199,8 +200,8 @@ img{
 
 .videoWrap2{
     width: 90%;
-    height: 59%;
-    margin: 0%;
+    height: 53%;
+   
 }
 
 

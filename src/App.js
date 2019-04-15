@@ -69,7 +69,7 @@ class App extends Component {
                 <div className = 'div2'>
                     <div className = "channelName2">
                         <h1 className = "channelName" >{this.props.channel}</h1>
-                        <div className = 'splitP' onClick={ ()=> this.props.splitScreen() }>I</div>
+                        <div className = 'splitP' onClick={()=> this.props.splitScreen()}>I</div>
                         <Button1/>
                         <Button2/>                
                     </div>
@@ -80,9 +80,7 @@ class App extends Component {
                                 
                                 this.loadingAnimation() 
                                 :
-
-                             article
-                               
+                                article
                             }
                         </div>
                         
