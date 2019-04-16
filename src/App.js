@@ -68,7 +68,7 @@ class App extends Component {
             {this.props.split ?
                 <div className = 'div2'>
                     <div className = "channelName2">
-                        <h1 className = "channelName" >{this.props.split ? 'News for You' : this.props.channel}</h1>
+                        <h1 className = "channelName" >{ this.props.split ? 'News for You' : this.props.channel}</h1>
                         <div className = 'splitP' onClick={()=> this.props.splitScreen()}>I</div>
                         <Button1/>
                         <Button2/>                

@@ -24,41 +24,37 @@ class ButtonProvider extends Component {
             split: false,
             videoName:'Sky News Live',
             sourceName: localStorage.getItem("name") ,
-            channel: ''
-            
-           
+            channel: this.video === 'on' ? this.videoName : this.sourceName
         }
     }
    
+    
     splitScreen = () => {
-
         this.setState(prevState => {
             return {
                 split: !prevState.split,
                 video: !prevState.video,
-                
             }
         })
 
-    this.state.split ? this.setState(prevState => { return { newsDiv: { width: '44vw', fontSize: '12px'}, channel: this.state.sourceName || this.state.name }}) : this.setState(prevState=>{ return{ newsDiv: { width: '39vw', fontSize: '11px'} } } )
-   
+        this.state.split ? this.setState({ newsDiv: {width: '44vw', fontSize: '12px'}}) : this.setState({ newsDiv: {width: '39vw', fontSize: '11px'} })
     }
     
     
+   
     showVideo = (url, name) => {
         this.state.animationToggle ? this.setState({ style:{ animation: 'videoIn 1s'} }) : this.setState({ style:{ animation: 'videoIn2 1s'} })
         
         this.setState(prevState => {
            return{
-             video: 'on',
-             toggle: !prevState.toggle,
-             videoUrl: url,
-             animationToggle: !prevState.animationToggle,
-             videoName: name,
-             channel: name
-             
-           }
-          })
+                video: 'on',
+                toggle: !prevState.toggle,
+                videoUrl: url,
+                animationToggle: !prevState.animationToggle,
+                videoName: name,
+                
+            }
+        })
     }
     
     
@@ -71,12 +67,12 @@ class ButtonProvider extends Component {
                     channel: this.state.name,
                     status: 'SUCCESS',
                     video: 'off',
-                    
+                })
             })
-        })
     }
 
 
+    
     getNews = (url, name) => {  
         localStorage.setItem("url", url)
         localStorage.setItem("name", name)
@@ -98,9 +94,7 @@ class ButtonProvider extends Component {
                     
                 }
             })
-
-           
-            document.body.style.overflow = 'scroll'
+        document.body.style.overflow = 'scroll'
     }
    
 
@@ -125,9 +119,8 @@ class ButtonProvider extends Component {
                 }
             })
            
-            document.body.style.overflow = 'scroll'
-           
-        }
+        document.body.style.overflow = 'scroll'
+    }
         
     
     
@@ -159,7 +152,6 @@ class ButtonProvider extends Component {
     
     
     closing = () => {
-       // document.ontouchmove= function(e){ return true }
         document.body.style.overflow = "scroll"
         this.setState({
             toggle: false,
