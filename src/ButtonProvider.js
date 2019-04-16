@@ -24,7 +24,7 @@ class ButtonProvider extends Component {
             split: false,
             videoName:'Sky News Live',
             sourceName: localStorage.getItem("name") ,
-            channel: this.video === 'on' ? this.videoName : this.sourceName
+           
         }
     }
    
@@ -33,7 +33,7 @@ class ButtonProvider extends Component {
         this.setState(prevState => {
             return {
                 split: !prevState.split,
-                video: !prevState.video,
+               
             }
         })
 
@@ -52,7 +52,6 @@ class ButtonProvider extends Component {
                 videoUrl: url,
                 animationToggle: !prevState.animationToggle,
                 videoName: name,
-                
             }
         })
     }
@@ -90,8 +89,6 @@ class ButtonProvider extends Component {
                     toggle2: !prevState.toggle2,
                     video: 'off',
                     sourceName: name,
-                    channel: name
-                    
                 }
             })
         document.body.style.overflow = 'scroll'
