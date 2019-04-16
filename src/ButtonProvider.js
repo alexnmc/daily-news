@@ -144,7 +144,8 @@ class ButtonProvider extends Component {
                 toggle2: !prevState.toggle2, 
                 toggle: false,
                 style:{ animation:''},
-                style3: !this.state.toggle2  ? {visibility: 'hidden'} : {visibility: 'visible'}
+                style3: !this.state.toggle2  ? {visibility: 'hidden'} : {visibility: 'visible'},
+               
             }
         })
         console.log(this.state.toggle2)
