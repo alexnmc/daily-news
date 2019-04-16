@@ -23,7 +23,8 @@ class ButtonProvider extends Component {
             newsDiv: this.split ? {width: '39vw'} : null,
             split: false,
             videoName:'Sky News Live',
-            sourceName: localStorage.getItem("name") ,
+            sourceName: localStorage.getItem("name"),
+            style3:{visibility:''}
            
         }
     }
@@ -89,6 +90,7 @@ class ButtonProvider extends Component {
                     toggle2: !prevState.toggle2,
                     video: 'off',
                     sourceName: name,
+                    style3: {visibility: 'visible'}
                 }
             })
         document.body.style.overflow = 'scroll'
@@ -111,7 +113,8 @@ class ButtonProvider extends Component {
                     channel: name,
                     toggle2: !prevState.toggle2,
                     video: 'off',
-                    sourceName: name
+                    sourceName: name,
+                    style3: {visibility: 'visible'}
                     
                 }
             })
@@ -140,10 +143,11 @@ class ButtonProvider extends Component {
             return { 
                 toggle2: !prevState.toggle2, 
                 toggle: false,
-                style:{ animation:''}
-               
+                style:{ animation:''},
+                style3: !this.state.toggle2  ? {visibility: 'hidden'} : {visibility: 'visible'}
             }
         })
+        console.log(this.state.toggle2)
     }
 
     
