@@ -20,7 +20,7 @@ class ButtonProvider extends Component {
             videoUrl: '',
             style:{ animation:''},
             animationToggle: true,
-            newsDiv: this.split ? {width: '39vw'} : null,
+            newsDiv: this.split ? {width: '38vw', fontSize:'10px'} : null,
             split: false,
             videoName:'Sky News Live',
             sourceName: localStorage.getItem("name"),
@@ -38,7 +38,7 @@ class ButtonProvider extends Component {
             }
         })
 
-        this.state.split ? this.setState({ newsDiv: {width: '44vw', fontSize: '12px'}}) : this.setState({ newsDiv: {width: '39vw', fontSize: '11px'}})
+        this.state.split ? this.setState({ newsDiv: {width: '44vw', fontSize: '12px'}}) : this.setState({ newsDiv: {width: '38vw', fontSize: '10px'}})
     }
     
     
