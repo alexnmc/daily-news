@@ -239,7 +239,7 @@ img{
     background-color: rgba(255, 255, 255, 0.959);
     overflow-x: hidden;
     margin-top: 49vh;
-    border: 1px solid rgba(95, 0, 0, 0.582);
+    border: 2px solid rgba(95, 0, 0, 0.582);
     animation: fadein2 1s, fade 2.8s;
     margin-left: -4%;
 }
@@ -254,7 +254,7 @@ img{
     background-color: rgba(255, 255, 255, 0.959);
     overflow-x: hidden;
     margin-top: 49vh;
-    border: 1px solid rgba(95, 0, 0, 0.582);
+    border: 2px solid rgba(95, 0, 0, 0.582);
     animation: fadein 1s, fade 2.2s;
     margin-left:4%;
 }
