@@ -394,7 +394,7 @@ p:hover{
 
 
 .channelName3{
-    width:100%;
+    width: 20%;
     height: 58px;
     margin-left:3.5%;
     margin-top: -1%;
@@ -408,6 +408,7 @@ p:hover{
    
     font-size: 24px;
     font-family: 'helvetica';
+    width: 20%
 }
 
 
