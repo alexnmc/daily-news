@@ -38,7 +38,7 @@ class ButtonProvider extends Component {
             }
         })
 
-        this.state.split ? this.setState({ newsDiv: {width: '44vw', fontSize: '12px'}}) : this.setState({ newsDiv: {width: '39vw', fontSize: '11px'} })
+        this.state.split ? this.setState({ newsDiv: {width: '44vw', fontSize: '12px'}}) : this.setState({ newsDiv: {width: '39vw', fontSize: '11px'}})
     }
     
     
@@ -145,6 +145,7 @@ class ButtonProvider extends Component {
                 toggle: false,
                 style:{ animation:''},
                 style3: !this.state.toggle2  ? {visibility: 'hidden'} : {visibility: 'visible'},
+               
                
             }
         })
