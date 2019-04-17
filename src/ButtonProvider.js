@@ -24,7 +24,8 @@ class ButtonProvider extends Component {
             split: false,
             videoName:'Sky News Live',
             sourceName: localStorage.getItem("name"),
-            style3:{visibility:''}
+            style3:{visibility:''},
+            style4: {}
            
         }
     }
@@ -38,7 +39,7 @@ class ButtonProvider extends Component {
             }
         })
 
-        this.state.split ? this.setState({ newsDiv: {width: '44vw', fontSize: '12px'}}) : this.setState({ newsDiv: {width: '38vw', fontSize: '10px'}})
+        this.state.split ? this.setState({newsDiv: {width: '44vw', fontSize: '12px'}}) : this.setState({ style4:{color:'hsla(0, 1%, 8%, 0.970)', border:'3px solid hsla(0, 1%, 8%, 1)', backgroundColor:'rgb(160, 1, 1)'},newsDiv: {width: '38vw', fontSize: '10px'}})
     }
     
     

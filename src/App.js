@@ -69,7 +69,7 @@ class App extends Component {
                 <div className = 'div2'>
                     <div className = "channelName2">
                         <h1 className = "channelName">News for You</h1>
-                        <div className = 'splitP' onClick={()=> this.props.splitScreen()}>I</div>
+                        <div className = 'splitP' style = {this.props.style4} onClick={()=> this.props.splitScreen()}>I</div>
                         <Button1/>
                         <Button2/>                
                     </div>
