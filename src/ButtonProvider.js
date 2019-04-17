@@ -39,7 +39,7 @@ class ButtonProvider extends Component {
             }
         })
 
-        this.state.split ? this.setState({newsDiv: {width: '44vw', fontSize: '12px'}}) : this.setState({ style4:{color:'hsla(0, 1%, 8%, 0.970)', border:'3px solid hsla(0, 1%, 8%, 1)', backgroundColor:'rgb(160, 1, 1)'},newsDiv: {width: '38vw', fontSize: '10px'}})
+        this.state.split ? this.setState({newsDiv: {width: '44vw', fontSize: '12px'}}) : this.setState({ style4:{backgroundColor:'rgba(255, 255, 255, 0.638)'},newsDiv: {width: '38vw', fontSize: '10px'}})
     }
     
     
