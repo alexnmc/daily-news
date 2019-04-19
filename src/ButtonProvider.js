@@ -26,7 +26,6 @@ class ButtonProvider extends Component {
             sourceName: localStorage.getItem("name"),
             style3:{visibility:''},
             style4: {}
-           
         }
     }
    
@@ -35,7 +34,6 @@ class ButtonProvider extends Component {
         this.setState(prevState => {
             return {
                 split: !prevState.split,
-               
             }
         })
 
@@ -43,7 +41,6 @@ class ButtonProvider extends Component {
     }
     
     
-   
     showVideo = (url, name) => {
         this.state.animationToggle ? this.setState({ style:{ animation: 'videoIn 1s'} }) : this.setState({ style:{ animation: 'videoIn2 1s'} })
         
@@ -60,7 +57,6 @@ class ButtonProvider extends Component {
     
     
     getMount = () => {
-        
         axios.get( `https://newsapi.org/v2/top-headlines?${this.state.url.length > 2 ? 'sources' : 'country'}=${this.state.url}&apiKey=f64c9be83f094f43a2c3954a6c1ec8aa`)
             .then(response => {
                 this.setState({
@@ -82,10 +78,8 @@ class ButtonProvider extends Component {
          .then(response => {
             this.setState({
                 articles: response.data.articles,
-    
             })
         })
-            
             this.setState(prevState=>{
                 return{ 
                     toggle2: !prevState.toggle2,
@@ -116,7 +110,6 @@ class ButtonProvider extends Component {
                     video: 'off',
                     sourceName: name,
                     style3: {visibility: 'visible'}
-                    
                 }
             })
            
@@ -146,11 +139,8 @@ class ButtonProvider extends Component {
                 toggle: false,
                 style:{ animation:''},
                 style3: !this.state.toggle2  ? {visibility: 'hidden'} : {visibility: 'visible'},
-               
-               
             }
         })
-        console.log(this.state.toggle2)
     }
 
     
