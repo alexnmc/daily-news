@@ -71,7 +71,7 @@ class ButtonProvider extends Component {
 
 
     
-    getNewsCountry = (url, name) => {  
+    getNewsSource= (url, name) => {  
         localStorage.setItem("url", url)
         localStorage.setItem("name", name)
         Scroll.animateScroll.scrollToTop()
@@ -93,7 +93,7 @@ class ButtonProvider extends Component {
     }
    
    
-    getNewsSource = (url, name) => {  
+    getNewsCountry = (url, name) => {  
         localStorage.setItem("url", url) 
         localStorage.setItem("name", name)
         Scroll.animateScroll.scrollToTop()
