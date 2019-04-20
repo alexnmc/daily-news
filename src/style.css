@@ -252,9 +252,10 @@ img{
     position: fixed;
     background-color: rgba(255, 255, 255, 0.979);
     overflow-x: hidden;
-    margin-top: 50.5vh;
+    margin-top: 49vh;
     border-left: 1px solid white;
     border-bottom: 1px solid white;
+    margin-right: 25px;
     animation: fadein2 1s, fade 2.8s;
 }
 
@@ -267,16 +268,17 @@ img{
     position: fixed;
     background-color: hsla(0, 0%, 100%, 0.977);
     overflow-x: hidden;
-    margin-top: 50.5vh;
+    margin-top: 49vh;
     border-right: 1px solid rgb(161, 0, 0);
     border-bottom: 1px solid rgb(161, 0, 0);
+    margin-left: 25px;
     animation: fadein 1s, fade 2.2s;
 }
 
 
 @-webkit-keyframes fadein {
     from {  margin-left: -15%}
-    to   {  margin-left: 0}
+    to   {  margin-left: 25px}
 }
 
 
@@ -294,8 +296,8 @@ img{
 
 
 .button1{
-    width: 7em;
-    height: 32px;
+    width: 7.2em;
+    height: 30px;
     font-size:16px;
     font-family: 'helvetica';
     font-weight: bolder;
@@ -311,8 +313,8 @@ img{
 
 
 .button2{
-    width: 7em;
-    height: 32px;
+    width: 7.2em;
+    height: 30px;
     font-size:16px;
     font-family: 'helvetica';
     font-weight: bolder;
