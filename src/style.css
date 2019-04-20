@@ -247,12 +247,12 @@ img{
     display:flex;
     flex-direction:column;
     padding: 1%;
-    height: 90vh;
+    height: 93vh;
     width: 12.3em;
     position: fixed;
     background-color: rgba(255, 255, 255, 0.979);
     overflow-x: hidden;
-    margin-top: 48.5vh;
+    margin-top: 50.2vh;
     border-left: 1px solid white;
     border-bottom: 1px solid white;
     animation: fadein2 1s, fade 2.8s;
@@ -262,12 +262,12 @@ img{
 .navbarWrap2{
     display:flex;
     flex-direction:column;
-    height: 90vh;
+    height: 93vh;
     width: 12.3em;
     position: fixed;
-    background-color: rgba(255, 255, 255, 0.972);
+    background-color: hsla(0, 0%, 100%, 0.977);
     overflow-x: hidden;
-    margin-top: 48.5vh;
+    margin-top: 50.2vh;
     border-right: 1px solid rgb(161, 0, 0);
     border-bottom: 1px solid rgb(161, 0, 0);
     animation: fadein 1s, fade 2.2s;
