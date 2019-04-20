@@ -37,12 +37,12 @@ body{
 
 
 .split2{
-    width: 59vw;
+    width: 55vw;
     height: auto;
     overflow: scroll;
     display: flex;
     align-items: center;
-    animation: videoIn 2.5s;
+    animation: videoIn4 2.5s;
 }
 
 
@@ -67,9 +67,22 @@ body{
     overflow: scroll;
     width: 45vw;
     height: auto;
-    animation: videoIn2 2.5s , fade 4s;
+    animation: videoIn3 2.5s , fade 4s;
     padding-bottom: 15%;
     padding-top: 5%;
+    margin-left: 5%
+}
+
+
+@-webkit-keyframes videoIn3 {
+    from {  margin-left: -150%}
+    to   {  margin-left: 5%}
+}
+
+
+@-webkit-keyframes videoIn4{
+    from {  margin-right: -170%}
+    to   {  margin-right: 10%}
 }
 
 
@@ -195,12 +208,12 @@ img{
 
 .videoWrap{
     width: 60%;
-    height: 59%;
+    height: 57%;
 }
 
 .videoWrap2{
     width: 90%;
-    height: 53%;
+    height:49%;
     margin-bottom:10%;
    
 }
