@@ -7,17 +7,23 @@ import {withButton} from './ButtonProvider'
        
         function getNews(url, name) {
             props.getNewsSource(url, name)
-            props.scrolling()
+            if(props.split){
+                return  props.scrolling()
+            }
         }
     
     
         function getNews2(url, name) {
             props.getNewsCountry(url, name)
-            props.scrolling()
+            if(props.split){
+                return  props.scrolling()
+            }
         }
        
+    
+    
     return (
-           <div className = "button2Wrap">
+        <div className = "button2Wrap">
             <button  className = "button2" onClick = {props.handleToggle2}>Read</button>
             { props.toggle2 ?
             
@@ -113,8 +119,8 @@ import {withButton} from './ButtonProvider'
             :
                 null
             }
-            </div>
-        )
+        </div>
+         )
     }
 
                

@@ -27,8 +27,8 @@ body{
     position:fixed;
 }
 
+
 .splitScreen{
-   
     height: 100%;
     width: 100%;
     display: grid;
@@ -211,11 +211,11 @@ img{
     height: 57%;
 }
 
+
 .videoWrap2{
     width: 90%;
     height:49%;
     margin-bottom:10%;
-   
 }
 
 
@@ -223,6 +223,7 @@ img{
     from {  margin-left: -150%}
     to   {  margin-left: 0px}
 }
+
 
 @-webkit-keyframes videoIn{
     from {  margin-right: -150%}
@@ -247,14 +248,14 @@ img{
     flex-direction:column;
     padding: 1%;
     height: 90vh;
-    width: 12.4em;
+    width: 12.3em;
     position: fixed;
-    background-color: rgba(255, 255, 255, 0.959);
+    background-color: rgba(255, 255, 255, 0.979);
     overflow-x: hidden;
-    margin-top: 49vh;
-    border: 2px solid rgba(95, 0, 0, 0.582);
+    margin-top: 48.5vh;
+    border-left: 1px solid white;
+    border-bottom: 1px solid white;
     animation: fadein2 1s, fade 2.8s;
-    margin-left: -4%;
 }
 
 
@@ -262,25 +263,26 @@ img{
     display:flex;
     flex-direction:column;
     height: 90vh;
-    width: 12.4em;
+    width: 12.3em;
     position: fixed;
-    background-color: rgba(255, 255, 255, 0.959);
+    background-color: rgba(255, 255, 255, 0.972);
     overflow-x: hidden;
-    margin-top: 49vh;
-    border: 2px solid rgba(95, 0, 0, 0.582);
+    margin-top: 48.5vh;
+    border-right: 1px solid rgb(161, 0, 0);
+    border-bottom: 1px solid rgb(161, 0, 0);
     animation: fadein 1s, fade 2.2s;
-    margin-left:4%;
 }
 
 
 @-webkit-keyframes fadein {
     from {  margin-left: -15%}
-    to   {  margin-left: 4%}
+    to   {  margin-left: 0}
 }
+
 
 @-webkit-keyframes fadein2 {
     from {  margin-left: 15%}
-    to   {  margin-left: -4%}
+    to   {  margin-left: 0%}
 }
 
 
@@ -292,8 +294,8 @@ img{
 
 
 .button1{
-    width: 7.5em;
-    height: 32px;
+    width: 7.6em;
+    height: 33px;
     font-size:16px;
     font-family: 'helvetica';
     font-weight: bolder;
@@ -303,14 +305,14 @@ img{
     position:fixed;
     border: 1px solid rgb(141, 0, 0);
     border-radius: 3px;
-    margin-left: -6.5%;
+    margin-left: -5.2%;
 }
 
 
 
 .button2{
-    width: 7.5em;
-    height: 32px;
+    width: 7.6em;
+    height: 33px;
     font-size:16px;
     font-family: 'helvetica';
     font-weight: bolder;
@@ -320,7 +322,7 @@ img{
     position:fixed;
     border: 1px solid  rgb(141, 0, 0);
     border-radius: 3px;
-    margin-left: 6.5%;
+    margin-left: 5.2%;
 }
 
 
@@ -341,7 +343,6 @@ p{
 
 
 .topP{
- 
  float:left;
  margin-left:45vh;
  height: 4vh;
