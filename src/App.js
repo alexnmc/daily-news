@@ -62,15 +62,16 @@ class App extends Component {
        
         
         return (
-        
+       
         <div className = 'MAIN'> 
+            
             {this.props.split ?
                 <div className = 'div2'>
                     <div className = "channelName2">
                         <h1 className = "channelName">News for You</h1>
                         <div className = 'splitP' style = {this.props.style4} onClick={()=> this.props.splitScreen()}>I</div>
-                        <Button1/>
-                        <Button2/>                
+                        <Button1 scrolling = {this.scrolling}/>
+                        <Button2/>    
                     </div>
                 
                 <div className = 'splitScreen'>
@@ -90,28 +91,28 @@ class App extends Component {
                 </div>
                 </div>
       
-        :     
+            :     
             
-        this.props.status === 'REQUEST' ? 
-                
-                this.loadingAnimation() 
-                :
-                <div className = "div">
-                
-                    <div className = "channelName2">
-                        <h1 className = "channelName" >{this.props.video === 'off' ? this.props.sourceName : this.props.videoName}</h1>
-                        <div className = 'splitP' onClick={()=> this.props.splitScreen()}>I</div>
-                        <Button1/>
-                        <Button2/>
-                    </div>
-                        {this.props.video === 'on' ?
-                            <Video/>
-                            :
-                            article
-                        }
-                </div>
-                }
-                </div>
+                this.props.status === 'REQUEST' ? 
+                    
+                    this.loadingAnimation() 
+                    :
+                    <div className = "div">
+                    
+                        <div className = "channelName2">
+                            <h1 className = "channelName" >{this.props.video === 'off' ? this.props.sourceName : this.props.videoName}</h1>
+                            <div className = 'splitP' onClick={()=> this.props.splitScreen()}>I</div>
+                            <Button1/>
+                            <Button2/>
+                        </div>
+                            {this.props.video === 'on' ?
+                                <Video/>
+                                :
+                                article
+                            }
+                        </div>
+            }
+        </div>
                 
         )   
     }

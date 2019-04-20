@@ -2,13 +2,14 @@ import React, { Component } from 'react'
 import axios from 'axios'
 import Scroll from 'react-scroll'
 
+
 const ButtonContext = React.createContext()
 
 
 class ButtonProvider extends Component {
     
-    constructor(){
-        super()
+    constructor(props){
+        super(props)
         this.state = {
             status: 'REQUEST',
             articles:[],
@@ -70,7 +71,7 @@ class ButtonProvider extends Component {
 
 
     
-    getNews = (url, name) => {  
+    getNewsCountry = (url, name) => {  
         localStorage.setItem("url", url)
         localStorage.setItem("name", name)
         Scroll.animateScroll.scrollToTop()
@@ -91,9 +92,8 @@ class ButtonProvider extends Component {
         document.body.style.overflow = 'scroll'
     }
    
-
-    
-    getNews2 = (url, name) => {  
+   
+    getNewsSource = (url, name) => {  
         localStorage.setItem("url", url) 
         localStorage.setItem("name", name)
         Scroll.animateScroll.scrollToTop()
@@ -112,7 +112,6 @@ class ButtonProvider extends Component {
                     style3: {visibility: 'visible'}
                 }
             })
-           
         document.body.style.overflow = 'scroll'
     }
         
@@ -155,12 +154,12 @@ class ButtonProvider extends Component {
     
     
     render() {
-
+      
         return (
             <ButtonContext.Provider
                 value={{
-                    getNews: this.getNews,
-                    getNews2: this.getNews2,
+                    getNewsSource: this.getNewsSource,
+                    getNewsCountry: this.getNewsCountry,
                     getMount: this.getMount,
                     handleToggle: this.handleToggle,
                     handleToggle2 : this.handleToggle2,
