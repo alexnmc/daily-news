@@ -430,7 +430,7 @@ p:hover{
     height: auto;
     margin:auto;
     border: 12px solid rgba(255, 255, 255, 0.76);
-    font-size: 28px;
+    font-size: 170%;
     position:fixed;
     color: rgb(170, 0, 0)
 }
