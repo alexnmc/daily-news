@@ -21,12 +21,12 @@ class ButtonProvider extends Component {
             videoUrl: '',
             style:{ animation:''},
             animationToggle: true,
-            newsDiv: this.split ? {width: '38vw', fontSize:'10px'} : null,
-            split: false,
+            newsDiv: !this.split ? {width: '38vw', fontSize:'10px'} : null,
+            split: true,
             videoName:'Sky News Live',
             sourceName: localStorage.getItem("name"),
             style3:{visibility:''},
-            style4: {}
+            style4:{color:'rgba(255, 255, 255, 0)'}
         }
     }
    

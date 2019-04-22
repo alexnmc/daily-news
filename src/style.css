@@ -54,7 +54,7 @@ body{
     font-weight:900;
     position: fixed;
     margin-top: 3.5%;
-    width: 40px;
+    width: 35px;
     color: rgb(160, 1, 1);
     border: 3px solid rgb(160, 1, 1);
     border-radius: 3px;
@@ -165,8 +165,8 @@ img{
       align-items: center;
       justify-content: center;
       font-family: Verdana, Tahoma, sans-serif;
-      
 }
+
 
 
 .topHead{
@@ -240,6 +240,10 @@ img{
 
 .link:hover{
     color:rgb(85, 85, 196);
+}
+
+.link{
+    font-size: 16px;
 }
 
 
@@ -344,14 +348,14 @@ p{
 
 
 .topP{
- float:left;
- margin-left:45vh;
- height: 4vh;
- width:2vw;
- cursor:pointer;
- background-image: url('./Photos/top.png');
- background-size: cover;
- background-position: center;
+    float:left;
+    margin-left:45vh;
+    height: 4vh;
+    width:2.2vw;
+    cursor:pointer;
+    background-image: url('./Photos/top.png');
+    background-size: cover;
+    background-position: center;
 }
 
 
@@ -370,6 +374,7 @@ p{
     border: 1px solid  rgb(141, 0, 0);
     margin: 7px;
 }
+
 
 
 .live:hover{
