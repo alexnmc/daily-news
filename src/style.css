@@ -334,7 +334,7 @@ img{
 
 .button1{
     width: 6vw;
-    height: 4.5vh;
+    height: 4.3vh;
     font-size:15px;
     font-family: 'helvetica';
     font-weight: bolder;
@@ -351,7 +351,7 @@ img{
 
 .button2{
     width: 6vw;
-    height: 4.5vh;
+    height: 4.3vh;
     font-size:15px;
     font-family: 'helvetica';
     font-weight: bolder;
@@ -429,7 +429,7 @@ p:hover{
     width:100%;
     height: auto;
     margin:auto;
-    border: 2vh solid rgba(255, 255, 255, 0.76);
+    border: 1.8vh solid rgba(255, 255, 255, 0.76);
     font-size: 3.2vh;
     position:fixed;
     color: rgb(170, 0, 0)
@@ -440,7 +440,7 @@ p:hover{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 58px;
+    height: 6vh;
     width:100%;
     font-family: 'helvetica';
 }
