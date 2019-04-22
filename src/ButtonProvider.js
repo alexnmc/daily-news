@@ -25,7 +25,7 @@ class ButtonProvider extends Component {
             videoName:'Sky News Live',
             sourceName: localStorage.getItem("name"),
             style3:{visibility:''},
-            newsDiv: {width: '38vw', fontSize: '10px'} 
+            
         }
     }
    
