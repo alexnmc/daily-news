@@ -19,7 +19,7 @@ const Button2 = (props) => {
                     <p className = 'live' onClick = {()=> props.showVideo('https://www.youtube.com/watch?v=rQSwh3bgs5k', 'ABC News Australia')}>ABC Australia LIVE</p>
                     <p className = 'live' onClick = {()=> props.showVideo('https://www.youtube.com/watch?v=2XvDVYmoVeE', 'NBC-2 LIVE')}>NBC-2 News LIVE </p>
                     <p className = 'live' onClick = {()=> props.showVideo('https://www.youtube.com/watch?v=IukZ7gOGPj8', 'ABC-7 SWFL LIVE')}>ABC-7 SWFL LIVE</p>
-                    <p className = 'live' onClick = {()=> props.showVideo('https://www.youtube.com/watch?v=qIZbVkgTA7M', 'Al Jazeera English LIVE')}>Al Jazeera English LIVE</p>
+                    <p className = 'live' onClick = {()=> props.showVideo('https://www.youtube.com/watch?v=fiW31uWgD2U', 'Al Jazeera English LIVE')}>Al Jazeera English LIVE</p>
                     <p className = 'live' onClick = {()=> props.showVideo('https://www.youtube.com/watch?v=hejIEb0FPBc', 'Newsmax TV LIVE')}>Newsmax TV LIVE</p>
                 </div>
 
