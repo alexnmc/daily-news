@@ -26,7 +26,7 @@ class ButtonProvider extends Component {
             videoName:'Sky News Live',
             sourceName: localStorage.getItem("name"),
             style3:{visibility:''},
-            style4:{color:'rgba(255, 255, 255, 0)'}
+            
         }
     }
    
@@ -37,13 +37,26 @@ class ButtonProvider extends Component {
                 split: !prevState.split,
             }
         })
+        this.state.split ? this.setState({newsDiv: {width: '44vw', fontSize: '12px'}}) : this.setState({newsDiv: {width: '38vw', fontSize: '10px'}})
+    }
+    
+    
+    showVideoMini = () => {
+        this.setState({
+            video:'on'
+        })
+    }
 
-        this.state.split ? this.setState({newsDiv: {width: '44vw', fontSize: '12px'}}) : this.setState({ style4:{color:'rgba(255, 255, 255, 0)'},newsDiv: {width: '38vw', fontSize: '10px'}})
+    
+    hideVideo = () => {
+        this.setState({
+            video:'off'
+        })
     }
     
     
     showVideo = (url, name) => {
-        this.state.animationToggle ? this.setState({ style:{ animation: 'videoIn 1s'} }) : this.setState({ style:{ animation: 'videoIn2 1s'} })
+        this.state.animationToggle ? this.setState({ style:{ animation: 'videoIn 1s'} }) : this.setState({style:{ animation: 'videoIn2 1s'}})
         
         this.setState(prevState => {
            return{
@@ -166,6 +179,8 @@ class ButtonProvider extends Component {
                     closing: this.closing,
                     showVideo: this.showVideo,
                     splitScreen: this.splitScreen,
+                    showVideoMini: this.showVideoMini,
+                    hideVideo: this.hideVideo,
                     ...this.state
                 }}>
                 {this.props.children}

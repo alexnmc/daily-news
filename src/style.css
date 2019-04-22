@@ -237,6 +237,36 @@ img{
 }
 
 
+.newLife{
+    display: flex;
+    width:45vw;
+    position: fixed;
+    margin-top: -1%;
+}
+
+
+.newLife2{
+    display: flex;
+    width: 50vw;
+}
+
+.smallRed{
+    height: 15pt;
+    width: 15pt;
+    border: 3px solid rgb(169, 0, 0);
+    cursor: pointer;
+    margin-left: 46%;
+}
+
+
+.smallRed2{
+    height: 15pt;
+    width: 15pt;
+    border: 3px solid rgb(169, 0, 0);
+    cursor: pointer;
+    margin-left: -6%;
+}
+
 
 .link:hover{
     color:rgb(85, 85, 196);
@@ -413,12 +443,8 @@ p:hover{
 
 
 .channelName3{
-    width: 40%;
-    height: 58px;
-    margin-left:3.5%;
-    margin-top: -1%;
+    width: 100%;
     font-family: 'helvetica';
-    position: fixed;
     font-size: 24px;
 }
 

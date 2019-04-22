@@ -40,7 +40,13 @@ class App extends Component {
         Scroll.animateScroll.scrollToTop()
         this.myRef.current.scrollTo({top: 0, behavior: 'smooth'})
     }
-    
+
+
+    batman = () => {
+        this.props.splitScreen()
+        this.props.hideVideo()
+    }
+   
     
     render(){
         
@@ -69,14 +75,16 @@ class App extends Component {
                 <div className = 'div2'>
                     <div className = "channelName2">
                         <h1 className = "channelName">News for You</h1>
-                        <div className = 'splitP' style = {this.props.style4} onClick={()=> this.props.splitScreen()}>I</div>
                         <Button1 scrolling = {this.scrolling}/>
                         <Button2/>    
                     </div>
                 
                 <div className = 'splitScreen'>
                         <div className = 'split1' ref = {this.myRef}>
-                            <h1 className = 'channelName3' style = {this.props.style3}>{`Top headlines: ${this.props.sourceName}`}</h1>
+                            <div className = "newLife">
+                                <h1 className = 'channelName3' style = {this.props.style3}>{`Top headlines: ${this.props.sourceName}`}</h1>
+                                <div className = 'smallRed2' onClick={() => this.batman()}></div>
+                            </div>
                             {this.props.status === 'REQUEST' ? 
                                 
                                 this.loadingAnimation() 
