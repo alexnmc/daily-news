@@ -372,10 +372,10 @@ p{
     text-decoration: none;
     color: rgb(155, 0, 0);
     cursor: pointer;
-    margin-bottom:12px;
+    margin-bottom:1.2vh;
     font-family: 'helvetica';
     font-weight: 700;
-    padding:2px;
+    padding:0.3vh;
     padding-left:5%;
 }
 
@@ -429,8 +429,8 @@ p:hover{
     width:100%;
     height: auto;
     margin:auto;
-    border: 12px solid rgba(255, 255, 255, 0.76);
-    font-size: 170%;
+    border: 2vh solid rgba(255, 255, 255, 0.76);
+    font-size: 3.2vh;
     position:fixed;
     color: rgb(170, 0, 0)
 }
