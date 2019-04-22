@@ -333,8 +333,8 @@ img{
 
 
 .button1{
-    width: 7.2em;
-    height: 30px;
+    width: 6vw;
+    height: 5vh;
     font-size:16px;
     font-family: 'helvetica';
     font-weight: bolder;
@@ -343,15 +343,15 @@ img{
     cursor: pointer;
     position:fixed;
     border: 1px solid rgb(141, 0, 0);
-    border-radius: 1px;
+    border-radius: 2px;
     margin-left: -5.2%;
 }
 
 
 
 .button2{
-    width: 7.2em;
-    height: 30px;
+    width: 6vw;
+    height: 5vh;
     font-size:16px;
     font-family: 'helvetica';
     font-weight: bolder;
@@ -360,7 +360,7 @@ img{
     cursor: pointer;
     position:fixed;
     border: 1px solid  rgb(141, 0, 0);
-    border-radius: 1px;
+    border-radius: 2px;
     margin-left: 5.2%;
 }
 
