@@ -406,7 +406,8 @@ p{
     background-color:  rgb(161, 0, 0);
     color:rgb(240, 240, 240);
     border: 1px solid  rgb(141, 0, 0);
-    margin: 7px;
+    margin: 0.7vh;
+    padding: 6pt;
 }
 
 
