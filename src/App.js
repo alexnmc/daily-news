@@ -72,7 +72,7 @@ class App extends Component {
         <div className = 'MAIN'> 
             
             {this.props.split ?
-                <div className = 'div2'>
+                <div className = 'div2' style = {this.props.div2Style}>
                     <div className = "channelName2">
                         <h1 className = "channelName">News for You</h1>
                         <Button1 scrolling = {this.scrolling}/>

@@ -663,9 +663,8 @@ h2{
 }
 
 
-
-.div2,
-.splitP{
+.splitP,
+.div2 {
     visibility: hidden;
 }
 
