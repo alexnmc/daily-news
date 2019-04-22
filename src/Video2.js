@@ -6,7 +6,7 @@ const Video2 = (props) => {
 
     
     function superman(){
-       return props.showVideoMini(),
+       props.showVideoMini()
        props.splitScreen()
     }
     

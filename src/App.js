@@ -27,7 +27,7 @@ class App extends Component {
     
     loadingAnimation = () => {
         return ( 
-            <div className = "opening2">
+            <div className = "opening2" style = {this.props.loadingStyle}>
                 <div className = "opening">
                     <Opening/>
                 </div>
