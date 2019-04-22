@@ -276,6 +276,7 @@ img{
     color:rgb(85, 85, 196);
 }
 
+
 .link{
     font-size: 16px;
 }
@@ -289,7 +290,7 @@ img{
     width: 23.4vh;
     position: fixed;
     background-color: rgba(255, 255, 255, 0.979);
-    overflow-x: hidden;
+    overflow: scroll;
     margin-top: 49vh;
     border-left: 1px solid white;
     border-bottom: 1px solid white;
@@ -304,7 +305,7 @@ img{
     width: 23.4vh;
     position: fixed;
     background-color: hsla(0, 0%, 100%, 0.977);
-    overflow-x: hidden;
+    overflow: scroll;
     margin-top: 49vh;
     margin-left: 30px;
     border-right: 1px solid rgb(161, 0, 0);
@@ -406,8 +407,9 @@ p{
     background-color:  rgb(161, 0, 0);
     color:rgb(240, 240, 240);
     border: 1px solid  rgb(141, 0, 0);
-    margin: 0.7vh;
-    padding: 6pt;
+    margin: 5pt;
+    padding: 6.7pt;
+    font-size: 13pt;
 }
 
 
@@ -559,7 +561,9 @@ img{
 
 
 .live{
-    margin: 5px;
+    margin: 1vh;
+    font-size: 3.9vw;
+    padding:1.9vw
 }
 
 
