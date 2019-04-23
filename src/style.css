@@ -93,7 +93,6 @@ body{
     height: 100vh;
     width: 100vw;
     background-color:rgba(14, 14, 14, 0.959);
-   
 }
 
 
@@ -484,12 +483,12 @@ a{
 
 .channelName{
     font-size: 20px;
-    border: 3vh solid rgba(255, 255, 255, 0.63);
+    border: 2.8vh solid rgba(255, 255, 255, 0.63);
 }
 
 
 .channelName2{
-    height: 10.8vh;
+    height: 9vh;
 }
 
 
