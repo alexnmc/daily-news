@@ -74,7 +74,7 @@ class ButtonProvider extends Component {
             .then(response => {
                 this.setState({
                     articles: response.data.articles,
-                    sourceName: this.state.name,
+                    sourceName: this.state.sourceName,
                     status: 'SUCCESS',
                     video: 'off',
                 })

@@ -22,6 +22,7 @@ class App extends Component {
    
     componentDidMount(){
        this.props.getMount()
+       console.log(this.props.sourceName)
     }
    
     
