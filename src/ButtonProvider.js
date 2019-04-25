@@ -23,7 +23,7 @@ class ButtonProvider extends Component {
             animationToggle: true,
             split: document.documentElement.clientWidth > 700 ? true : false ,
             videoName:'Sky News Live',
-            sourceName: localStorage.getItem("name"),
+            sourceName: localStorage.getItem("name") || 'USA',
             style3:{visibility:''},
             
         }
@@ -117,7 +117,6 @@ class ButtonProvider extends Component {
         })
             this.setState(prevState=>{  
                 return { 
-                    channel: name,
                     toggle2: !prevState.toggle2,
                     video: 'off',
                     sourceName: name,
