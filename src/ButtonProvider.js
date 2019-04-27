@@ -25,10 +25,11 @@ class ButtonProvider extends Component {
             videoName:'Sky News Live',
             sourceName: localStorage.getItem("name") || 'USA',
             style3:{visibility:''},
-            
+            title: {fontSize: '14.5pt'}
         }
     }
    
+    
     
     splitScreen = () => {
         this.setState(prevState => {
@@ -36,8 +37,9 @@ class ButtonProvider extends Component {
                 split: !prevState.split,
             }
         })
-        this.state.split ? this.setState({newsDiv: {width: '44vw', fontSize: '12px'}}) : this.setState({newsDiv: {width: '38vw', fontSize: '10px'}})
+        this.state.split ? this.setState({title: {fontSize: '16pt'}, newsDiv: {width: '44vw', fontSize: '12px'}}) : this.setState({newsDiv: {width: '38vw', fontSize: '10px'}, title: {fontSize: '14.5pt'}})
     }
+    
     
     
     showVideoMini = () => {

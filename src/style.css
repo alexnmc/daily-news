@@ -4,6 +4,9 @@
 }
 
 
+
+
+
 body{
       background-image: url('./Photos/news.jpg') ;
       background-size:10%;
@@ -31,6 +34,7 @@ body{
     height: 100%;
     width: 100%;
     display: grid;
+    grid-gap: 2vh;
     grid-template-columns: auto auto ;
 }
 
@@ -69,13 +73,13 @@ body{
     animation: videoIn3 2.5s , fade 4s;
     padding-bottom: 15%;
     padding-top: 5%;
-    margin-left: 5%
+    margin-left: 4.5%
 }
 
 
 @-webkit-keyframes videoIn3 {
     from {  margin-left: -150%}
-    to   {  margin-left: 5%}
+    to   {  margin-left: 4.5%}
 }
 
 
@@ -137,11 +141,11 @@ body{
 
 
 h1{
-    margin-bottom:7px;
     color:rgb(144, 0, 0);
-    font-size:21px;
+    font-size: 21px;
 }
 
+ 
 
 img{
     width: 100%;
@@ -150,7 +154,7 @@ img{
 
 
 .newsDiv{
-      border: 2px solid rgb(70, 0, 0);
+      border: 2px solid rgba(0, 0, 0, 0.863);
       width: 38vw;
       padding:18px;
       height: auto;
@@ -332,8 +336,8 @@ img{
 
 
 .button1{
-    width: 8vw;
-    height: 3.7vh;
+    width: 7.5vw;
+    height: 3.5vh;
     font-size:15px;
     font-family: 'helvetica';
     font-weight: bolder;
@@ -349,8 +353,8 @@ img{
 
 
 .button2{
-    width: 8vw;
-    height: 3.7vh;
+    width: 7.5vw;
+    height: 3.5vh;
     font-size:15px;
     font-family: 'helvetica';
     font-weight: bolder;

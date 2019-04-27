@@ -55,7 +55,7 @@ class App extends Component {
             
             return (
                 <div className = "newsDiv" onClick = {this.props.closing} key={Math.random()} style = {this.props.newsDiv}>
-                    <h1> {item.title} </h1>
+                    <h1 className = 'itemTitle' style = {this.props.title}> {item.title} </h1>
                     <img src={ item.urlToImage} alt = ''/>
                     <h2> {item.description} </h2>
                     <h2 className = "name">{item.source.name}</h2>
