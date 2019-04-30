@@ -11,8 +11,8 @@ const Button2 = (props) => {
             
                 <div className = "navbarWrap" >
                     <p className = 'live' onClick = {()=> props.showVideo('https://www.youtube.com/watch?v=lrX6ktLg8WQ', 'SKY NEWS LIVE')}>Sky News LIVE</p>
-                    <p className = 'live' onClick = {()=> props.showVideo('https://www.youtube.com/watch?v=7t04Mv8_5sM&feature=player_embedded_uturn', 'EURONEWS LIVE')}>Euronews LIVE</p>
-                    <p className = 'live' onClick = {()=> props.showVideo('https://www.youtube.com/watch?v=O8yyiEfHIRA', 'France 24 LIVE')}>France 24 LIVE</p>
+                    <p className = 'live' onClick = {()=> props.showVideo('https://www.youtube.com/watch?v=Nor6eNBxeTQ', 'EURONEWS LIVE')}>Euronews LIVE</p>
+                    <p className = 'live' onClick = {()=> props.showVideo('https://www.youtube.com/watch?v=IBlUM-0NZZU', 'France 24 LIVE')}>France 24 LIVE</p>
                     <p className = 'live' onClick = {()=> props.showVideo('https://www.youtube.com/watch?v=NvqKZHpKs-g', 'DW News LIVE')}>DW News LIVE</p>
                     <p className = 'live' onClick = {()=> props.showVideo('https://www.youtube.com/watch?v=9iQ17RA-6r0', 'FOX News LIVE')}>FOX News LIVE </p>
                     <p className = 'live' onClick = {()=> props.showVideo('https://www.youtube.com/watch?v=IFAcqaNzNSc', 'RT News LIVE')}>RT News LIVE</p>

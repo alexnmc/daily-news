@@ -16,9 +16,10 @@ body{
 
 
 .div{
-    background-color: hsla(0, 0%, 4%, 0.979);
+    background-color: hsla(0, 0%, 11%, 0.968);
     height: 100%;
     width: 100%;
+    
 }
 
 
@@ -40,7 +41,7 @@ body{
 
 
 .split2{
-    width: 55vw;
+    width: 52vw;
     height: auto;
     overflow: scroll;
     display: flex;
@@ -155,7 +156,7 @@ img{
 
 .newsDiv{
       border: 2px solid rgba(0, 0, 0, 0.863);
-      width: 38vw;
+      width: 36vw;
       padding:18px;
       height: auto;
       font-size: 10px;
@@ -210,15 +211,16 @@ img{
 
 
 .videoWrap{
-    width: 60%;
-    height: 57%;
+    width: 70%;
+    height: 69%;
 }
 
 
 .videoWrap2{
-    width: 90%;
-    height:49%;
-    margin-bottom:10%;
+    width: 89%;
+    height:46%;
+    margin-bottom:20%;
+    margin-left: 5%;
 }
 
 
@@ -260,7 +262,7 @@ img{
     border: 3px solid rgb(169, 0, 0);
     border-radius: 2px;
     cursor: pointer;
-    margin-left: 46%;
+    margin-left: 39%;
 }
 
 
@@ -270,7 +272,7 @@ img{
     border: 3px solid rgb(169, 0, 0);
     border-radius: 2px;
     cursor: pointer;
-    margin-left: -6%;
+    margin-left: -9%;
 }
 
 
@@ -386,9 +388,9 @@ p{
 
 .topP{
     float:left;
-    margin-left:45vh;
-    height: 4vh;
-    width:2.2vw;
+    margin-left:65pt;
+    height: 19pt;
+    width: 18pt;
     cursor:pointer;
     background-image: url('./Photos/top.png');
     background-size: cover;
