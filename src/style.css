@@ -394,9 +394,9 @@ p{
 
 .topP{
     float:left;
-    margin-left:65pt;
-    height: 19pt;
-    width: 18pt;
+    margin-left: 180pt;
+    height: 21pt;
+    width: 21pt;
     cursor:pointer;
     background-image: url('./Photos/top.png');
     background-size: cover;
