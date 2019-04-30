@@ -144,6 +144,11 @@ body{
 h1{
     color:rgb(144, 0, 0);
     margin-bottom: 1pt;
+    
+}
+
+h2{
+    font-size:12pt
 }
 
  
@@ -156,10 +161,10 @@ img{
 
 .newsDiv{
       border: 2px solid rgba(0, 0, 0, 0.863);
-      width: 36vw;
-      padding:18px;
+      width: 35vw;
+      padding:17px;
       height: auto;
-      font-size: 10px;
+      font-size: 10pt;
       margin:auto;
       margin-bottom: 5%;
       margin-top:8%;
@@ -172,6 +177,7 @@ img{
 }
 
 
+ 
 
 .topHead{
     position: fixed;
@@ -220,7 +226,7 @@ img{
     width: 89%;
     height:46%;
     margin-bottom:20%;
-    margin-left: 5%;
+    margin-left: 3%;
 }
 
 
