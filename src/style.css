@@ -172,8 +172,19 @@ img{
       font-family: Verdana, Tahoma, sans-serif;
 }
 
+.newsBig{
+    animation: superMan 2s;
+    height: auto;
+    width: 100vw;
+}
 
- 
+
+@keyframes superMan{
+    from{ margin-left: -50%}
+    to  { margin-left: 0}
+}
+
+     
 .topHead{
     position: fixed;
     background-color:  rgb(161, 0, 0);

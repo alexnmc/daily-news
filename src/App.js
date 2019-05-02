@@ -116,7 +116,9 @@ class App extends Component {
                                 {this.props.video === 'on' ?
                                     <Video/>
                                     :
-                                    article
+                                    <div className = 'newsBig'>
+                                    {article}
+                                    </div>
                                 }
                             </div>
                 }
