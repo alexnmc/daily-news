@@ -51,8 +51,7 @@ class App extends Component {
     
     render(){
         
-       
-        const article = this.props.articles.length ? 
+        const article = this.props.articles.length ? //either show the articles or not available message
         
             this.props.articles.map(item => {
                 return (
