@@ -51,25 +51,31 @@ class App extends Component {
     
     render(){
         
-        const article = this.props.articles.map(item => {
-            
-            return (
-                <div className = "newsDiv" onClick = {this.props.closing} key={Math.random()} style = {this.props.newsDiv}>
-                    <h1 className = 'itemTitle' style = {this.props.title}> {item.title} </h1>
-                    <img src={ item.urlToImage} alt = ''/>
-                    <h2> {item.description} </h2>
-                    <h2 className = "name">{item.source.name}</h2>
-                    <div className = "bottom">
-                        <a className = "link"  href={item.url} onClick = {this.props.stopScroll}>read more</a>
-                        <div className = "topP" onClick = {()=> this.scrolling()}></div>
-                    </div>
-                </div>
-            )
-    })
        
+        const article = this.props.articles.length ? 
+        
+            this.props.articles.map(item => {
+                return (
+                    <div className = "newsDiv" onClick = {this.props.closing} key={Math.random()} style = {this.props.newsDiv}>
+                        <h1 className = 'itemTitle' style = {this.props.title}> {item.title} </h1>
+                        <img src={ item.urlToImage} alt = ''/>
+                        <h2> {item.description} </h2>
+                        <h2 className = "name">{item.source.name}</h2>
+                        <div className = "bottom">
+                            <a className = "link"  href={item.url} onClick = {this.props.stopScroll}>read more</a>
+                            <div className = "topP" onClick = {()=> this.scrolling()}></div>
+                        </div>
+                    </div>
+                )
+            })
+        :
+            <div className = 'newsDiv'>
+                <h1>not available</h1>
+            </div>
+            
+        
         
         return (
-       
             <div className = 'MAIN'> 
                 {this.props.split ?
                     <div className = 'div2' style = {this.props.div2Style}>
