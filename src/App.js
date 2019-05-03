@@ -121,7 +121,7 @@ class App extends Component {
                                 {this.props.video === 'on' ?
                                     <Video/>
                                     :
-                                    <div className = 'newsBig'>
+                                    <div className = 'newsBig' style = {this.props.articles.length ? {height: 'auto'} : {height: '100vh'}}>
                                     {article}
                                     </div>
                                 }
