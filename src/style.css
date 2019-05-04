@@ -309,7 +309,7 @@ img{
     margin-top: 49vh;
     border-left: 1px solid white;
     border-bottom: 1px solid white;
-    animation: fadein2 1s, fade 2.8s;
+    animation: fadein2 1s, fade 2s;
 }
 
 
@@ -325,7 +325,7 @@ img{
     margin-left: 1vh;
     border-right: 1px solid rgb(161, 0, 0);
     border-bottom: 1px solid rgb(161, 0, 0);
-    animation: fadein 1s, fade 2.2s;
+    animation: fadein 1s, fade 1.5s;
 }
 
 
