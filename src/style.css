@@ -493,6 +493,8 @@ a{
     }
 
 
+    
+
 .channelName{
     font-size: 20px;
     border: 3vh solid rgba(255, 255, 255, 0.63);
@@ -683,6 +685,10 @@ h2{
     visibility: hidden;
 }
 
+
+.itemTitle{
+   font-size:5pt;
+}
 }
 
 
