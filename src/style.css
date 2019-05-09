@@ -293,7 +293,7 @@ img{
 
 
 .link{
-    font-size: 16px;
+    font-size: 14px;
 }
 
 
@@ -489,11 +489,8 @@ a{
 
     .div{
         background-color: rgba(22, 22, 22, 0.945);
-        
     }
 
-
-    
 
 .channelName{
     font-size: 20px;
@@ -628,15 +625,18 @@ p{
 
 .topP{
     margin-left:170px;
-    height: 27px;
-    width:27px;
+    height: 26px;
+    width:26px;
 }
 
 
 a{
-    font-size: 14px;
+    font-size: 13px;
 }
 
+.link{
+    font-size:12.5px;
+}
 
 h1{
     font-size: 17px;
@@ -645,7 +645,7 @@ h1{
 
 
 h2{
-    font-size: 15px;
+    font-size: 14px;
 }
 
 
@@ -686,9 +686,7 @@ h2{
 }
 
 
-.itemTitle{
-   font-size:5pt;
-}
+
 }
 
 
