@@ -145,7 +145,7 @@ h1{
 }
 
 h2{
-    font-size:12pt
+    font-size:11.5pt
 }
 
  
@@ -445,7 +445,7 @@ p:hover{
     height: auto;
     margin:auto;
     border: 1.8vh solid rgba(255, 255, 255, 0.76);
-    font-size: 3.2vh;
+    font-size: 3vh;
     position:fixed;
     color: rgb(170, 0, 0)
 }
@@ -464,12 +464,12 @@ p:hover{
 .channelName3{
     width: 100%;
     font-family: 'helvetica';
-    font-size: 24px;
+    font-size: 16pt;
 }
 
 
 .channelName4{
-   font-size: 24px;
+   font-size: 16pt;
    font-family: 'helvetica';
    width: 50%
 }
