@@ -92,6 +92,7 @@ class ButtonProvider extends Component {
          .then(response => {
             this.setState({
                 articles: response.data.articles,
+                status: 'SUCCESS',
             })
         })
             this.setState(prevState=>{
@@ -114,6 +115,7 @@ class ButtonProvider extends Component {
          .then(response => {
             this.setState({
                 articles: response.data.articles,
+                status: 'SUCCESS',
             })
         })
             this.setState(prevState=>{  
@@ -127,8 +129,14 @@ class ButtonProvider extends Component {
         document.body.style.overflow = 'scroll'
     }
         
+   
+    loadingAnim = () => {
+        this.setState({
+            status: 'REQUEST'
+        })
+    }
     
-    
+   
     handleToggle = () => {
         this.state.toggle ? document.body.style.overflow = 'scroll' : document.body.style.overflow = 'hidden'
         this.setState( prevState => {   
@@ -180,6 +188,7 @@ class ButtonProvider extends Component {
                     splitScreen: this.splitScreen,
                     showVideoMini: this.showVideoMini,
                     hideVideo: this.hideVideo,
+                    loadingAnim: this.loadingAnim,
                     ...this.state
                 }}>
                 {this.props.children}

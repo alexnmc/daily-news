@@ -26,16 +26,7 @@ class App extends Component {
     }
    
     
-    loadingAnimation = () => {
-        return ( 
-            <div className = "opening2">
-                <div className = "opening">
-                    <Opening/>
-                </div>
-            </div>
-        )
-    }
-
+   
    
     scrolling = () => {
         Scroll.animateScroll.scrollToTop()
@@ -92,7 +83,11 @@ class App extends Component {
                                 </div>
                                 {this.props.status === 'REQUEST' ? 
                                     
-                                    this.loadingAnimation() 
+                                    <div className = "opening3">
+                                        <div className = "opening">
+                                            <Opening/>
+                                        </div>
+                                    </div>
                                     :
                                     article
                                 }
@@ -108,7 +103,11 @@ class App extends Component {
                 
                     this.props.status === 'REQUEST' ? 
                         
-                        this.loadingAnimation() 
+                        <div className = "opening2">
+                            <div className = "opening">
+                                <Opening/>
+                            </div>
+                        </div>
                         :
                         <div className = "div" >
                         
