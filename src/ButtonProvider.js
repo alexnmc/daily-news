@@ -37,8 +37,7 @@ class ButtonProvider extends Component {
                 split: !prevState.split,
             }
         })
-        this.state.split ? this.setState({title: {fontSize: '14pt'}, newsDiv: {width: '41vw', fontSize: '12px'}}) : this.setState({newsDiv: {width: '35vw', fontSize: '10pt'}, title: {fontSize: '13pt'}})
-        document.body.style.overflow = 'scroll'
+        
     }
     
     

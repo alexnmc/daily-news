@@ -172,9 +172,35 @@ img{
       font-family: Verdana, Tahoma, sans-serif;
 }
 
+
+.newsDiv2{
+    border: 2px solid rgba(0, 0, 0, 0.863);
+    width: 41vw;
+    padding:17px;
+    height: auto;
+    font-size: 12pt;
+    margin:auto;
+    margin-bottom: 5%;
+    margin-top:8%;
+    background-color: white;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
 .newsBig{
     animation: superMan 1s;
-    
 }
 
 
