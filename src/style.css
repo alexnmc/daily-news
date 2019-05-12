@@ -533,7 +533,7 @@ a{
 
 
 .newsDiv{
-    width: 97vw;
+    width: 98vw;
     height: auto;
     margin: auto;
     margin-top: 20%;
@@ -542,9 +542,6 @@ a{
     margin-bottom: 20%;
     margin-top: 20%;
 }
-
-
-
 
 
 .button1,
@@ -663,14 +660,11 @@ a{
     font-size:12.5px;
 }
 
-h1{
-    font-size: 17px;
-    margin: 0px;
-}
+
 
 
 h2{
-    font-size: 14px;
+    font-size: 10pt;
 }
 
 
@@ -710,6 +704,9 @@ h2{
     visibility: hidden;
 }
 
+.itemTitle{
+    font-size: 11.5pt;
+}
 
 
 }
