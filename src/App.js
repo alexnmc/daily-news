@@ -68,6 +68,7 @@ class App extends Component {
         return (
             <div className = 'MAIN'> 
                 {this.props.split ?
+                    
                     <div className = 'div2'>
                         <div className = "channelName2">
                             <h1 className = "channelName">News for You</h1>
@@ -110,21 +111,21 @@ class App extends Component {
                         </div>
                         :
                         <div className = "div" >
-                        
                             <div className = "channelName2" ref = {this.myRef}>
                                 <h1 className = "channelName">{this.props.video === 'off' ? this.props.sourceName : this.props.videoName}</h1>
                                 <div className = 'splitP' onClick={()=> this.props.splitScreen()}>I</div>
                                 <Button1/>
                                 <Button2/>
                             </div>
-                                {this.props.video === 'on' ?
-                                    <Video/>
-                                    :
-                                    <div className = 'newsBig' style = {this.props.articles.length ? {height: 'auto'} : {height: '100vh'}}>
+                            {this.props.video === 'on' ?
+                                
+                                <Video/>
+                                :
+                                <div className = 'newsBig' style = {this.props.articles.length ? {height: 'auto'} : {height: '100vh'}}>
                                     {article}
-                                    </div>
-                                }
-                            </div>
+                                </div>
+                            }
+                        </div>
                 }
             </div>
         )   
