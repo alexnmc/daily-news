@@ -25,7 +25,7 @@ class ButtonProvider extends Component {
             videoName:'Sky News Live',
             sourceName: localStorage.getItem("name") || 'USA',
             style3:{visibility:''},
-            title: {fontSize: '13pt'}
+            
         }
     }
    
@@ -37,9 +37,7 @@ class ButtonProvider extends Component {
                 split: !prevState.split,
             }
         })
-        
     }
-    
     
     
     showVideoMini = () => {

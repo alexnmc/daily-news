@@ -28,7 +28,7 @@ class App extends Component {
     
     loadingAnimation = () => {
         return ( 
-            <div className = "opening2" style = {this.props.loadingStyle}>
+            <div className = "opening2">
                 <div className = "opening">
                     <Opening/>
                 </div>
@@ -55,8 +55,8 @@ class App extends Component {
         
             this.props.articles.map(item => {
                 return (
-                    <div className = "newsDiv" onClick = {this.props.closing} key={Math.random()} style = {this.props.newsDiv}>
-                        <h1 className = 'itemTitle' style = {this.props.title}> {item.title} </h1>
+                    <div className = "newsDiv" onClick = {this.props.closing} key={Math.random()}>
+                        <h1 className = 'itemTitle'> {item.title} </h1>
                         <img src={ item.urlToImage} alt = ''/>
                         <h2> {item.description} </h2>
                         <h2 className = "name">{item.source.name}</h2>
@@ -77,7 +77,7 @@ class App extends Component {
         return (
             <div className = 'MAIN'> 
                 {this.props.split ?
-                    <div className = 'div2' style = {this.props.div2Style}>
+                    <div className = 'div2'>
                         <div className = "channelName2">
                             <h1 className = "channelName">News for You</h1>
                             <Button1 scrolling = {this.scrolling}/>
@@ -87,7 +87,7 @@ class App extends Component {
                     <div className = 'splitScreen'>
                             <div className = 'split1' ref = {this.myRef}>
                                 <div className = "newLife">
-                                    <h1 className = 'channelName3' style = {this.props.style3}>{`Top headlines: ${this.props.sourceName}`}</h1>
+                                    <h1 className = 'channelName3' style ={this.props.style3}>{`Top headlines: ${this.props.sourceName}`}</h1>
                                     <div className = 'smallRed2' onClick={() => this.batman()}></div>
                                 </div>
                                 {this.props.status === 'REQUEST' ? 

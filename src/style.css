@@ -141,7 +141,7 @@ body{
 h1{
     color:rgb(144, 0, 0);
     margin-bottom: 1pt;
-    
+    font-size:13pt;
 }
 
 h2{
@@ -189,14 +189,6 @@ img{
     justify-content: center;
     font-family: Verdana, Tahoma, sans-serif;
 }
-
-
-
-
-
-
-
-
 
 
 .newsBig{
