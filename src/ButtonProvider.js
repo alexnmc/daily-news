@@ -21,7 +21,7 @@ class ButtonProvider extends Component {
             videoUrl: '',
             style:{ animation:''},
             animationToggle: true,
-            split: document.documentElement.clientWidth > 700 ? true : false ,
+            split: document.documentElement.clientWidth > 900 ? true : false ,
             videoName:'Sky News Live',
             sourceName: localStorage.getItem("name") || 'USA',
             style3:{visibility:''},
