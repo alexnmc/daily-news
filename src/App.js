@@ -26,8 +26,6 @@ class App extends Component {
     }
    
     
-   
-   
     scrolling = () => {
         Scroll.animateScroll.scrollToTop()
         this.myRef.current.scrollTo({top: 0, behavior: 'smooth'})
@@ -63,7 +61,6 @@ class App extends Component {
                 <h1>not available</h1>
             </div>
             
-        
         
         return (
             <div className = 'MAIN'> 

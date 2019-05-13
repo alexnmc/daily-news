@@ -11,7 +11,6 @@ body{
       flex-direction: column;
 }
 
-
 .div{
     background-color: hsla(0, 1%, 8%, 0.970);
     height: 100%;
@@ -19,14 +18,12 @@ body{
     
 }
 
-
 .div2{
     background-color: hsla(0, 1%, 8%, 0.970);
     height: 100%;
     width: 100%;
     position:fixed;
 }
-
 
 .splitScreen{
     height: 100%;
@@ -36,7 +33,6 @@ body{
     grid-template-columns: auto auto ;
 }
 
-
 .split2{
     width: 52vw;
     height: auto;
@@ -45,7 +41,6 @@ body{
     align-items: center;
     animation: videoIn4 2.5s;
 }
-
 
 .splitP{
     display:flex;
@@ -62,7 +57,6 @@ body{
     font-family: sans-serif;
     cursor:pointer;
 }
-
 
 .split1{
     overflow: scroll;
@@ -86,7 +80,6 @@ body{
     to   {  margin-right: 10%}
 }
 
-
 .opening{
     display:flex;
     align-items: center;
@@ -95,7 +88,6 @@ body{
     width: 100vw;
     background-color:rgba(14, 14, 14, 0);
 }
-
 
 .opening2{
     height: auto;
@@ -115,8 +107,6 @@ body{
    
 }
 
-
-
 .loading{
     margin-bottom:20%;
     height:30%;
@@ -126,7 +116,6 @@ body{
     justify-content: center;
 }
 
-
 .transitions{
     display: flex;
     align-items: center;
@@ -134,8 +123,6 @@ body{
     width:100%;
     height: 100%;
 }
-
-
 
 .button2Wrap{
     display: flex;
@@ -157,12 +144,10 @@ h2{
     font-size:11.5pt
 }
 
- 
 img{
     width: 100%;
     margin: 7px;
 }
-
 
 .newsDiv{
       border: 2px solid rgba(0, 0, 0, 0.863);
@@ -457,13 +442,10 @@ p{
     color: rgb(197, 151, 151);
 }
 
-
-
 p:hover{
     color:white;
     background-color: rgb(161, 0, 0);
 }
-
 
 .channelName{
     text-align: center;
@@ -477,7 +459,6 @@ p:hover{
     color: rgb(170, 0, 0)
 }
 
- 
 .channelName2{
     display: flex;
     align-items: center;
@@ -487,21 +468,17 @@ p:hover{
     font-family: 'helvetica';
 }
 
-
 .channelName3{
     width: 100%;
     font-family: 'helvetica';
     font-size: 16pt;
 }
 
-
 .channelName4{
    font-size: 16pt;
    font-family: 'helvetica';
    width: 50%
 }
-
-
 
 a{
     font-size:17px;
@@ -518,17 +495,14 @@ a{
         background-color: rgba(22, 22, 22, 0.945);
     }
 
-    
 .channelName{
     font-size: 20px;
     border: 3vh solid rgba(255, 255, 255, 0.63);
 }
 
-
 .channelName2{
     height: 9.2vh;
 }
-
 
 .newsDiv{
     width: 98vw;
@@ -541,6 +515,9 @@ a{
     margin-top: 20%;
 }
 
+.newsBig{
+    animation:none;
+}
 
 .button1,
 .button2{
@@ -574,7 +551,6 @@ a{
     animation: fadein2 1s, fade 1.2s;
 }
 
-
 .navbarWrap2{
     width: 35vw;
     height: 85vh;
@@ -585,20 +561,17 @@ a{
     animation: fadein 1s, fade 1.2s;
 }
 
-
 .live{
     margin: 1vh;
     font-size: 3.9vw;
     padding:1.9vw
 }
 
-
 .topHead{
     width:35vw;
     font-size: 4.5vw;
     height: auto;
 }
-
 
 .topHead2{
     width:35vw;
@@ -637,13 +610,11 @@ p{
     margin-bottom:13px;
 }
 
-
 .topP{
     margin-left:170px;
     height: 26px;
     width:26px;
 }
-
 
 a{
     font-size: 13px;
@@ -676,14 +647,12 @@ h2{
     width: 100vw;
 }
 
-
 .videoWrap{
     width: 100%;
     height: 100%;
     border: 3px solid white;
     border-bottom:7px solid white;
 }
-
 
 .splitP,
 .div2 {
@@ -693,8 +662,6 @@ h2{
 .itemTitle{
     font-size: 11.5pt;
 }
-
-
 }
 
 
