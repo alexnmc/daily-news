@@ -34,12 +34,21 @@ body{
 }
 
 .split2{
-    width: 50vw;
-    overflow: scroll;
+    width: 45vw;
     display: flex;
     align-items: center;
     justify-content: center;
     animation: videoIn4 2.5s;
+}
+
+.split1{
+    overflow: scroll;
+    width: 42vw;
+    height: auto;
+    animation: videoIn3 2.5s , fade 4s;
+    padding-bottom: 15%;
+    padding-top: 5%;
+    margin-left: 4.5%
 }
 
 .splitP{
@@ -56,16 +65,6 @@ body{
     border-radius: 3px;
     font-family: sans-serif;
     cursor:pointer;
-}
-
-.split1{
-    overflow: scroll;
-    width: 45vw;
-    height: auto;
-    animation: videoIn3 2.5s , fade 4s;
-    padding-bottom: 15%;
-    padding-top: 5%;
-    margin-left: 4.5%
 }
 
 
@@ -151,8 +150,8 @@ img{
 
 .newsDiv{
       border: 2px solid rgba(0, 0, 0, 0.863);
-      width: 390pt;
-      padding:17px;
+      width: 360pt;
+      padding:15px;
       height: auto;
       font-size: 10pt;
       margin:auto;
