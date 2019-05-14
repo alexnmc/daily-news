@@ -38,7 +38,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    animation: videoIn4 2.5s;
+    animation: videoIn4 1.8s;
 }
 
 .split1{
@@ -75,8 +75,8 @@ body{
 
 
 @-webkit-keyframes videoIn4{
-    from {  margin-right: -170%}
-    to   {  margin-right: 10%}
+    from {  margin-right: -100%}
+    to   {  margin-right: 0%}
 }
 
 .opening{
