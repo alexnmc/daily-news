@@ -165,7 +165,6 @@ img{
       font-family: Verdana, Tahoma, sans-serif;
 }
 
-
 .newsDiv2{
     border: 2px solid rgba(0, 0, 0, 0.863);
     width: 41vw;
@@ -183,7 +182,6 @@ img{
     font-family: Verdana, Tahoma, sans-serif;
 }
 
-
 .newsBig{
     animation: superMan 1s;
 }
@@ -194,7 +192,6 @@ img{
     to  { margin-left: 0}
 }
 
-     
 .topHead{
     position: fixed;
     background-color:  rgb(161, 0, 0);
@@ -206,7 +203,6 @@ img{
     font-size: 2.3vh;
 }
 
-
 .topHead2{
     background-color:  rgb(161, 0, 0);
     color:rgb(240, 240, 240);
@@ -217,11 +213,9 @@ img{
     font-size: 20px;
 }
 
-
 .argentina{
     margin-top: 6vh
 }
-
 
 .video{
     height: 100vh;
@@ -231,10 +225,9 @@ img{
     justify-content: center;
 }
 
-
 .videoWrap{
-    width: 70%;
-    height: 69%;
+    width: 700pt;
+    height:394pt;
 }
 
 
