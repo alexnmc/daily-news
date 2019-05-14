@@ -39,6 +39,7 @@ body{
     overflow: scroll;
     display: flex;
     align-items: center;
+    justify-content: center;
     animation: videoIn4 2.5s;
 }
 
@@ -151,7 +152,7 @@ img{
 
 .newsDiv{
       border: 2px solid rgba(0, 0, 0, 0.863);
-      width: 35vw;
+      width: 390pt;
       padding:17px;
       height: auto;
       font-size: 10pt;
@@ -240,10 +241,9 @@ img{
 
 
 .videoWrap2{
-    width: 89%;
-    height:46%;
-    margin-bottom:20%;
-    margin-left: 3%;
+    width: 501pt;
+    height:282pt;
+    margin:auto;
 }
 
 
@@ -267,7 +267,7 @@ img{
 
 .newLife{
     display: flex;
-    width:45vw;
+    width:501pt;
     position: fixed;
     margin-top: -1%;
 }
@@ -285,7 +285,8 @@ img{
     border: 3px solid rgb(169, 0, 0);
     border-radius: 2px;
     cursor: pointer;
-    margin-left: 40%;
+    position:fixed;
+    margin-left:490pt;
 }
 
 
@@ -295,7 +296,8 @@ img{
     border: 3px solid rgb(169, 0, 0);
     border-radius: 2px;
     cursor: pointer;
-    margin-left: -9%;
+    position:fixed;
+    margin-left: 42vw;
 }
 
 
@@ -307,7 +309,6 @@ img{
 .link{
     font-size: 14px;
 }
-
 
 .navbarWrap{
     display:flex;
@@ -323,7 +324,6 @@ img{
     border-bottom: 1px solid white;
     animation: fadein2 1s, fade 2s;
 }
-
 
 .navbarWrap2{
     display:flex;
@@ -358,7 +358,6 @@ img{
     to   {  opacity: 1}
 }
 
-
 .button1{
     width: 7.5vw;
     height: 3.5vh;
@@ -373,7 +372,6 @@ img{
     border-radius: 2px;
     margin-left: -6.2%;
 }
-
 
 
 .button2{
@@ -406,7 +404,6 @@ p{
 }
 
 
-
 .topP{
     float:left;
     margin-left: 180pt;
@@ -419,14 +416,12 @@ p{
 }
 
 
-
 .bottom{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
 }
-
 
 .live{
     background-color:  rgb(161, 0, 0);
@@ -436,7 +431,6 @@ p{
     padding: 6.7pt;
     font-size: 13pt;
 }
-
 
 .live:hover{
     color: rgb(197, 151, 151);
@@ -469,7 +463,7 @@ p:hover{
 }
 
 .channelName3{
-    width: 100%;
+    width: 390pt;
     font-family: 'helvetica';
     font-size: 16pt;
 }
