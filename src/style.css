@@ -34,8 +34,7 @@ body{
 }
 
 .split2{
-    width: 52vw;
-    height: auto;
+    width: 50vw;
     overflow: scroll;
     display: flex;
     align-items: center;
@@ -286,7 +285,7 @@ img{
     border-radius: 2px;
     cursor: pointer;
     position:fixed;
-    margin-left:490pt;
+    margin-left: 485pt;
 }
 
 
