@@ -11,7 +11,7 @@ body{
       flex-direction: column;
 }
 
-body::-webkit-scrollbar { width: 0 !important }
+
 
 .div{
     background-color: hsla(0, 1%, 8%, 0.970);
@@ -41,6 +41,7 @@ body::-webkit-scrollbar { width: 0 !important }
     align-items: center;
     justify-content: center;
     animation: videoIn4 1.8s;
+    margin-right:6%;
 }
 
 .split1{
@@ -50,7 +51,7 @@ body::-webkit-scrollbar { width: 0 !important }
     animation: videoIn3 2.5s , fade 4s;
     padding-bottom: 15%;
     padding-top: 5%;
-    margin-left: 4.5%
+    margin-left: 6%
 }
 
 .split1::-webkit-scrollbar { width: 0 !important }
@@ -74,13 +75,13 @@ body::-webkit-scrollbar { width: 0 !important }
 
 @-webkit-keyframes videoIn3 {
     from {  margin-left: -150%}
-    to   {  margin-left: 4.5%}
+    to   {  margin-left: 6%}
 }
 
 
 @-webkit-keyframes videoIn4{
     from {  margin-right: -100%}
-    to   {  margin-right: 0%}
+    to   {  margin-right: 6%}
 }
 
 .opening{
