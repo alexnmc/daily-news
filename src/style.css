@@ -12,7 +12,6 @@ body{
 }
 
 
-
 .div{
     background-color: hsla(0, 1%, 8%, 0.970);
     height: 100%;
@@ -655,9 +654,7 @@ h2{
 
 @media only screen and (min-width:551px) and (max-width:1100px) {
     
-    
-   
-  
+
   .newsDiv2,
   .newsDiv{
       width:350pt;
@@ -689,4 +686,23 @@ h2{
 .button2{
     margin-left: 2%;
 }
+}
+
+@media only screen and (min-width: 1800px) {
+
+    .newsDiv2,
+    .newsDiv{
+        width: 430pt;
+    }
+
+    .videoWrap2{
+        width: 620pt;
+        height:347pt;
+        margin:auto;
+        margin-bottom:37vh
+    }
+
+    .smallRed{
+        margin-left:610pt;
+    }
 }
