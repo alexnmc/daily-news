@@ -11,6 +11,8 @@ body{
       flex-direction: column;
 }
 
+body::-webkit-scrollbar { width: 0 !important }
+
 .div{
     background-color: hsla(0, 1%, 8%, 0.970);
     height: 100%;
