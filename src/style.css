@@ -103,7 +103,6 @@ body{
     display:flex;
     align-items: center;
     justify-content: center;
-   
 }
 
 .loading{
@@ -132,7 +131,6 @@ body{
     position: absolute;
 }
 
-
 h1{
     color:rgb(144, 0, 0);
     margin-bottom: 1pt;
@@ -150,8 +148,8 @@ img{
 
 .newsDiv{
       border: 2px solid rgba(0, 0, 0, 0.863);
-      width: 360pt;
-      padding:15px;
+      width: 340pt;
+      padding:10px;
       height: auto;
       font-size: 10pt;
       margin:auto;
@@ -230,10 +228,9 @@ img{
     height:394pt;
 }
 
-
 .videoWrap2{
-    width: 470pt;
-    height:265pt;
+    width: 430pt;
+    height:242pt;
     margin:auto;
     margin-bottom:37vh
 }
@@ -264,12 +261,10 @@ img{
     margin-top: -1%;
 }
 
-
 .newLife2{
     display: flex;
     width: 50vw;
 }
-
 
 .smallRed{
     height: 13pt;
@@ -278,9 +273,8 @@ img{
     border-radius: 2px;
     cursor: pointer;
     position:fixed;
-    margin-left: 455pt;
+    margin-left: 415pt;
 }
-
 
 .smallRed2{
     height: 13pt;
@@ -292,11 +286,9 @@ img{
     margin-left: 39vw;
 }
 
-
 .link:hover{
     color:rgb(85, 85, 196);
 }
-
 
 .link{
     font-size: 14px;
@@ -365,7 +357,6 @@ img{
     margin-left: -6.2%;
 }
 
-
 .button2{
     width: 7.5vw;
     height: 3.5vh;
@@ -380,7 +371,6 @@ img{
     border-radius: 2px;
     margin-left: 6.2%;
 }
-
 
 p{
     font-size: 2.3vh;
@@ -406,7 +396,6 @@ p{
     background-size: cover;
     background-position: center;
 }
-
 
 .bottom{
     display: flex;
