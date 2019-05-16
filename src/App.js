@@ -107,7 +107,7 @@ class App extends Component {
                             </div>
                         </div>
                         :
-                        <div className = "div" >
+                        <div className = "div">
                             <div className = "channelName2" ref = {this.myRef}>
                                 <h1 className = "channelName">{this.props.video === 'off' ? this.props.sourceName : this.props.videoName}</h1>
                                 <div className = 'splitP' onClick={()=> this.props.splitScreen()}>I</div>
