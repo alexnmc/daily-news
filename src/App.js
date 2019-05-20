@@ -10,19 +10,27 @@ import Video2 from './Video2'
 
 
 
+
 class App extends Component { 
     constructor(props){
         super(props)
         this.myRef = React.createRef()
+        
         this.state = {
+            
+
         
         }
     }
 
+    
+    onResize = () =>{ if(document.documentElement.clientWidth < 1100 && this.props.split === true){return window.location.reload()}}
+    
    
     componentDidMount(){
        this.props.getMount()
-       console.log(this.props.sourceName)
+       window.addEventListener("resize", this.onResize)
+       
     }
    
     
@@ -61,11 +69,12 @@ class App extends Component {
                 <h1>not available</h1>
             </div>
             
-        
+            
+            
         return (
             <div className = 'MAIN'> 
+               
                 {this.props.split ?
-                    
                     <div className = 'div2'>
                         <div className = "channelName2">
                             <h1 className = "channelName">News for You</h1>
