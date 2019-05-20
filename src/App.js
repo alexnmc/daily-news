@@ -24,13 +24,12 @@ class App extends Component {
     }
 
     
-    onResize = () =>{ if(document.documentElement.clientWidth < 1100 && this.props.split === true){return window.location.reload()}}
-    
+    onResize = () =>{if(document.documentElement.clientWidth < 1100 && this.props.split === true){return window.location.reload()}}
+    //refresh the page for the mobile view
    
     componentDidMount(){
        this.props.getMount()
-       window.addEventListener("resize", this.onResize)
-       
+       window.addEventListener("resize", this.onResize)//if the window size changed call the function onResize
     }
    
     
