@@ -9,15 +9,13 @@ import Video2 from './Video2'
 
 
 
-
-
 class App extends Component { 
     constructor(props){
         super(props)
         this.myRef = React.createRef()
         
         this.state = {
-            
+            call: window.addEventListener("resize", this.onResize) //if the window size changed call the function onResize
         }
     }
 
@@ -26,16 +24,13 @@ class App extends Component {
     //refresh the page for the mobile view
    
     componentDidMount(){
-       this.props.getMount()
-       window.addEventListener("resize", this.onResize)//if the window size changed call the function onResize
+        this.props.getMount()
     }
    
-    
     scrolling = () => {
         Scroll.animateScroll.scrollToTop()
         this.myRef.current.scrollTo({top: 0, behavior: 'smooth'})
     }
-
 
     batman = () => {
         this.props.splitScreen()
@@ -67,18 +62,16 @@ class App extends Component {
             </div>
             
             
-            
         return (
             <div className = 'MAIN'> 
-               
                 {this.props.split ?
+                    
                     <div className = 'div2'>
                         <div className = "channelName2">
                             <h1 className = "channelName">News for You</h1>
                             <Button1 scrolling = {this.scrolling}/>
                             <Button2/>    
                         </div>
-                    
                     <div className = 'splitScreen'>
                             <div className = 'split1' ref = {this.myRef}>
                                 <div className = "newLife">
@@ -102,9 +95,7 @@ class App extends Component {
                             </div>
                     </div>
                     </div>
-        
                 :     
-                
                     this.props.status === 'REQUEST' ? 
                         
                         <div className = "opening2">
