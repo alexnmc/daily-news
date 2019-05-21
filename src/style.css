@@ -382,6 +382,14 @@ img{
     margin-left: 6.2%;
 }
 
+.button1:hover{
+    color: rgb(197, 151, 151);
+}
+
+.button2:hover{
+    color: rgb(197, 151, 151);
+}
+
 p{
     font-size: 2.2vh;
     font-weight: bolder;
