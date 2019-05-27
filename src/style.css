@@ -11,6 +11,10 @@ body{
       flex-direction: column;
 }
 
+body::-webkit-scrollbar{
+    display: none;
+ }
+
 
 .div{
     background-color: hsla(0, 1%, 8%, 0.970);
@@ -602,8 +606,8 @@ a{
 
 
 p{
-    font-size: 4.5vw;
-    margin-bottom:13px;
+    font-size:4vw;
+    margin-bottom:10px;
 }
 
 .topP{
