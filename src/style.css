@@ -387,11 +387,11 @@ img{
 }
 
 .button1:hover{
-    color: rgb(197, 151, 151);
+    color: rgb(214, 188, 188);
 }
 
 .button2:hover{
-    color: rgb(197, 151, 151);
+    color: rgb(214, 188, 188);
 }
 
 p{
@@ -451,7 +451,8 @@ p:hover{
     height: auto;
     margin:auto;
     border: 1.8vh solid rgba(255, 255, 255, 0.76);
-    font-size: 3vh;
+    font-size: 16pt;
+    padding: 2pt;
     position:fixed;
     color: rgb(170, 0, 0)
 }
@@ -607,7 +608,7 @@ a{
 
 p{
     font-size:4vw;
-    margin-bottom:7px;
+    margin-bottom:8px;
 }
 
 .topP{
