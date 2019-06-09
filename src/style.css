@@ -199,6 +199,7 @@ img{
     to  { margin-left: 0}
 }
 
+
 .topHead{
     position: fixed;
     background-color:  rgb(161, 0, 0);
@@ -210,14 +211,16 @@ img{
     font-size: 2.3vh;
 }
 
-.topHead2{
+.switchTo{
     background-color:  rgb(161, 0, 0);
     color:rgb(240, 240, 240);
-    padding: 3px;
-    padding-top:6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 13.4vw;
     height: 2em;
-    font-size: 20px;
+    font-size: 17px;
+    margin:auto;
 }
 
 .argentina{

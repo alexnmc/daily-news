@@ -32,7 +32,6 @@ import {withButton} from './ButtonProvider'
                 <div className = "navbarWrap2">
                 {props.switch  ?
                     <div>
-                    <p onClick = {props.editSwitch}>switch to channels</p>   
                     <p className = 'topHead'>Top headlines from:</p>
                     <p className = 'argentina' onClick = {()=> getNews2("ar", "Argentina")}>Argentina</p>
                     <p onClick = {()=> getNews2("au", "Australia")}>Australia</p>
@@ -87,11 +86,12 @@ import {withButton} from './ButtonProvider'
                     <p onClick = {()=> getNews2("gb", "United Kingdom")}>United Kingdom</p>
                     <p onClick = {()=> getNews2("us", "USA")}>USA</p>
                     <p onClick = {()=> getNews2("ve", "Venezuela")}>Venezuela</p>
+                    <p  className = 'switchTo' onClick = {props.editSwitch}>switch to channels</p>  
                 </div>
                 :
                 <div>
-                    <p onClick = {props.editSwitch}>switch to countries</p>
-                    <p onClick = {()=> getNews("abc-news", "ABC News")}>ABC </p>
+                    <p className = 'topHead'>Top headlines from:</p>
+                    <p className = 'argentina' onClick = {()=> getNews("abc-news", "ABC News")}>ABC </p>
                     <p onClick = {()=> getNews("axios", "Axios")}>Axios</p>
                     <p onClick = {()=> getNews("bbc-news", "BBC News")}>BBC News</p>
                     <p onClick = {()=> getNews("bbc-sport", 'BBC Sport')}>BBC Sport</p>
@@ -122,6 +122,7 @@ import {withButton} from './ButtonProvider'
                     <p onClick = {()=> getNews("time", 'TIME')}>TIME</p>
                     <p onClick = {()=> getNews("usa-today", 'USA Today')}>USA Today</p>
                     <p onClick = {()=> getNews("the-wall-street-journal", 'Wall Street Journal')}>Wall Street Journal</p>
+                    <p className = 'switchTo' onClick = {props.editSwitch}>switch to countries</p>
                 </div>
                 }
                 </div>
