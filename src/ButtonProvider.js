@@ -25,10 +25,19 @@ class ButtonProvider extends Component {
             videoName:'Sky News Live',
             sourceName: localStorage.getItem("name") || 'USA',
             style3:{visibility:''},
+            switch: true
         }
     }
    
     
+    editSwitch = () =>{
+        this.setState(prevState => {
+            return {
+                switch: !prevState.switch,
+            }
+        })
+        
+    }
     
     splitScreen = () => {
         this.setState(prevState => {
@@ -188,6 +197,7 @@ class ButtonProvider extends Component {
                     showVideoMini: this.showVideoMini,
                     hideVideo: this.hideVideo,
                     loadingAnim: this.loadingAnim,
+                    editSwitch: this.editSwitch,
                     ...this.state
                 }}>
                 {this.props.children}
