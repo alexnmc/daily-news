@@ -591,16 +591,14 @@ a{
     font-size: 3.9vw;
     padding:1.9vw;
     margin-top:2.5vh;
-    display:flex;
-    flex-wrap: wrap;
+   
 }
 
 .live{
     margin: 1.2vh;
     font-size: 3.9vw;
     padding:1.9vw;
-    display:flex;
-    flex-wrap: wrap;
+    
 }
 
 .topHead{
