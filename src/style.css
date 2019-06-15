@@ -568,6 +568,7 @@ a{
 
 .navbarWrap{
     width: 35vw;
+    overflow: scroll;
     height: 85vh;
     margin-top: 48vh;
     border: 0px;
@@ -586,7 +587,6 @@ a{
 }
 
 .live1{
-    
     margin: 1.2vh;
     font-size: 3.9vw;
     padding:1.9vw;
