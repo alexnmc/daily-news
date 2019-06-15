@@ -284,8 +284,7 @@ img{
     border: 3px solid rgb(169, 0, 0);
     border-radius: 2px;
     cursor: pointer;
-    position:fixed;
-    margin-left: 415pt;
+    margin-left: 14.5vw;
 }
 
 .smallRed2{
@@ -436,6 +435,8 @@ p{
     margin: 5pt;
     padding: 6.7pt;
     font-size: 13pt;
+    display:flex;
+    flex-wrap: wrap;
 }
 
 .live:hover{
@@ -703,6 +704,8 @@ h2{
 .button2{
     margin-left: 2%;
 }
+
+
 }
 
 @media only screen and (min-width: 1800px) {
@@ -721,6 +724,6 @@ h2{
     }
 
     .smallRed{
-        margin-left:610pt;
+        margin-left:82pt;
     }
 }
