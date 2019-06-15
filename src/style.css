@@ -308,7 +308,6 @@ img{
 .navbarWrap{
     display:flex;
     flex-direction:column;
-    padding: 1%;
     height: 90vh;
     width: 23.4vh;
     position: fixed;
@@ -336,6 +335,7 @@ img{
     border-right: 1px solid rgba(161, 0, 0, 0.308);
     border-bottom: 1px solid rgba(161, 0, 0, 0);
     animation: fadein 1s, fade 1.5s;
+   
 }
 
 .navbarWrap2::-webkit-scrollbar { width: 0 !important }
@@ -432,11 +432,31 @@ p{
     background-color:  rgb(161, 0, 0);
     color:rgb(240, 240, 240);
     border: 1px solid  rgb(141, 0, 0);
-    margin: 5pt;
+    margin-top: 5pt;
+    margin-left: 11pt;
+    margin-right: 11pt;
     padding: 6.7pt;
     font-size: 13pt;
     display:flex;
     flex-wrap: wrap;
+}
+
+.live1{
+    background-color:  rgb(161, 0, 0);
+    color:rgb(240, 240, 240);
+    border: 1px solid  rgb(141, 0, 0);
+    margin-top: 15pt;
+    margin-left: 11pt;
+    margin-right: 11pt;
+    padding: 6.7pt;
+    font-size: 13pt;
+    display:flex;
+    flex-wrap: wrap;
+}
+
+
+.live1:hover{
+    color: rgb(197, 151, 151);
 }
 
 .live:hover{
