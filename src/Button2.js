@@ -10,10 +10,10 @@ const Button2 = (props) => {
             { props.toggle ?
             
                 <div className = "navbarWrap" >
-                    <p className = 'live1' onClick = {()=> props.showVideo('https://www.youtube.com/watch?v=lrX6ktLg8WQ', 'SKY NEWS LIVE')}>Sky News Live</p>
+                    <p className = 'live' onClick = {()=> props.showVideo('https://www.youtube.com/watch?v=lrX6ktLg8WQ', 'SKY NEWS LIVE')}>Sky News Live</p>
                     <p className = 'live' onClick = {()=> props.showVideo('https://www.youtube.com/watch?v=SM29tFvd_VM', 'EURONEWS LIVE')}>Euronews Live</p>
-                    <p className = 'live' onClick = {()=> props.showVideo('https://www.youtube.com/watch?v=d3_gK9MrXo8', 'France 24 LIVE')}>France 24 News Live</p>
-                    <p className = 'live' onClick = {()=> props.showVideo('https://www.youtube.com/watch?v=NvqKZHpKs-g', 'DW News LIVE')}>Deutsche Welle Live</p>
+                    <p className = 'live' onClick = {()=> props.showVideo('https://www.youtube.com/watch?v=d3_gK9MrXo8', 'France 24 LIVE')}>France 24 Live</p>
+                    <p className = 'live' onClick = {()=> props.showVideo('https://www.youtube.com/watch?v=NvqKZHpKs-g', 'DW News LIVE')}>DW Live</p>
                     <p className = 'live' onClick = {()=> props.showVideo('https://www.youtube.com/watch?v=9iQ17RA-6r0', 'FOX News LIVE')}>FOX News Live</p>
                     <p className = 'live' onClick = {()=> props.showVideo('https://www.youtube.com/watch?v=IFAcqaNzNSc', 'RT News LIVE')}>RT News Live</p>
                     <p className = 'live' onClick = {()=> props.showVideo('https://www.youtube.com/watch?v=BbDF_GXBmGc', 'ABC News Australia')}>ABC Australia Live</p>
