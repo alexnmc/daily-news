@@ -306,6 +306,7 @@ img{
 }
 
 .navbarWrap{
+    padding:1%;
     display:flex;
     flex-direction:column;
     height: 90vh;
@@ -433,8 +434,7 @@ p{
     color:rgb(240, 240, 240);
     border: 1px solid  rgb(141, 0, 0);
     margin-top: 5pt;
-    margin-left: 11pt;
-    margin-right: 11pt;
+   
     padding: 6.7pt;
     font-size: 13pt;
     display:flex;
@@ -446,8 +446,7 @@ p{
     color:rgb(240, 240, 240);
     border: 1px solid  rgb(141, 0, 0);
     margin-top: 15pt;
-    margin-left: 11pt;
-    margin-right: 11pt;
+   
     padding: 6.7pt;
     font-size: 13pt;
     display:flex;
@@ -587,7 +586,7 @@ a{
 }
 
 .live1{
-    margin: 1.2vh;
+    margin: 1vh;
     font-size: 3.9vw;
     padding:1.9vw;
     margin-top:2.5vh;
@@ -595,7 +594,7 @@ a{
 }
 
 .live{
-    margin: 1.2vh;
+    margin: 1vh;
     font-size: 3.9vw;
     padding:1.9vw;
     
