@@ -435,16 +435,9 @@ p{
     margin-top: 5pt;
     padding: 6.7pt;
     font-size: 13pt;
-    display:flex;
-    flex-wrap: wrap;
+   
 }
 
-
-
-
-.live1:hover{
-    color: rgb(197, 151, 151);
-}
 
 .live:hover{
     color: rgb(197, 151, 151);
