@@ -570,7 +570,6 @@ a{
     width: 35vw;
     height: 85vh;
     margin-top: 48vh;
-    padding: 1%;
     border: 0px;
     margin-left:0px;
     animation: fadein2 1s, fade 1.2s;
@@ -587,9 +586,18 @@ a{
 }
 
 
-.live1,
+.live1{
+    
+    margin: 1.2vh;
+    font-size: 3.9vw;
+    padding:1.9vw;
+    margin-top:2.5vh;
+}
+
+
+
 .live{
-    margin: 1vh;
+    margin: 1.2vh;
     font-size: 3.9vw;
     padding:1.9vw
 }
