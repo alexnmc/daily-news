@@ -17,10 +17,9 @@ const Button2 = (props) => {
                     <p className = 'live' onClick = {()=> props.showVideo('https://www.youtube.com/watch?v=9iQ17RA-6r0', 'FOX News LIVE')}>FOX News<br></br> Live</p>
                     <p className = 'live' onClick = {()=> props.showVideo('https://www.youtube.com/watch?v=IFAcqaNzNSc', 'RT News LIVE')}>RT News<br></br> Live</p>
                     <p className = 'live' onClick = {()=> props.showVideo('https://www.youtube.com/watch?v=BbDF_GXBmGc', 'ABC News Australia')}>ABC Australia <br></br>Live</p>
-                    <p className = 'live' onClick = {()=> props.showVideo('https://www.youtube.com/watch?v=2XvDVYmoVeE', 'NBC-2 LIVE')}>NBC-2 News<br></br> Live</p>
+                    <p className = 'live' onClick = {()=> props.showVideo('https://www.youtube.com/watch?v=T0nE_H-I8JQ', 'NBC-2 LIVE')}>NBC-2 News<br></br> Live</p>
                     <p className = 'live' onClick = {()=> props.showVideo('https://www.youtube.com/watch?v=IukZ7gOGPj8', 'ABC-7 SWFL LIVE')}>ABC-7 SWFL <br></br>Live</p>
                     <p className = 'live' onClick = {()=> props.showVideo('https://www.youtube.com/watch?v=jL8uDJJBjMA', 'Al Jazeera English LIVE')}>Al Jazeera English Live</p>
-                    <p className = 'live' onClick = {()=> props.showVideo('https://www.youtube.com/watch?v=Zfu4bb2ZTlM', 'Newsmax TV LIVE')}>Newsmax TV<br></br> Live</p>
                 </div>
 
             :
