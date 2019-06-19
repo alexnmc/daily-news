@@ -277,7 +277,8 @@ img{
 
 .newLife2{
     display: flex;
-    width: 50vw;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .smallRed{
@@ -286,7 +287,7 @@ img{
     border: 3px solid rgb(169, 0, 0);
     border-radius: 2px;
     cursor: pointer;
-    margin-left: 14.5vw;
+    
 }
 
 .smallRed2{
