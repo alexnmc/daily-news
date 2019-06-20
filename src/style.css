@@ -45,7 +45,7 @@ body::-webkit-scrollbar{
     align-items: center;
     justify-content: center;
     animation: videoIn4 1.8s;
-    margin-right:7%;
+    margin-right:10%;
 }
 
 .split1{
@@ -55,7 +55,7 @@ body::-webkit-scrollbar{
     animation: videoIn3 2.5s , fade 4s;
     padding-bottom: 15%;
     padding-top: 5%;
-    margin-left: 7%
+    margin-left: 10%
 }
 
 .split1::-webkit-scrollbar { width: 0 !important }
@@ -79,13 +79,13 @@ body::-webkit-scrollbar{
 
 @-webkit-keyframes videoIn3 {
     from {  margin-left: -150%}
-    to   {  margin-left: 7%}
+    to   {  margin-left: 10%}
 }
 
 
 @-webkit-keyframes videoIn4{
     from {  margin-right: -100%}
-    to   {  margin-right: 7%}
+    to   {  margin-right: 10%}
 }
 
 .opening{
@@ -243,10 +243,10 @@ img{
 }
 
 .videoWrap2{
-    width: 430pt;
-    height:242pt;
+    width: 400pt;
+    height:225pt;
     margin:auto;
-    margin-bottom:37vh
+    margin-bottom:38vh
 }
 
 
