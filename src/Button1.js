@@ -126,7 +126,6 @@ import {withButton} from './ButtonProvider'
                 </div>
                 }
                 </div>
-                
             :
                 null
             }

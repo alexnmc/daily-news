@@ -91,7 +91,6 @@ class ButtonProvider extends Component {
     }
 
 
-    
     getNewsSource= (url, name) => {  
         localStorage.setItem("url", url)
         localStorage.setItem("name", name)
@@ -157,7 +156,6 @@ class ButtonProvider extends Component {
     }
     
     
-    
     handleToggle2 = () => {
         this.state.toggle2 ? document.body.style.overflow = 'scroll' : document.body.style.overflow = 'hidden'
         this.setState( prevState => {   
@@ -170,7 +168,6 @@ class ButtonProvider extends Component {
         })
     }
 
-    
     
     closing = () => {
         document.body.style.overflow = "scroll"
