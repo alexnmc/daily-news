@@ -79,8 +79,7 @@ class App extends Component {
                                     <h1 className = 'channelName3' style ={this.props.style3}>{`Top headlines: ${this.props.sourceName}`}</h1>
                                     <div className = 'smallRed2' onClick={() => this.fullScreen()}></div>
                                 </div>
-                                {this.props.status === 'REQUEST' ? 
-                                    
+                                { this.props.status === 'REQUEST' ? 
                                     <div className = "opening3">
                                         <div className = "opening">
                                             <Opening/>
@@ -90,34 +89,32 @@ class App extends Component {
                                     article
                                 }
                             </div>
-                            
                             <div className = 'split2'>
                                 <Video2/>
                             </div>
                     </div>
                 :    
                     <div ref = {this.myRef} className = 'div' style = {this.props.stopScroll}>
-                    {this.props.status === 'REQUEST' ? 
-                       
-                        <div className = "opening2">
-                            <div className = "opening">
-                                <Opening/>
-                            </div>
-                        </div>
-                        :
-                        <div>
-                            <div className = " channelName2">
-                                <div className = 'splitP' onClick={()=> this.props.splitScreen()}>|</div>
-                            </div>
-                            {this.props.video === 'on' ?
-                                <Video/>
-                                :
-                                <div className = 'newsBig' style = {this.props.articles.length ? {height: 'auto'} : {height: '100vh'}}>
-                                    {article}
+                        { this.props.status === 'REQUEST' ? 
+                            <div className = "opening2">
+                                <div className = "opening">
+                                    <Opening/>
                                 </div>
-                            }
-                        </div>
-                    }
+                            </div>
+                            :
+                            <div>
+                                <div className = " channelName2">
+                                    <div className = 'splitP' onClick={()=> this.props.splitScreen()}>|</div>
+                                </div>
+                                { this.props.video === 'on' ?
+                                    <Video/>
+                                    :
+                                    <div className = 'newsBig' style = {this.props.articles.length ? {height: 'auto'} : {height: '100vh'}}>
+                                        {article}
+                                    </div>
+                                }
+                            </div>
+                        }
                     </div>
                     }
                 </div>
