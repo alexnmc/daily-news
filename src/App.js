@@ -25,10 +25,11 @@ class App extends Component {
    
     componentDidMount(){
         this.props.getMount()
+        console.log(this.props)
     }
    
     scrolling = () => {
-       
+        //Scroll.animateScroll.scrollToTop() - disable scroll on body
         this.myRef.current.scrollTo({top: 0, behavior: 'smooth'})
     }
 
@@ -104,7 +105,7 @@ class App extends Component {
                             </div>
                         </div>
                         :
-                        <div className = "div" ref = {this.myRef}>
+                        <div className = "div" ref = {this.myRef} style = {this.props.stopScroll}>
                             <div className = "channelName2" ref = {this.myRef}>
                                 <h1 className = "channelName">{this.props.video === 'off' ? this.props.sourceName : this.props.videoName}</h1>
                                 <div className = 'splitP' onClick={()=> this.props.splitScreen()}>I</div>

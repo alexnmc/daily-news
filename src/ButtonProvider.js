@@ -25,7 +25,8 @@ class ButtonProvider extends Component {
             videoName:'Sky News Live',
             sourceName: localStorage.getItem("name") || 'USA',
             style3:{visibility:''},
-            switch: true
+            switch: true,
+            stopScroll: {overflow: 'scroll'}
         }
     }
    
@@ -107,10 +108,11 @@ class ButtonProvider extends Component {
                     toggle2: !prevState.toggle2,
                     video: 'off',
                     sourceName: name,
-                    style3: {visibility: 'visible'}
+                    style3: {visibility: 'visible'},
+                    stopScroll: {overflow: 'scroll'}
                 }
             })
-        document.body.style.overflow = 'scroll'
+        
     }
    
    
@@ -130,10 +132,11 @@ class ButtonProvider extends Component {
                     toggle2: !prevState.toggle2,
                     video: 'off',
                     sourceName: name,
-                    style3: {visibility: 'visible'}
+                    style3: {visibility: 'visible'},
+                    stopScroll:{overflow: 'scroll'}
                 }
             })
-        document.body.style.overflow = 'scroll'
+        
     }
         
    
@@ -145,7 +148,7 @@ class ButtonProvider extends Component {
     
    
     handleToggle = () => {
-        this.state.toggle ? document.body.style.overflow = 'scroll' : document.body.style.overflow = 'hidden' // block scrolling, doesn't work on ios
+        this.state.toggle ? this.setState({stopScroll: {overflow: 'scroll'}}) : this.setState({stopScroll:{ overflow: 'hidden'}}) // block scrolling, doesn't work on ios
         this.setState( prevState => {   
                     return { 
                         toggle: !prevState.toggle, 
@@ -157,7 +160,7 @@ class ButtonProvider extends Component {
     
     
     handleToggle2 = () => {
-        this.state.toggle2 ? document.body.style.overflow = 'scroll' : document.body.style.overflow = 'hidden'
+        this.state.toggle2 ? this.setState({stopScroll: {overflow: 'scroll'}}) : this.setState({stopScroll:{ overflow: 'hidden'}})
         this.setState( prevState => {   
             return { 
                 toggle2: !prevState.toggle2, 

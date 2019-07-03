@@ -24,7 +24,7 @@ body::-webkit-scrollbar{
     width: 100%;
     position:fixed;
     overflow: scroll;
-    
+    -webkit-overflow-scrolling: touch; 
 }
 
 .div2{
@@ -448,7 +448,6 @@ p{
     font-size: 13pt;
    
 }
-
 
 .live:hover{
     color: rgb(197, 151, 151);
