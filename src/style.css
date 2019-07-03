@@ -584,11 +584,6 @@ a{
     height: auto;
 }
 
-.switchTo{
-    width:35vw;
-    font-size: 4vw;
-    height: auto;
-}
 
 .argentina{
     margin-top: 45%
@@ -676,8 +671,9 @@ h2{
 }
 
 .switchTo{
-    width:110pt;
+    width: 80%;
     margin-bottom:5pt;
+    font-size: 10pt;
 }
 }
 
