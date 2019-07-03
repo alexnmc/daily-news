@@ -672,6 +672,11 @@ h2{
 .itemTitle{
     font-size: 11.5pt;
 }
+
+.switchTo{
+    width:110pt;
+    margin-bottom:5pt;
+}
 }
 
 
