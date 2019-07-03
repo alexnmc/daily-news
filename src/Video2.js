@@ -18,7 +18,7 @@ const Video2 = (props) => {
         <div className = 'smallRed' onClick={() => superman()}></div>
     </div>
         
-        <ReactPlayer className = 'reactPlayer' url={props.videoUrl ? props.videoUrl : 'https://www.youtube.com/watch?v=lrX6ktLg8WQ'} height='100%' width='100%' playing />
+        <ReactPlayer className = 'reactPlayer' url={props.videoUrl ? props.videoUrl : 'https://www.youtube.com/watch?v=HXeGpCFGu-k'} height='100%' width='100%' playing />
         
     </div>
 
