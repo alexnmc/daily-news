@@ -5,6 +5,7 @@ import {withButton} from './ButtonProvider'
 import Opening from './Opening'
 import Video from './Video'
 import Video2 from './Video2'
+import Scroll from 'react-scroll'
 
 
 
@@ -29,10 +30,8 @@ class App extends Component {
     }
    
     scrolling = () => {
-       
-        //Scroll.animateScroll.scrollToTop() - disable scroll on body
+        Scroll.animateScroll.scrollToTop() 
         this.myRef.current.scrollTo({top: 0, behavior: 'smooth'})
-        
     }
 
     
@@ -73,7 +72,7 @@ class App extends Component {
                     <div className = 'div2'>
                         <div className = "channelName2">
                             <h1 className = "channelName">News for You</h1>
-                            <Button1/>
+                            <Button1 scrolling = {this.scrolling}/>
                             <Button2/>    
                         </div>
                     <div className = 'splitScreen'>
@@ -112,7 +111,7 @@ class App extends Component {
                             <div className = "channelName2" >
                                 <h1 className = "channelName">{this.props.video === 'off' ? this.props.sourceName : this.props.videoName}</h1>
                                 <div className = 'splitP' onClick={()=> this.props.splitScreen()}>|</div>
-                                <Button1/>
+                                <Button1 scrolling = {this.scrolling}/>
                                 <Button2/>
                             </div>
                             {this.props.video === 'on' ?

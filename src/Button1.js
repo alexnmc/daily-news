@@ -8,12 +8,14 @@ import {withButton} from './ButtonProvider'
         function getNews(url, name) {
             props.loadingAnim()
             props.getNewsSource(url, name)
+            props.scrolling()
             
         }
     
         function getNews2(url, name) {
             props.loadingAnim()
             props.getNewsCountry(url, name)
+            props.scrolling()
             
         }
        
