@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import Scroll from 'react-scroll'
 import Button1 from './Button1'
 import Button2 from './Button2'
 import {withButton} from './ButtonProvider'
@@ -14,6 +13,7 @@ class App extends Component {
         super(props)
         this.myRef = React.createRef()
         
+        
         this.state = {
             call: window.addEventListener("resize", this.onResize) //if the window size changed call the function onResize
         }
@@ -25,22 +25,25 @@ class App extends Component {
    
     componentDidMount(){
         this.props.getMount()
-        console.log(this.props)
+        
     }
    
     scrolling = () => {
+       
         //Scroll.animateScroll.scrollToTop() - disable scroll on body
         this.myRef.current.scrollTo({top: 0, behavior: 'smooth'})
+        
     }
 
-    batman = () => {
+    
+    fullScreen = () => {
         this.props.splitScreen()
         this.props.hideVideo()
     }
    
     
     render(){
-        
+    
         const article = this.props.articles.length ? //either show the articles or not available message
         
             this.props.articles.map(item => {
@@ -51,7 +54,7 @@ class App extends Component {
                         <h2> {item.description} </h2>
                         <h2 className = "name">{item.source.name}</h2>
                         <div className = "bottom">
-                            <a className = "link"  href={item.url} onClick = {this.props.stopScroll}>read more</a>
+                            <a className = "link"  href={item.url}>read more</a>
                             <div className = "topP" onClick = {()=> this.scrolling()}></div>
                         </div>
                     </div>
@@ -70,14 +73,14 @@ class App extends Component {
                     <div className = 'div2'>
                         <div className = "channelName2">
                             <h1 className = "channelName">News for You</h1>
-                            <Button1 scrolling = {this.scrolling}/>
+                            <Button1/>
                             <Button2/>    
                         </div>
                     <div className = 'splitScreen'>
                             <div className = 'split1' ref = {this.myRef}>
                                 <div className = "newLife">
                                     <h1 className = 'channelName3' style ={this.props.style3}>{`Top headlines: ${this.props.sourceName}`}</h1>
-                                    <div className = 'smallRed2' onClick={() => this.batman()}></div>
+                                    <div className = 'smallRed2' onClick={() => this.fullScreen()}></div>
                                 </div>
                                 {this.props.status === 'REQUEST' ? 
                                     
@@ -106,9 +109,9 @@ class App extends Component {
                         </div>
                         :
                         <div className = "div" ref = {this.myRef} style = {this.props.stopScroll}>
-                            <div className = "channelName2" ref = {this.myRef}>
+                            <div className = "channelName2" >
                                 <h1 className = "channelName">{this.props.video === 'off' ? this.props.sourceName : this.props.videoName}</h1>
-                                <div className = 'splitP' onClick={()=> this.props.splitScreen()}>I</div>
+                                <div className = 'splitP' onClick={()=> this.props.splitScreen()}>|</div>
                                 <Button1/>
                                 <Button2/>
                             </div>

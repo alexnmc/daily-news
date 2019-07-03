@@ -6,7 +6,7 @@ const Opening = ({type, color}) => {
     
   return(
     <div className = "loading">
-    <ReactLoading  type={type} color={color} height={'5%'} width={'10%'}/>
+      <ReactLoading  type={type} color={color} height={'5%'} width={'10%'}/>
     </div>
   )
 }

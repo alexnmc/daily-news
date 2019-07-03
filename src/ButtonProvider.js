@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import axios from 'axios'
-import Scroll from 'react-scroll'
 
 
 const ButtonContext = React.createContext()
@@ -65,7 +64,6 @@ class ButtonProvider extends Component {
     
     showVideo = (url, name) => {
         this.state.animationToggle ? this.setState({ style:{ animation: 'videoIn 1s'} }) : this.setState({style:{ animation: 'videoIn2 1s'}})
-        
         this.setState(prevState => {
            return{
                 video: 'on',
@@ -88,14 +86,12 @@ class ButtonProvider extends Component {
                     video: 'off',
                 })
             })
-            document.body.style.overflow = 'scroll'
     }
 
 
-    getNewsSource= (url, name) => {  
+    getNewsSource= (url, name) => { 
         localStorage.setItem("url", url)
         localStorage.setItem("name", name)
-        Scroll.animateScroll.scrollToTop()
         axios.get( `https://newsapi.org/v2/top-headlines?sources=${url}&apiKey=f64c9be83f094f43a2c3954a6c1ec8aa`)
          .then(response => {
             this.setState({
@@ -119,7 +115,6 @@ class ButtonProvider extends Component {
     getNewsCountry = (url, name) => {  
         localStorage.setItem("url", url) 
         localStorage.setItem("name", name)
-        Scroll.animateScroll.scrollToTop()
         axios.get( `https://newsapi.org/v2/top-headlines?country=${url}&apiKey=f64c9be83f094f43a2c3954a6c1ec8aa`)
          .then(response => {
             this.setState({
