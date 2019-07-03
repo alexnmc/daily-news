@@ -22,10 +22,15 @@ body::-webkit-scrollbar{
     background-color: hsla(0, 1%, 8%, 0.970);
     height: 100%;
     width: 100%;
-    position:fixed;
+    position:absolute;
     overflow: scroll;
     -webkit-overflow-scrolling: touch; 
 }
+
+.div::-webkit-scrollbar{
+    display: none;
+ }
+
 
 .div2{
     background-color: hsla(0, 1%, 8%, 0.970);
