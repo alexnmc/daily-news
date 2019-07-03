@@ -141,7 +141,7 @@ body::-webkit-scrollbar{
 }
 
 h1{
-    color:rgb(144, 0, 0);
+    color:rgb(131, 0, 0);
     margin-bottom: 1pt;
     font-size:13pt;
 }
@@ -477,12 +477,14 @@ p:hover{
     width: 390pt;
     font-family: 'helvetica';
     font-size: 16pt;
+    color: rgb(185, 0, 0);
 }
 
 .channelName4{
    font-size: 16pt;
    font-family: 'helvetica';
-   width: 50%
+   width: 50%;
+   color:rgb(185, 0, 0);
 }
 
 a{
@@ -727,13 +729,52 @@ h2{
     }
 
     .videoWrap2{
-        width: 620pt;
-        height:347pt;
+        width: 600pt;
+        height:337pt;
         margin:auto;
        
     }
 
     .smallRed{
         margin-left:82pt;
+    }
+
+    .switchTo{
+        width: 80%;
+    }
+
+    .button1,
+    .button2{
+        width: 150pt;
+    }
+
+    .split2{
+        width: 45vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        animation: videoIn4 1.8s;
+        margin-right:17%;
+    }
+    
+    .split1{
+        overflow: scroll;
+        width: 42vw;
+        height: auto;
+        animation: videoIn3 2.5s , fade 4s;
+        padding-bottom: 15%;
+        padding-top: 5%;
+        margin-left: 17%
+    }
+
+    @-webkit-keyframes videoIn3 {
+        from {  margin-left: -150%}
+        to   {  margin-left: 17%}
+    }
+    
+    
+    @-webkit-keyframes videoIn4{
+        from {  margin-right: -100%}
+        to   {  margin-right: 17%}
     }
 }
