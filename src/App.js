@@ -44,7 +44,6 @@ class App extends Component {
     render(){
     
         const article = this.props.articles.length ? //either show the articles or not available message
-        
             this.props.articles.map(item => {
                 return (
                     <div className = {this.props.split ? "newsDiv" : "newsDiv2"} onClick = {this.props.closing} key={Math.random()}>
@@ -67,14 +66,13 @@ class App extends Component {
             
         return (
             <div className = 'MAIN'> 
+                <div className = 'div2'>
+                    <div className = "channelName2">
+                        <h1 className = "channelName">{this.props.split? "News for You" : this.props.video === 'off' ? this.props.sourceName : this.props.videoName}</h1>
+                        <Button1 scrolling = {this.scrolling}/>
+                        <Button2/>    
+                    </div>
                 {this.props.split ?
-                    
-                    <div className = 'div2'>
-                        <div className = "channelName2">
-                            <h1 className = "channelName">News for You</h1>
-                            <Button1 scrolling = {this.scrolling}/>
-                            <Button2/>    
-                        </div>
                     <div className = 'splitScreen'>
                             <div className = 'split1' ref = {this.myRef}>
                                 <div className = "newLife">
@@ -97,25 +95,21 @@ class App extends Component {
                                 <Video2/>
                             </div>
                     </div>
-                    </div>
-                :     
-                    this.props.status === 'REQUEST' ? 
-                        
+                :    
+                    <div ref = {this.myRef} className = 'div' style = {this.props.stopScroll}>
+                    {this.props.status === 'REQUEST' ? 
+                       
                         <div className = "opening2">
                             <div className = "opening">
                                 <Opening/>
                             </div>
                         </div>
                         :
-                        <div className = "div" ref = {this.myRef} style = {this.props.stopScroll}>
-                            <div className = "channelName2" >
-                                <h1 className = "channelName">{this.props.video === 'off' ? this.props.sourceName : this.props.videoName}</h1>
+                        <div>
+                            <div className = " channelName2">
                                 <div className = 'splitP' onClick={()=> this.props.splitScreen()}>|</div>
-                                <Button1 scrolling = {this.scrolling}/>
-                                <Button2/>
                             </div>
                             {this.props.video === 'on' ?
-                                
                                 <Video/>
                                 :
                                 <div className = 'newsBig' style = {this.props.articles.length ? {height: 'auto'} : {height: '100vh'}}>
@@ -123,8 +117,12 @@ class App extends Component {
                                 </div>
                             }
                         </div>
-                }
+                    }
+                    </div>
+                    }
+                </div>
             </div>
+            
         )   
     }
 }
