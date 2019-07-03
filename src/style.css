@@ -333,6 +333,7 @@ img{
     position: fixed;
     background-color: hsla(0, 0%, 100%, 0.977);
     overflow: scroll;
+    -webkit-overflow-scrolling: touch; 
     margin-top: 49vh;
     margin-left: 1vh;
     border-right: 1px solid rgba(161, 0, 0, 0.308);
