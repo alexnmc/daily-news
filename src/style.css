@@ -219,14 +219,14 @@ img{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 13.4vw;
+    width: 13vw;
     height: 2em;
-    font-size: 17px;
+    font-size: 16px;
     margin:auto;
 }
 
 .argentina{
-    margin-top: 5.5vh
+    margin-top: 5vh
 }
 
 .video{
@@ -400,16 +400,16 @@ img{
 }
 
 p{
-    font-size: 2.2vh;
+    font-size: 2.1vh;
     font-weight: bolder;
     text-decoration: none;
     color: rgb(155, 0, 0);
     cursor: pointer;
-    margin-bottom: 0.7vh;
+    margin-bottom: 0.4vh;
     font-family: 'helvetica';
     font-weight: 700;
     padding:3pt;
-    padding-left:5pt;
+    padding-left:6.5pt;
 }
 
 

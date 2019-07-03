@@ -13,7 +13,6 @@ import {withButton} from './ButtonProvider'
             }
         }
     
-    
         function getNews2(url, name) {
             props.loadingAnim()
             props.getNewsCountry(url, name)

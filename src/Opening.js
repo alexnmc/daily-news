@@ -12,6 +12,4 @@ const Opening = ({type, color}) => {
 }
 
 
-
-
 export default Opening
