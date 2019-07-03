@@ -10,7 +10,7 @@ const Button2 = (props) => {
             { props.toggle ?
             
                 <div className = "navbarWrap" >
-                    <p className = 'live' onClick = {()=> props.showVideo('https://www.youtube.com/watch?v=HXeGpCFGu-k', 'BBC NEWS LIVE')}>BBC News<br></br> Live</p>
+                    <p className = 'live' onClick = {()=> props.showVideo('https://www.youtube.com/watch?v=HXeGpCFGu-k', 'BBC News LIVE')}>BBC News<br></br> Live</p>
                     <p className = 'live' onClick = {()=> props.showVideo('https://www.youtube.com/watch?v=V1hVsD4F7UY', 'EURONEWS LIVE')}>Euronews<br></br> Live</p>
                     <p className = 'live' onClick = {()=> props.showVideo('https://www.youtube.com/watch?v=d3_gK9MrXo8', 'France 24 LIVE')}>France 24 <br></br>Live</p>
                     <p className = 'live' onClick = {()=> props.showVideo('https://www.youtube.com/watch?v=NvqKZHpKs-g', 'DW News LIVE')}>Deutsche Welle<br></br> Live</p>
