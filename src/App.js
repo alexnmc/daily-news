@@ -28,7 +28,7 @@ class App extends Component {
     }
    
     scrolling = () => {
-        Scroll.animateScroll.scrollToTop()
+       
         this.myRef.current.scrollTo({top: 0, behavior: 'smooth'})
     }
 
@@ -104,7 +104,7 @@ class App extends Component {
                             </div>
                         </div>
                         :
-                        <div className = "div">
+                        <div className = "div" ref = {this.myRef}>
                             <div className = "channelName2" ref = {this.myRef}>
                                 <h1 className = "channelName">{this.props.video === 'off' ? this.props.sourceName : this.props.videoName}</h1>
                                 <div className = 'splitP' onClick={()=> this.props.splitScreen()}>I</div>

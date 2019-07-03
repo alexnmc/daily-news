@@ -145,7 +145,7 @@ class ButtonProvider extends Component {
     
    
     handleToggle = () => {
-        this.state.toggle ? document.body.style.overflow = 'scroll' : document.body.style.overflow = 'hidden'
+        this.state.toggle ? document.body.style.overflow = 'scroll' : document.body.style.overflow = 'hidden' // block scrolling, doesn't work on ios
         this.setState( prevState => {   
                     return { 
                         toggle: !prevState.toggle, 

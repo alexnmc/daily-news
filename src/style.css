@@ -9,6 +9,8 @@ body{
       background-size:10%;
       display:flex;
       flex-direction: column;
+     
+     
 }
 
 body::-webkit-scrollbar{
@@ -20,6 +22,8 @@ body::-webkit-scrollbar{
     background-color: hsla(0, 1%, 8%, 0.970);
     height: 100%;
     width: 100%;
+    position:fixed;
+    overflow: scroll;
     
 }
 
