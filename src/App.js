@@ -102,7 +102,7 @@ class App extends Component {
                                 </div>
                             </div>
                             :
-                            <div>
+                            <div >
                                 <div className = " channelName2">
                                     <div className = 'splitP' onClick={()=> this.props.splitScreen()}>|</div>
                                 </div>
