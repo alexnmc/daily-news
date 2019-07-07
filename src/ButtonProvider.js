@@ -36,7 +36,6 @@ class ButtonProvider extends Component {
                 switch: !prevState.switch,
             }
         })
-        
     }
     
     splitScreen = () => {
@@ -46,7 +45,6 @@ class ButtonProvider extends Component {
             }
         })
     }
-    
     
     showVideoMini = () => {
         this.setState({
@@ -64,7 +62,6 @@ class ButtonProvider extends Component {
     
     showVideo = (url, name) => {
         this.state.animationToggle ? this.setState({ style:{ animation: 'videoIn 1s'} }) : this.setState({style:{ animation: 'videoIn2 1s'}})
-        
         this.setState(prevState => {
            return{
                 video: 'on',
@@ -87,7 +84,6 @@ class ButtonProvider extends Component {
                     video: 'off',
                 })
             })
-            
     }
 
 

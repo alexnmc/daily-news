@@ -245,13 +245,14 @@ img{
 .videoWrap{
     width: 700pt;
     height:394pt;
+    margin-bottom:7%;
 }
 
 .videoWrap2{
     width: 400pt;
     height:225pt;
     margin:auto;
-    margin-bottom:38vh
+    margin-bottom:39vh
 }
 
 
