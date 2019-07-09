@@ -6,7 +6,6 @@ import {withButton} from './ButtonProvider'
 
         let myRef = React.createRef()
         
-        
         function getNews(url, name) {
             props.loadingAnim()
             props.getNewsSource(url, name)
@@ -22,11 +21,9 @@ import {withButton} from './ButtonProvider'
         function  scrolling(){
             props.editSwitch()
             myRef.current.scrollTo({top: 0, behavior: 'smooth'})
-          }
+        }
          
        
-    
-    
     return (
         <div className = "button2Wrap">
             <button  className = "button2" onClick = {props.handleToggle2}>Read</button>
