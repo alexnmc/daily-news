@@ -223,7 +223,7 @@ img{
     justify-content: center;
     width: 120pt;
     height: 2em;
-    font-size: 16px;
+    font-size: 15px;
     margin:auto;
 }
 
@@ -563,7 +563,7 @@ a{
 }
 
 .navbarWrap{
-    width: 35vw;
+    width: 37vw;
     height: 85vh;
     margin-top: 48vh;
     border: 0px;
@@ -575,7 +575,7 @@ a{
 }
 
 .navbarWrap2{
-    width: 35vw;
+    width: 37vw;
     height: 85vh;
     margin-top: 48vh;
     padding: 0px;
@@ -594,9 +594,10 @@ a{
 }
 
 .topHead{
-    width:35vw;
+    width:37vw;
     font-size: 4vw;
     height: auto;
+    position:fixed;
 }
 
 
