@@ -95,7 +95,7 @@ class App extends Component {
                             </div>
                     </div>
                 :    
-                    <div ref = {this.myRef} className = 'div' style = {this.props.stopScroll}>
+                    <div ref = {this.myRef} className = 'div'>
                         { this.props.status === 'REQUEST' ? 
                             <div className = "opening2">
                                 <div className = "opening">

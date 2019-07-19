@@ -1,7 +1,7 @@
 import React  from 'react'
 import {withButton} from './ButtonProvider'
 
-// https://newsapi.org/v2/everything?domains=wsj.com&apiKey=f64c9be83f094f43a2c3954a6c1ec8aa`
+
 const Button2 = (props) => {
    
     return (

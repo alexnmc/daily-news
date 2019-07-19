@@ -25,7 +25,7 @@ class ButtonProvider extends Component {
             sourceName: localStorage.getItem("name") || 'USA',
             style3:{visibility:''},
             switch: true,
-            stopScroll: {overflow: 'scroll'}
+            //stopScroll: {overflow: 'scroll'}
         }
     }
    
@@ -186,7 +186,8 @@ class ButtonProvider extends Component {
                     getMount: this.getMount,
                     handleToggle: this.handleToggle,
                     handleToggle2 : this.handleToggle2,
-                    closing: this.closing,
+                    
+closing: this.closing,
                     showVideo: this.showVideo,
                     splitScreen: this.splitScreen,
                     showVideoMini: this.showVideoMini,
