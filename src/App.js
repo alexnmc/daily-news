@@ -69,8 +69,8 @@ class App extends Component {
             <div className = 'MAIN'> 
                 <div className = 'div2'>
                     <div className = "channelName2">
-                        <h1 className = "channelName">{this.props.split? "News for You" : this.props.video === 'off' ? this.props.sourceName : this.props.videoName}</h1>
                         <Button1 scrolling = {this.scrolling}/>
+                        <h1 className = "channelName">{this.props.split? "News for You" : this.props.video === 'off' ? this.props.sourceName : this.props.videoName}</h1>
                         <Button2/>    
                     </div>
                 {this.props.split ?
@@ -104,7 +104,7 @@ class App extends Component {
                             </div>
                             :
                             <div >
-                                <div className = " channelName2">
+                                <div className = " channelName5">
                                     <div className = 'splitP' onClick={()=> this.props.splitScreen()}>|</div>
                                 </div>
                                 { this.props.video === 'on' ?
