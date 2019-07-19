@@ -142,6 +142,7 @@ body::-webkit-scrollbar{
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    height: auto;
 }
 
 .button2Wrap{
@@ -331,6 +332,7 @@ img{
     border-left: 1px solid white;
     border-bottom: 1px solid white;
     animation: fadein2 1s, fade 2s;
+    overflow: scroll;
 }
 
 .navbarWrap::-webkit-scrollbar { 
