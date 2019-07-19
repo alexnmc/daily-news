@@ -561,7 +561,6 @@ a{
     margin-left:0px;
     overflow: scroll;
     animation: fadein2 1s, fade 1.2s;
-    position:relative;
 }
 
 .navbarWrap2{
@@ -572,7 +571,6 @@ a{
     border: 0px;
     margin-left:0px;
     animation: fadein 1s, fade 1.2s;
-    position:relative;
 }
 
 
@@ -678,6 +676,10 @@ h2{
     width: 30vw;
     margin-bottom:5pt;
     font-size: 2.5vw;
+}
+
+.button2Wrap{
+    position: absolute;
 }
 }
 
