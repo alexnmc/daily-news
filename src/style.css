@@ -22,6 +22,7 @@ body::-webkit-scrollbar{
     overflow: scroll;
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;  
+   
 }
 
 .div::-webkit-scrollbar{
@@ -133,6 +134,7 @@ body::-webkit-scrollbar{
     justify-content: flex-end;
     width:100%;
     height: 100%;
+    position:absolute;
 }
 
 .button2Wrap{
@@ -140,7 +142,7 @@ body::-webkit-scrollbar{
     align-items: center;
     justify-content: flex-start;
     width:100%;
-    position:fixed;
+    position:absolute;
     height: auto;
 }
   
@@ -676,10 +678,6 @@ h2{
     width: 30vw;
     margin-bottom:5pt;
     font-size: 2.5vw;
-}
-
-.button2Wrap{
-    position: fixed;
 }
 }
 
