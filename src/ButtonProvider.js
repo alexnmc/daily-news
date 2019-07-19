@@ -142,7 +142,7 @@ class ButtonProvider extends Component {
     
    
     handleToggle = () => {
-       document.documentElement.clientWidth < 1100 && !this.state.toggle ? this.setState({newsDiv: { visibility: 'hidden'}}) : this.setState({newsDiv:{ visibility: 'visible'}})  // block scrolling only on mobile view
+        document.documentElement.clientWidth < 1100 && !this.state.toggle ? this.setState({newsDiv: { visibility: 'hidden'}}) : this.setState({newsDiv:{ visibility: 'visible'}})  // hide the articles while choosing channels for mobile view only
         this.setState( prevState => {   
                     return { 
                         toggle: !prevState.toggle, 
