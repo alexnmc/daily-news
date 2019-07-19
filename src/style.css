@@ -163,7 +163,7 @@ img{
 }
 
 .newsDiv{
-      border: 2px solid rgba(0, 0, 0, 0.863);
+      
       width: 330pt;
       padding:10px;
       height: auto;
@@ -224,7 +224,7 @@ img{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 13vw;
+    width: 12vw;
     height: 2em;
     font-size: 16px;
     margin:auto;
@@ -272,7 +272,6 @@ img{
     color: rgb(128, 0, 0);
     cursor: none;
 }
-
 
 .newLife{
     display: flex;

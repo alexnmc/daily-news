@@ -38,6 +38,7 @@ class App extends Component {
     fullScreen = () => {
         this.props.splitScreen()
         this.props.hideVideo()
+        this.props.closing()
     }
    
     

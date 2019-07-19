@@ -38,10 +38,13 @@ class ButtonProvider extends Component {
         })
     }
     
+    
     splitScreen = () => {
         this.setState(prevState => {
             return {
                 split: !prevState.split,
+                toggle: false,
+                toggle2: false
             }
         })
     }
@@ -141,7 +144,7 @@ class ButtonProvider extends Component {
     
    
     handleToggle = () => {
-        this.state.toggle ? this.setState({stopScroll: {overflow: 'scroll'}}) : this.setState({stopScroll:{ overflow: 'hidden'}}) // block scrolling, doesn't work on ios
+       //if( document.documentElement.clientWidth < 1100){this.state.toggle ? this.setState({stopScroll: { overflow: 'scroll'}}) : this.setState({stopScroll:{ overflow: 'hidden'}})}  // block scrolling only on mobile view
         this.setState( prevState => {   
                     return { 
                         toggle: !prevState.toggle, 
@@ -153,7 +156,7 @@ class ButtonProvider extends Component {
     
     
     handleToggle2 = () => {
-        this.state.toggle2 ? this.setState({stopScroll: {overflow: 'scroll'}}) : this.setState({stopScroll:{ overflow: 'hidden'}})
+       //if( document.documentElement.clientWidth < 1100){this.state.toggle2 ? this.setState({stopScroll: { overflow: 'scroll'}}) : this.setState({stopScroll:{ overflow: 'hidden'}})}
         this.setState( prevState => {   
             return { 
                 toggle2: !prevState.toggle2, 
@@ -166,7 +169,6 @@ class ButtonProvider extends Component {
 
     
     closing = () => {
-        document.body.style.overflow = "scroll"
         this.setState({
             toggle: false,
             toggle2: false

@@ -86,7 +86,7 @@ import {withButton} from './ButtonProvider'
                     <p onClick = {()=> getNews2("gb", "United Kingdom")}>United Kingdom</p>
                     <p onClick = {()=> getNews2("us", "USA")}>USA</p>
                     <p onClick = {()=> getNews2("ve", "Venezuela")}>Venezuela</p>
-                    <p  className = 'switchTo' onClick = {()=>scrolling()}>Channels</p>  
+                    <p  className = 'switchTo' onClick = {()=>scrolling()}>switch to channels</p>  
                 </div>
                 :
                 <div>
@@ -122,7 +122,7 @@ import {withButton} from './ButtonProvider'
                     <p onClick = {()=> getNews("time", 'TIME')}>TIME</p>
                     <p onClick = {()=> getNews("usa-today", 'USA Today')}>USA Today</p>
                     <p onClick = {()=> getNews("the-wall-street-journal", 'Wall Street Journal')}>Wall Street Journal</p>
-                    <p className = 'switchTo' onClick = {()=>scrolling()}>Countries</p>
+                    <p className = 'switchTo' onClick = {()=>scrolling()}>choose country</p>
                 </div>
                 }
                 </div>
