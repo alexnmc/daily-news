@@ -342,6 +342,7 @@ img{
     border-right: 1px solid rgba(161, 0, 0, 0.308);
     border-bottom: 1px solid rgba(161, 0, 0, 0);
     animation: fadein 1s, fade 1.5s;
+    
 }
 
 .navbarWrap2::-webkit-scrollbar { 
@@ -504,7 +505,6 @@ a{
 @media only screen and (max-width: 550px) {
 
    
-
 .channelName{
     font-size: 17px;
     border: 3vh solid rgba(255, 255, 255, 0.63);
@@ -524,6 +524,7 @@ a{
     border-top: 0;
     margin-bottom: 20%;
     margin-top: 20%;
+   
 }
 
 .newsBig{
