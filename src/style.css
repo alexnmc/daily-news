@@ -344,7 +344,6 @@ img{
     border-right: 1px solid rgba(161, 0, 0, 0.308);
     border-bottom: 1px solid rgba(161, 0, 0, 0);
     animation: fadein 1s, fade 1.5s;
-   
 }
 
 .navbarWrap2::-webkit-scrollbar { 
