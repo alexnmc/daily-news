@@ -32,7 +32,7 @@ body::-webkit-scrollbar{
 
 
 .div2{
-    background-color: hsla(0, 1%, 8%, 0.970);
+    background-color: rgba(27, 27, 27, 0.97);
     height: 100%;
     width: 100%;
     position:fixed;
