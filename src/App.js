@@ -68,6 +68,7 @@ class App extends Component {
         return (
             <div className = 'MAIN'> 
                 <div className = 'div2'>
+                    <div className = 'cover' style = {this.props.cover}></div>
                     <div className = "channelName2">
                         <Button1 scrolling = {this.scrolling}/>
                         <h1 className = "channelName">{this.props.split? "News for You" : this.props.video === 'off' ? this.props.sourceName : this.props.videoName}</h1>
@@ -77,7 +78,7 @@ class App extends Component {
                     <div className = 'splitScreen'>
                             <div className = 'split1' ref = {this.myRef}>
                                 <div className = "newLife">
-                                    <h1 className = 'channelName3' style ={this.props.style3}>{`Top headlines: ${this.props.sourceName}`}</h1>
+                                    <h1 className = 'channelName3' style ={this.props.toggle2 ? {visibility: 'hidden'} : {visibility: 'visible'}}>{`Top headlines: ${this.props.sourceName}`}</h1>
                                     <div className = 'smallRed2' onClick={() => this.fullScreen()}></div>
                                 </div>
                                 { this.props.status === 'REQUEST' ? 

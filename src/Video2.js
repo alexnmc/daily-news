@@ -15,7 +15,7 @@ const Video2 = (props) => {
     <div className = 'videoWrap2'>
     <div className = "newLife2">
         <h1 className = "channelName4" >{props.videoName}</h1>
-        <div className = 'smallRed' onClick={() => splitScreen2()}></div>
+        <div className = 'smallRed' onClick={() => splitScreen2()} style = {props.toggle ? {visibility: 'hidden'} : {visibility: 'visible'}}></div>
     </div>
         <ReactPlayer className = 'reactPlayer' url={props.videoUrl ? props.videoUrl : 'https://www.youtube.com/watch?v=HXeGpCFGu-k'} height='100%' width='100%' playing />
     </div>

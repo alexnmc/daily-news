@@ -22,7 +22,6 @@ body::-webkit-scrollbar{
     overflow: scroll;
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;  
-   
 }
 
 .div::-webkit-scrollbar{
@@ -37,6 +36,14 @@ body::-webkit-scrollbar{
     height: 100%;
     width: 100%;
     position:fixed;
+}
+
+.cover{
+    background-color: rgba(0, 0, 0, 0.555);
+    height:100vh;
+    width:100vw;
+    position:absolute;
+    visibility: hidden;
 }
 
 .splitScreen{
@@ -273,14 +280,17 @@ img{
 .newLife{
     display: flex;
     width:501pt;
-    position: fixed;
     margin-top: -1%;
 }
 
 .newLife2{
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    width: 37%;
+    position:fixed;
+    margin-top: -20pt;
+    
+   
 }
 
 .smallRed{
@@ -342,7 +352,7 @@ img{
     margin-left: 1vh;
     border-right: 1px solid rgba(161, 0, 0, 0.308);
     border-bottom: 1px solid rgba(161, 0, 0, 0);
-    animation: fadein 1s, fade 1.5s;
+    animation: fadein 0.7s, fade 1.2s;
     position:fixed;
     
 }
@@ -381,7 +391,8 @@ img{
     cursor: pointer;
     border: 1px solid rgb(141, 0, 0);
     border-radius: 2px;
-    margin-right:50pt;
+    margin-left: -50pt;
+    position:fixed;
 }
 
 .button2{
@@ -396,6 +407,7 @@ img{
     border: 1px solid  rgb(141, 0, 0);
     border-radius: 2px;
     margin-left:50pt;
+    position:fixed;
 }
 
 .button1:hover{
@@ -464,7 +476,6 @@ p:hover{
     color: rgb(170, 0, 0);
     padding:2pt;
     margin:auto;
-   
 }
 
 .channelName2{
@@ -495,6 +506,7 @@ p:hover{
     font-family: 'helvetica';
     font-size: 16pt;
     color: rgb(185, 0, 0);
+    position:fixed;
 }
 
 .channelName4{
@@ -502,6 +514,7 @@ p:hover{
    font-family: 'helvetica';
    width: 50%;
    color:rgb(185, 0, 0);
+   
 }
 
 a{

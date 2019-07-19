@@ -23,9 +23,9 @@ class ButtonProvider extends Component {
             split: document.documentElement.clientWidth > 1100 ? true : false ,
             videoName:'BBC News Live',
             sourceName: localStorage.getItem("name") || 'USA',
-            style3:{visibility:''},
             switch: true,
-            newsDiv :{visibility:'visible'}
+            newsDiv :{visibility:'visible'},
+            cover: {visibility: 'hidden'}
         }
     }
    
@@ -44,7 +44,8 @@ class ButtonProvider extends Component {
             return {
                 split: !prevState.split,
                 toggle: false,
-                toggle2: false
+                toggle2: false,
+                cover: {visibility: 'hidden'}
             }
         })
     }
@@ -52,7 +53,8 @@ class ButtonProvider extends Component {
     showVideoMini = () => {
         this.setState({
             video:'on',
-            newsDiv:{ visibility: 'visible'}
+            newsDiv:{ visibility: 'visible'},
+            cover: {visibility: 'hidden'}
         })
     }
 
@@ -73,7 +75,8 @@ class ButtonProvider extends Component {
                 videoUrl: url,
                 animationToggle: !prevState.animationToggle,
                 videoName: name,
-                newsDiv:{ visibility: 'visible'}
+                newsDiv:{ visibility: 'visible'},
+                cover:{visibility:'hidden'}
             }
         })
     }
@@ -107,8 +110,8 @@ class ButtonProvider extends Component {
                     toggle2: !prevState.toggle2,
                     video: 'off',
                     sourceName: name,
-                    style3: {visibility: 'visible'},
-                    newsDiv:{ visibility: 'visible'}
+                    newsDiv:{visibility: 'visible'},
+                    cover: {visibility: 'hidden'}
                 }
             })
         
@@ -130,8 +133,8 @@ class ButtonProvider extends Component {
                     toggle2: !prevState.toggle2,
                     video: 'off',
                     sourceName: name,
-                    style3: {visibility: 'visible'},
-                    newsDiv:{ visibility: 'visible'}
+                    newsDiv:{ visibility: 'visible'},
+                    cover: {visibility: 'hidden'}
                 }
             })
         
@@ -146,12 +149,14 @@ class ButtonProvider extends Component {
     
    
     handleToggle = () => {
-        document.documentElement.clientWidth < 1100 && !this.state.toggle ? this.setState({newsDiv: { visibility: 'hidden'}}) : this.setState({newsDiv:{ visibility: 'visible'}})  // hide the articles while choosing channels for mobile view only
+        document.documentElement.clientWidth < 1100 && !this.state.toggle ? this.setState({newsDiv: {visibility: 'hidden'}}) : this.setState({newsDiv:{ visibility: 'visible'}})  // hide the articles while choosing channels for mobile view only
+        !this.state.toggle ? this.setState({cover: {visibility: 'visible'}}) : this.setState({cover: {visibility: 'hidden'}})
         this.setState( prevState => {   
                     return { 
                         toggle: !prevState.toggle, 
                         toggle2: false,
                         style:{ animation:''},
+                       
                     }
         })
        
@@ -160,12 +165,13 @@ class ButtonProvider extends Component {
     
     handleToggle2 = () => {
         document.documentElement.clientWidth < 1100 && !this.state.toggle2 ? this.setState({newsDiv: { visibility: 'hidden'}}) : this.setState({newsDiv:{ visibility: 'visible'}})  
+        !this.state.toggle2 ? this.setState({cover: {visibility: 'visible'}}) : this.setState({cover: {visibility: 'hidden'}})
         this.setState( prevState => {   
             return { 
                 toggle2: !prevState.toggle2, 
                 toggle: false,
                 style:{ animation:''},
-                style3: !this.state.toggle2  ? {visibility: 'hidden'} : {visibility: 'visible'},
+                
             }
         })
     }
@@ -174,7 +180,8 @@ class ButtonProvider extends Component {
     closing = () => {
         this.setState({
             toggle: false,
-            toggle2: false
+            toggle2: false,
+            cover: {visibility: 'hidden'}
         })
     }
     
