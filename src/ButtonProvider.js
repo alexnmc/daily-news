@@ -153,6 +153,7 @@ class ButtonProvider extends Component {
     
     
     handleToggle2 = () => {
+        // button2Wrap covers the entire page therefore it is imposible to scroll, we don't need the code below:
        //if( document.documentElement.clientWidth < 1100){this.state.toggle2 ? this.setState({stopScroll: { overflow: 'scroll'}}) : this.setState({stopScroll:{ overflow: 'hidden'}})}
         this.setState( prevState => {   
             return { 
