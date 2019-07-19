@@ -222,7 +222,7 @@ img{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 12vw;
+    width: 120pt;
     height: 2em;
     font-size: 16px;
     margin:auto;
@@ -673,15 +673,17 @@ h2{
 }
 
 .switchTo{
-    width: 80%;
+    width: 30vw;
     margin-bottom:5pt;
-    font-size: 3.5vw;
+    font-size: 2.5vw;
 }
 }
 
 
 @media only screen and (min-width:551px) and (max-width:1100px) {
-    
+    .switchTo{
+        width:120pt;
+    }
 
   .newsDiv2,
   .newsDiv{
@@ -736,9 +738,7 @@ h2{
         margin-left:82pt;
     }
 
-    .switchTo{
-        width: 80%;
-    }
+    
 
     .button1,
     .button2{
