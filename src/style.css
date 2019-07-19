@@ -679,7 +679,7 @@ h2{
 }
 
 .button2Wrap{
-    position: absolute;
+    position: fixed;
 }
 }
 
