@@ -567,7 +567,7 @@ a{
     margin-left:10px;
     overflow: scroll;
     animation: fadein2 1s, fade 1.2s;
-    position:absolute;
+    position:fixed;
    
 }
 
@@ -579,7 +579,7 @@ a{
     border: 0px;
     margin-left: -10px;
     animation: fadein 1s, fade 1.2s;
-    position: absolute;
+    position: fixed;
 }
 
 
