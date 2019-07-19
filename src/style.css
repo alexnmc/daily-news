@@ -323,7 +323,10 @@ img{
     animation: fadein2 1s, fade 2s;
 }
 
-.navbarWrap::-webkit-scrollbar { width: 0 !important }
+.navbarWrap::-webkit-scrollbar { 
+    width: 0 !important ;
+    background-color: transparent;
+}
 
 
 .navbarWrap2{
@@ -345,7 +348,7 @@ img{
 }
 
 .navbarWrap2::-webkit-scrollbar { 
-    width: 0 ;
+    width: 0 !important;
     background-color: transparent;
 }
 
