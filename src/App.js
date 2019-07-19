@@ -47,7 +47,7 @@ class App extends Component {
         const article = this.props.articles.length ? //either show the articles or not available message
             this.props.articles.map(item => {
                 return (
-                    <div className = {this.props.split ? "newsDiv" : "newsDiv2"} onClick = {this.props.closing} key={Math.random()}>
+                    <div className = {this.props.split ? "newsDiv" : "newsDiv2"} onClick = {this.props.closing} key={Math.random()} style = {this.props.newsDiv}>
                         <h1 className = 'itemTitle'> {item.title} </h1>
                         <img src={ item.urlToImage} alt = ''/>
                         <h2> {item.description} </h2>

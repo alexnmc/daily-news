@@ -25,6 +25,7 @@ class ButtonProvider extends Component {
             sourceName: localStorage.getItem("name") || 'USA',
             style3:{visibility:''},
             switch: true,
+            newsDiv :{visibility:'visible'}
         }
     }
    
@@ -141,7 +142,7 @@ class ButtonProvider extends Component {
     
    
     handleToggle = () => {
-       //if( document.documentElement.clientWidth < 1100){this.state.toggle ? this.setState({stopScroll: { overflow: 'scroll'}}) : this.setState({stopScroll:{ overflow: 'hidden'}})}  // block scrolling only on mobile view
+       document.documentElement.clientWidth < 1100 && !this.state.toggle ? this.setState({newsDiv: { visibility: 'hidden'}}) : this.setState({newsDiv:{ visibility: 'visible'}})  // block scrolling only on mobile view
         this.setState( prevState => {   
                     return { 
                         toggle: !prevState.toggle, 
@@ -149,12 +150,12 @@ class ButtonProvider extends Component {
                         style:{ animation:''},
                     }
         })
+       
     }
     
     
     handleToggle2 = () => {
-        // button2Wrap covers the entire page therefore it is imposible to scroll, we don't need the code below:
-       //if( document.documentElement.clientWidth < 1100){this.state.toggle2 ? this.setState({stopScroll: { overflow: 'scroll'}}) : this.setState({stopScroll:{ overflow: 'hidden'}})}
+        document.documentElement.clientWidth < 1100 && !this.state.toggle2 ? this.setState({newsDiv: { visibility: 'hidden'}}) : this.setState({newsDiv:{ visibility: 'visible'}})  
         this.setState( prevState => {   
             return { 
                 toggle2: !prevState.toggle2, 
