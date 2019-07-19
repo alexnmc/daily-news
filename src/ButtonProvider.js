@@ -51,7 +51,8 @@ class ButtonProvider extends Component {
     
     showVideoMini = () => {
         this.setState({
-            video:'on'
+            video:'on',
+            newsDiv:{ visibility: 'visible'}
         })
     }
 
@@ -72,6 +73,7 @@ class ButtonProvider extends Component {
                 videoUrl: url,
                 animationToggle: !prevState.animationToggle,
                 videoName: name,
+                newsDiv:{ visibility: 'visible'}
             }
         })
     }
@@ -106,6 +108,7 @@ class ButtonProvider extends Component {
                     video: 'off',
                     sourceName: name,
                     style3: {visibility: 'visible'},
+                    newsDiv:{ visibility: 'visible'}
                 }
             })
         
@@ -128,6 +131,7 @@ class ButtonProvider extends Component {
                     video: 'off',
                     sourceName: name,
                     style3: {visibility: 'visible'},
+                    newsDiv:{ visibility: 'visible'}
                 }
             })
         
