@@ -535,11 +535,11 @@ a{
 
 .newsDiv2,
 .newsDiv{
-    width: 98vw;
+    width: 97.5vw;
     height: auto;
     margin: auto;
     margin-top: 20%;
-    padding:7px;
+    padding:2.5vw;
     border-top: 0;
     margin-bottom: 20%;
     margin-top: 20%;
@@ -576,7 +576,7 @@ a{
     height: 85vh;
     margin-top: 48vh;
     border: 0px;
-    margin-left:15px;
+    margin-left:11px;
     overflow: scroll;
     animation: fadein2 1s, fade 1.2s;
     position:fixed;
@@ -588,7 +588,7 @@ a{
     margin-top: 48vh;
     padding: 0px;
     border: 0px;
-    margin-left: -15px;
+    margin-left: -11px;
     animation: fadein 1s, fade 1.2s;
     position: fixed;
 }
@@ -615,12 +615,12 @@ a{
 
 @-webkit-keyframes fadein2 {
     from { margin-left: 15%}
-    to   { margin-left: 15px}
+    to   { margin-left: 11px}
 }
 
 @-webkit-keyframes fadein {
     from { margin-left: -15%}
-    to   { margin-left: -15px}
+    to   { margin-left: -11px}
 }
 
 @-webkit-keyframes videoIn {
