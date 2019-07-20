@@ -287,11 +287,9 @@ img{
 .newLife2{
     display: flex;
     justify-content: space-between;
-    width: 37%;
+    width: 400pt;
     position:fixed;
     margin-top: -20pt;
-    
-   
 }
 
 .smallRed{
@@ -532,7 +530,7 @@ a{
 
    
 .channelName{
-    font-size: 17px;
+    font-size: 4vw;
 }
 
 .channelName2{
@@ -557,7 +555,7 @@ a{
 
 .button1,
 .button2{
-    width: 19vw;
+    width: 24vw;
     height: 33px;
     font-size: 0.75em;
     font-weight: bolder;
@@ -570,11 +568,11 @@ a{
 }
 
 .button1{
-    margin-left: -3%;
+    margin-left: 0%;
 }
 
 .button2{
-    margin-left: 3%;
+    margin-left: 0%;
 }
 
 .navbarWrap{
@@ -802,5 +800,13 @@ h2{
     @-webkit-keyframes videoIn4{
         from {  margin-right: -100%}
         to   {  margin-right: 17%}
+    }
+
+    .newLife2{
+        display: flex;
+        justify-content: space-between;
+        width: 600pt;
+        position:fixed;
+        margin-top: -20pt;
     }
 }
