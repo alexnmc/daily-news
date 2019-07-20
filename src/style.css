@@ -383,7 +383,7 @@ img{
 }
 
 .button1{
-    width: 94pt;
+    width: 9.5vw;
     height: 22.5pt;
     font-size:15px;
     font-family: 'helvetica';
@@ -398,7 +398,7 @@ img{
 }
 
 .button2{
-    width: 94pt;
+    width: 9.5vw;
     height: 22.5pt;
     font-size:15px;
     font-family: 'helvetica';
@@ -748,7 +748,7 @@ h2{
 }
 
 
-@media only screen and (min-width: 1800px) {
+@media only screen and (min-width: 2140px) {
 
     .newsDiv2,
     .newsDiv{
