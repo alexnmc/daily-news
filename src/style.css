@@ -71,7 +71,6 @@ body::-webkit-scrollbar{
     padding-bottom: 15%;
     padding-top: 5%;
     margin-left: 10%;
-   
 }
 
 .split1::-webkit-scrollbar { width: 0 !important }
@@ -110,7 +109,6 @@ body::-webkit-scrollbar{
     justify-content: center;
     height: 100vh;
     width: 100vw;
-   
 }
 
 .opening2{
@@ -161,7 +159,6 @@ h1{
 h2{
     font-size:12.5pt;
     font-family: 'arial';
-    
 }
 
 img{
@@ -218,7 +215,7 @@ img{
     color:rgb(240, 240, 240);
     display: flex;
     align-items: center;
-    width: 25.5vh;
+    width: 28vh;
     height:4.5vh;
     font-size: 2,1vh;
 }
@@ -323,7 +320,7 @@ img{
     display:flex;
     flex-direction:column;
     height: 90vh;
-    width: 23.4vh;
+    width: 24vh;
     position: fixed;
     background-color: rgba(255, 255, 255, 0.979);
     margin-top: 49vh;
@@ -344,17 +341,16 @@ img{
     display:flex;
     flex-direction:column;
     height: 90vh;
-    width: 25.5vh;
+    width: 28vh;
     background-color: hsla(0, 0%, 100%, 0.977);
     overflow: scroll;
     -webkit-overflow-scrolling: touch; 
     margin-top: 49vh;
-    margin-left: 1vh;
+    margin-left: 0vh;
     border-right: 1px solid rgba(161, 0, 0, 0.308);
     border-bottom: 1px solid rgba(161, 0, 0, 0);
     animation: fadein 0.7s, fade 1.2s;
     position:fixed;
-    
 }
 
 .navbarWrap2::-webkit-scrollbar { 
@@ -365,7 +361,7 @@ img{
 
 @-webkit-keyframes fadein {
     from {  margin-left: -15%}
-    to   {  margin-left: 1vh}
+    to   {  margin-left: 0vh}
 }
 
 
@@ -424,11 +420,11 @@ p{
     text-decoration: none;
     color: rgb(155, 0, 0);
     cursor: pointer;
-    margin-bottom: 0.4vh;
-    font-family: 'helvetica';
+    margin-bottom: 0.2vh;
+    font-family: 'arial';
     font-weight: 700;
     padding:3pt;
-    padding-left:6.5pt;
+    padding-left:12pt;
 }
 
 
