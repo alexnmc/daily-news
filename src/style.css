@@ -22,7 +22,6 @@ body::-webkit-scrollbar{
     overflow: scroll;
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;  
-    position: static;
 }
 
 .div::-webkit-scrollbar{

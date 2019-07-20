@@ -149,7 +149,7 @@ class ButtonProvider extends Component {
     
    
     handleToggle = () => {
-        //document.documentElement.clientWidth < 1100 && !this.state.toggle ? this.setState({newsDiv: {visibility: 'hidden'}}) : this.setState({newsDiv:{ visibility: 'visible'}})  // hide the articles while choosing channels for mobile view only
+        document.documentElement.clientWidth < 1100 && !this.state.toggle ? this.setState({newsDiv: {visibility: 'hidden'}}) : this.setState({newsDiv:{ visibility: 'visible'}})  // hide the articles while choosing channels for mobile view only
         !this.state.toggle ? this.setState({cover: {visibility: 'visible'}}) : this.setState({cover: {visibility: 'hidden'}})
         this.setState( prevState => {   
                     return { 
@@ -163,7 +163,7 @@ class ButtonProvider extends Component {
     
     
     handleToggle2 = () => {
-        //document.documentElement.clientWidth < 1100 && !this.state.toggle2 ? this.setState({newsDiv: { visibility: 'hidden'}}) : this.setState({newsDiv:{ visibility: 'visible'}})  
+        document.documentElement.clientWidth < 1100 && !this.state.toggle2 ? this.setState({newsDiv: { visibility: 'hidden'}}) : this.setState({newsDiv:{ visibility: 'visible'}})  
         !this.state.toggle2 ? this.setState({cover: {visibility: 'visible'}}) : this.setState({cover: {visibility: 'hidden'}})
         this.setState( prevState => {   
             return { 
