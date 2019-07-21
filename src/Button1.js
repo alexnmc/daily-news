@@ -9,9 +9,9 @@ import click from './Sound/click.mp3'
 
         
         function playSound(){
-            props.handleToggle2()
             var sound = new Audio(click)
             sound.play()
+            props.handleToggle2()
         }
         
         function getNews(url, name) {
