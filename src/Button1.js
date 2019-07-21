@@ -1,10 +1,18 @@
 import React from 'react'
 import {withButton} from './ButtonProvider'
+import click from './Sound/click.mp3'
 
 
     const Button1 = (props) => {
 
         let myRef = React.createRef()
+
+        
+        function playSound(){
+            props.handleToggle2()
+            var sound = new Audio(click)
+            sound.play()
+        }
         
         function getNews(url, name) {
             props.loadingAnim()
@@ -26,7 +34,7 @@ import {withButton} from './ButtonProvider'
        
     return (
         <div className = "button2Wrap">
-            <button  className = "button2" onClick = {props.handleToggle2}>Read</button>
+            <button  className = "button2" onClick = {() => playSound()}>Read</button>
             {props.toggle2 ?
                 <div className = "navbarWrap2" ref = {myRef}>
                 {props.switch  ?

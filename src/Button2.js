@@ -1,12 +1,19 @@
 import React  from 'react'
 import {withButton} from './ButtonProvider'
-
+import click from './Sound/click.mp3'
 
 const Button2 = (props) => {
    
+    
+    function playSound(){
+        props.handleToggle()
+        var sound = new Audio(click)
+        sound.play()
+    }
+    
     return (
             <div className = "transitions">
-            <button className = " button1" onClick = {props.handleToggle}>Watch</button>
+            <button className = " button1" onClick = {() => playSound()}>Watch</button>
             { props.toggle ?
             
                 <div className = "navbarWrap" >
