@@ -378,8 +378,8 @@ img{
 
 .button1{
     width: 9.5vw;
-    height: 22.5pt;
-    font-size:15px;
+    height: 23pt;
+    font-size:14px;
     font-family: 'helvetica';
     font-weight: bolder;
     color: rgb(241, 241, 241);
@@ -387,14 +387,14 @@ img{
     cursor: pointer;
     border: 1px solid rgb(141, 0, 0);
     border-radius: 2px;
-    margin-left: -50pt;
+    margin-left: -60pt;
     position:fixed;
 }
 
 .button2{
     width: 9.5vw;
-    height: 22.5pt;
-    font-size:15px;
+    height: 23pt;
+    font-size:14px;
     font-family: 'helvetica';
     font-weight: bolder;
     color: rgb(241, 241, 241);
@@ -402,7 +402,7 @@ img{
     cursor: pointer;
     border: 1px solid  rgb(141, 0, 0);
     border-radius: 2px;
-    margin-left:50pt;
+    margin-left:60pt;
     position:fixed;
 }
 
