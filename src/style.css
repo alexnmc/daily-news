@@ -188,8 +188,8 @@ img{
     height: auto;
     font-size: 10pt;
     margin:auto;
-    margin-bottom: 5%;
-    margin-top:8%;
+    margin-bottom: 9%;
+    margin-top:4%;
     background-color: white;
     display:flex;
     flex-direction: column;
@@ -483,7 +483,6 @@ p:hover{
     font-family: 'helvetica';
     background-color: rgba(255, 255, 255, 0.938);
     border: 1.7vh solid rgba(255, 255, 255, 0.76);
-   
 }
 
 
@@ -493,7 +492,6 @@ p:hover{
     justify-content:center;
     height: 7.5vh;
     width:100vw;
-    
 }
 
 
@@ -510,7 +508,6 @@ p:hover{
    font-family: 'helvetica';
    width: 50%;
    color:rgb(185, 0, 0);
-   
 }
 
 a{
@@ -641,7 +638,6 @@ p{
 }
 
 .topP{
-    
     height: 26px;
     width:26px;
 }
@@ -703,13 +699,15 @@ h2{
 
 
 @media only screen and (min-width:601px) and (max-width:1100px) {
+    
+    
     .switchTo{
         width:120pt;
     }
 
   .newsDiv2,
   .newsDiv{
-      width:350pt;
+    width:350pt;
   }
     
   .splitP {
@@ -746,21 +744,17 @@ h2{
     .newsDiv2,
     .newsDiv{
         width: 430pt;
-       
     }
 
     .videoWrap2{
         width: 600pt;
         height:337pt;
         margin:auto;
-       
     }
 
     .smallRed{
         margin-left:82pt;
     }
-
-    
 
     .button1,
     .button2{

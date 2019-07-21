@@ -158,7 +158,6 @@ class ButtonProvider extends Component {
                         style:{ animation:''},
                     }
         })
-       
     }
     
     
@@ -170,7 +169,6 @@ class ButtonProvider extends Component {
                 toggle2: !prevState.toggle2, 
                 toggle: false,
                 style:{ animation:''},
-                
             }
         })
     }
