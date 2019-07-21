@@ -3,7 +3,6 @@ import {withButton} from './ButtonProvider'
 import click from './Sound/click.mp3'
 
 const Button2 = (props) => {
-   
     
     function playSound(){
         var sound = new Audio(click)
