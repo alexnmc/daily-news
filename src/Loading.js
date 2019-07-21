@@ -2,7 +2,7 @@ import React from 'react'
 import ReactLoading from "react-loading"
 
 
-const Opening = ({type, color}) => {
+const Loading = ({type, color}) => {
     
   return(
     <div className = "loading">
@@ -12,4 +12,4 @@ const Opening = ({type, color}) => {
 }
 
 
-export default Opening
+export default Loading

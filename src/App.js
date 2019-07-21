@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import Button1 from './Button1'
 import Button2 from './Button2'
 import {withButton} from './ButtonProvider'
-import Opening from './Opening'
+import Loading from './Loading'
 import Video from './Video'
 import Video2 from './Video2'
 import Scroll from 'react-scroll'
@@ -77,14 +77,14 @@ class App extends Component {
                 {this.props.split ?
                     <div className = 'splitScreen'>
                             <div className = 'split1' ref = {this.myRef}>
-                                <div className = "newLife">
+                                <div className = "channelName6">
                                     <h1 className = 'channelName3' style ={this.props.toggle2 ? {visibility: 'hidden'} : {visibility: 'visible'}}>{`Top headlines: ${this.props.sourceName}`}</h1>
-                                    <div className = 'smallRed2' onClick={() => this.fullScreen()}></div>
+                                    <div className = 'fullScreen2' onClick={() => this.fullScreen()}></div>
                                 </div>
                                 { this.props.status === 'REQUEST' ? 
-                                    <div className = "opening3">
-                                        <div className = "opening">
-                                            <Opening/>
+                                    <div className = "loading3">
+                                        <div className = "loading1">
+                                            <Loading/>
                                         </div>
                                     </div>
                                     :
@@ -98,9 +98,9 @@ class App extends Component {
                 :    
                     <div ref = {this.myRef} className = 'div' style = {this.props.newsDiv}>
                         { this.props.status === 'REQUEST' ? 
-                            <div className = "opening2">
-                                <div className = "opening">
-                                    <Opening/>
+                            <div className = "loading2">
+                                <div className = "loading1">
+                                    <Loading/>
                                 </div>
                             </div>
                             :
