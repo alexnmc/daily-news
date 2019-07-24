@@ -1,6 +1,6 @@
 import React  from 'react'
 import {withButton} from './ButtonProvider'
-import click from './Sound/click.mp3'
+import click from './Sound/click1.mp3'
 
 const Button2 = (props) => {
     
