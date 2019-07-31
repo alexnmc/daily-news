@@ -523,13 +523,13 @@ a{
    
 .channelName{
     font-size: 4vw;
-    color:white;
+    color: rgb(165, 0, 0);
 }
 
 .channelName2{
-    height: 9.2vh;
-    background-color:rgba(0, 0, 0, 0.671);
-    border: 1.7vh solid black;
+    height: 9vh;
+    background-color:rgba(255, 255, 255, 0.972);
+    border: 1.7vh solid rgb(255, 255, 255);
 }
 
 .newsDiv2,
