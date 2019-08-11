@@ -471,6 +471,7 @@ p:hover{
     color: rgb(156, 0, 0);
     padding:2pt;
     margin:auto;
+    animation: fade 2s;
 }
 
 .channelName2{

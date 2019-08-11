@@ -50,7 +50,7 @@ class App extends Component {
                     <div className = {this.props.split ? "newsDiv" : "newsDiv2"} onClick = {this.props.closing} key={Math.random()}>
                         <h1 className = 'itemTitle'> {item.title} </h1>
                         <img src={ item.urlToImage} alt = ''/>
-                        <h2> {item.description} </h2>
+                        <h2> {item.description}</h2>
                         <h2 className = "name">{item.source.name}</h2>
                         <div className = "bottom">
                             <a className = "link"  href={item.url}>read more</a>
