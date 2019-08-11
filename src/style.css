@@ -421,7 +421,7 @@ p{
     color: rgb(155, 0, 0);
     cursor: pointer;
     margin-bottom: 0.2vh;
-    font-family: 'arial';
+    font-family: 'helvetica';
     font-weight: 700;
     padding:3pt;
     padding-left:12pt;
@@ -467,8 +467,8 @@ p:hover{
 .channelName{
     text-align: center;
     height: auto;
-    font-size: 16pt;
-    color: rgb(170, 0, 0);
+    font-size: 15pt;
+    color: rgb(156, 0, 0);
     padding:2pt;
     margin:auto;
 }
