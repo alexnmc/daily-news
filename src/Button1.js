@@ -10,7 +10,7 @@ import click from './Sound/click1.mp3'
         
         function playSound(){
             var sound = new Audio(click)
-            sound.play()
+            //sound.play()
             props.handleToggle2()
         }
         

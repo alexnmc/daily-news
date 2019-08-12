@@ -6,7 +6,7 @@ const Button2 = (props) => {
     
     function playSound(){
         var sound = new Audio(click)
-        sound.play()
+        //sound.play()
         props.handleToggle()
     }
     
