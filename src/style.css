@@ -32,7 +32,7 @@ body::-webkit-scrollbar{
 
 
 .div2{
-    background-color: rgba(12, 12, 12, 0.984);
+    background-color: rgba(17, 17, 17, 0.981);
     height: 100%;
     width: 100%;
     position:fixed;
@@ -153,11 +153,14 @@ body::-webkit-scrollbar{
 h1{
     color:rgb(131, 0, 0);
     margin-bottom: 1pt;
-    font-size:13pt;
+}
+
+.itemTitle{
+    font-size: 12.5pt;
 }
 
 h2{
-    font-size:12.5pt;
+    font-size:12pt;
     font-family: 'arial';
 }
 
@@ -167,10 +170,9 @@ img{
 }
 
 .newsDiv{
-      width: 330pt;
+      width: 310pt;
       padding:10px;
       height: auto;
-      font-size: 10pt;
       margin:auto;
       margin-bottom: 5%;
       margin-top:8%;
