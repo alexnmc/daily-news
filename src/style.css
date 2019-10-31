@@ -149,10 +149,10 @@ body::-webkit-scrollbar{
     justify-content: flex-start;
 }
   
-
 h1{
     color:rgb(131, 0, 0);
     margin-bottom: 1pt;
+    font-weight: 900;
 }
 
 .itemTitle{
@@ -210,16 +210,15 @@ img{
     to  { margin-left: 0}
 }
 
-
 .topHead{
     position: fixed;
     background-color:  rgb(161, 0, 0);
     color:rgb(240, 240, 240);
     display: flex;
     align-items: center;
-    width: 28vh;
+    width: 165pt;
     height:4.5vh;
-    font-size: 2vh;
+    font-size: 12pt;
 }
 
 .switchTo{
@@ -253,8 +252,8 @@ img{
 }
 
 .videoWrap2{
-    width: 400pt;
-    height:225pt;
+    width: 360pt;
+    height:200pt;
     margin:auto;
     margin-bottom:39vh
 }
@@ -271,7 +270,6 @@ img{
     to   {  margin-right: 0px}
 }
 
-
 .name{
     color: rgb(128, 0, 0);
     cursor: none;
@@ -286,7 +284,7 @@ img{
 .channelName7{
     display: flex;
     justify-content: space-between;
-    width: 400pt;
+    width: 360pt;
     position:fixed;
     margin-top: -20pt;
 }
@@ -322,7 +320,7 @@ img{
     display:flex;
     flex-direction:column;
     height: 90vh;
-    width: 24vh;
+    width: 165pt;
     position: fixed;
     background-color: rgba(255, 255, 255, 0.979);
     margin-top: 49vh;
@@ -337,13 +335,12 @@ img{
     background-color: transparent;
 }
 
-
 .navbarWrap2{
     min-height: 0;
     display:flex;
     flex-direction:column;
     height: 90vh;
-    width: 28vh;
+    width: 165pt;
     background-color: hsla(0, 0%, 100%, 0.977);
     overflow: scroll;
     -webkit-overflow-scrolling: touch; 
@@ -379,7 +376,7 @@ img{
 }
 
 .button1{
-    width: 9.5vw;
+    width: 110pt;
     height: 23pt;
     font-size:14px;
     font-family: 'helvetica';
@@ -394,7 +391,7 @@ img{
 }
 
 .button2{
-    width: 9.5vw;
+    width: 110pt;
     height: 23pt;
     font-size:14px;
     font-family: 'helvetica';
@@ -417,7 +414,7 @@ img{
 }
 
 p{
-    font-size: 2.1vh;
+    font-size: 12.5pt;
     font-weight: bolder;
     text-decoration: none;
     color: rgb(155, 0, 0);
@@ -468,6 +465,7 @@ p:hover{
 
 .channelName{
     text-align: center;
+    font-weight: 900;
     height: auto;
     font-size: 15pt;
     color: rgb(156, 0, 0);
@@ -480,22 +478,20 @@ p:hover{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    height: 7.5vh;
+    height: 40pt;
     width:100vw;
     font-family: 'helvetica';
     background-color: rgba(255, 255, 255, 0.938);
-    border: 1.7vh solid rgba(255, 255, 255, 0.76);
+    border: 8pt solid rgba(255, 255, 255, 0.76);
 }
-
 
 .channelName5{
     display: flex;
     align-items: center;
     justify-content:center;
-    height: 7.5vh;
+    height: 30pt;
     width:100vw;
 }
-
 
 .channelName3{
     width: 390pt;
@@ -520,8 +516,7 @@ a{
 
 
 
-
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
 
    
 .channelName{
@@ -703,7 +698,7 @@ h2{
 }
 
 
-@media only screen and (min-width:601px) and (max-width:1100px) {
+@media only screen and (min-width:701px) and (max-width:1000px) {
     
     
     .switchTo{
@@ -721,7 +716,7 @@ h2{
   
   .button1,
   .button2{
-    width: 75pt;
+    width: 95pt;
     height: 30px;
     font-size: 0.8em;
     font-weight: bolder;
