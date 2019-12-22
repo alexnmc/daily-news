@@ -342,11 +342,8 @@ img{
     display:flex;
     flex-direction:column;
     height: 90vh;
-<<<<<<< HEAD
     width: 29vh;
-=======
     width: 165pt;
->>>>>>> 376a84a99b3e2d2a4a9741d4d54e05f60fd9cc3f
     background-color: hsla(0, 0%, 100%, 0.977);
     overflow: scroll;
     -webkit-overflow-scrolling: touch; 
