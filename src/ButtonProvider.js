@@ -87,10 +87,15 @@ class ButtonProvider extends Component {
         axios.get( `https://newsapi.org/v2/top-headlines?${this.state.url.length > 2 ? 'sources' : 'country'}=${this.state.url}&apiKey=f64c9be83f094f43a2c3954a6c1ec8aa`)
             .then(response => {
                 this.setState({
-                    articles: mockData,
+                    articles: response.data.articles,
                     sourceName: this.state.sourceName,
                     status: 'SUCCESS',
                     video: 'off',
+                })
+            }).catch(err => {
+                this.setState({
+                    articles: mockData,
+                    status: 'SUCCESS',
                 })
             })
     }
@@ -100,12 +105,17 @@ class ButtonProvider extends Component {
         localStorage.setItem("url", url)
         localStorage.setItem("name", name)
         axios.get( `https://newsapi.org/v2/top-headlines?sources=${url}&apiKey=f64c9be83f094f43a2c3954a6c1ec8aa`)
-         .then(response => {
-            this.setState({
-                articles: mockData,
-                status: 'SUCCESS',
+            .then(response => {
+                this.setState({
+                    articles: response.data.articles,
+                    status: 'SUCCESS',
+                })
+            }).catch(err => {
+                this.setState({
+                    articles: mockData,
+                    status: 'SUCCESS',
+                })
             })
-        })
             this.setState(prevState=>{
                 return{ 
                     toggle2: !prevState.toggle2,
@@ -123,12 +133,17 @@ class ButtonProvider extends Component {
         localStorage.setItem("url", url) 
         localStorage.setItem("name", name)
         axios.get( `https://newsapi.org/v2/top-headlines?country=${url}&apiKey=f64c9be83f094f43a2c3954a6c1ec8aa`)
-         .then(response => {
-            this.setState({
-                articles: mockData,
-                status: 'SUCCESS',
+            .then(response => {
+                this.setState({
+                    articles: response.data.articles,
+                    status: 'SUCCESS',
+                })
+            }).catch(err => {
+                this.setState({
+                    articles: mockData,
+                    status: 'SUCCESS',
+                })
             })
-        })
             this.setState(prevState=>{  
                 return { 
                     toggle2: !prevState.toggle2,
