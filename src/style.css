@@ -323,7 +323,7 @@ img{
     width: 165pt;
     position: fixed;
     background-color: rgba(255, 255, 255, 0.979);
-    margin-top: 49vh;
+    margin-top: 99vh;
     border-left: 1px solid white;
     border-bottom: 1px solid white;
     animation: fadein2 0.7s, fade 1.8s;
@@ -344,7 +344,7 @@ img{
     background-color: hsla(0, 0%, 100%, 0.977);
     overflow: scroll;
     -webkit-overflow-scrolling: touch; 
-    margin-top: 49vh;
+    margin-top: 99vh;
     margin-left: 0vh;
     border-right: 1px solid rgba(161, 0, 0, 0.308);
     border-bottom: 1px solid rgba(161, 0, 0, 0);
@@ -571,7 +571,7 @@ a{
 .navbarWrap{
     width: 40vw;
     height: 85vh;
-    margin-top: 48vh;
+    margin-top: 98vh;
     border: 0px;
     margin-left:11px;
     overflow: scroll;
@@ -582,7 +582,7 @@ a{
 .navbarWrap2{
     width: 38.5vw;
     height: 85vh;
-    margin-top: 48vh;
+    margin-top: 98vh;
     padding: 0px;
     border: 0px;
     margin-left: -11px;

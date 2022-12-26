@@ -17,15 +17,15 @@ const Button2 = (props) => {
             
                 <div className = "navbarWrap" >
                     <p className = 'live' onClick = {()=> props.showVideo('https://www.youtube.com/watch?v=CKrbM_Ac3Jw', 'BBC News LIVE')}>BBC News<br></br> Live</p>
-                    <p className = 'live' onClick = {()=> props.showVideo('https://www.youtube.com/watch?v=1tqcADsCx8s', 'Euronews LIVE')}>Euronews<br></br> Live</p>
-                    <p className = 'live' onClick = {()=> props.showVideo('https://www.youtube.com/watch?v=Af_7Gyfp8qI', 'France 24 LIVE')}>France 24 <br></br>Live</p>
-                    <p className = 'live' onClick = {()=> props.showVideo('https://www.youtube.com/watch?v=NvqKZHpKs-g', 'DW News LIVE')}>Deutsche Welle<br></br> Live</p>
-                    <p className = 'live' onClick = {()=> props.showVideo('https://www.youtube.com/watch?v=rHY8yG4mVzs', 'FOX News LIVE')}>FOX News<br></br> Live</p>
-                    <p className = 'live' onClick = {()=> props.showVideo('https://www.youtube.com/watch?v=IFAcqaNzNSc', 'RT News LIVE')}>RT News<br></br> Live</p>
-                    <p className = 'live' onClick = {()=> props.showVideo('https://www.youtube.com/watch?v=SyefnCmfvFA', 'ABC News Australia')}>ABC Australia <br></br>Live</p>
-                    <p className = 'live' onClick = {()=> props.showVideo('https://www.youtube.com/watch?v=tPeUHECNLKs', 'NBC-2 LIVE')}>NBC-2 News<br></br> Live</p>
-                    <p className = 'live' onClick = {()=> props.showVideo('https://www.youtube.com/watch?v=IukZ7gOGPj8', 'ABC-7 SWFL LIVE')}>ABC-7 SWFL <br></br>Live</p>
-                    <p className = 'live' onClick = {()=> props.showVideo('https://www.youtube.com/watch?v=jL8uDJJBjMA', 'Al Jazeera English LIVE')}>Al Jazeera<br></br>English Live</p>
+                    <p className = 'live' onClick = {()=> props.showVideo('https://www.youtube.com/watch?v=pykpO5kQJ98', 'Euronews LIVE')}>Euronews<br></br> Live</p>
+                    <p className = 'live' onClick = {()=> props.showVideo('https://www.youtube.com/watch?v=gxG3pdKvlIs', 'France 24 LIVE')}>France 24 <br></br>Live</p>
+                    <p className = 'live' onClick = {()=> props.showVideo('https://www.youtube.com/watch?v=gxG3pdKvlIs', 'DW News LIVE')}>Deutsche Welle<br></br> Live</p>
+                    <p className = 'live' onClick = {()=> props.showVideo('https://www.youtube.com/watch?v=Zl3obqdVZ2o', 'FOX News LIVE')}>FOX News<br></br> Live</p>
+                    <p className = 'live' onClick = {()=> props.showVideo('https://www.youtube.com/watch?v=BNaCCk_MwFw&t=3s', 'RT News LIVE')}>RT News<br></br> Live</p>
+                    <p className = 'live' onClick = {()=> props.showVideo('https://www.youtube.com/watch?v=w_Ma8oQLmSM', 'ABC News Australia')}>ABC Australia <br></br>Live</p>
+                    <p className = 'live' onClick = {()=> props.showVideo('https://www.youtube.com/watch?v=w_Ma8oQLmSM', 'NBC-2 LIVE')}>NBC-2 News<br></br> Live</p>
+                    <p className = 'live' onClick = {()=> props.showVideo('https://www.youtube.com/watch?v=_yen6PGM4ak', 'ABC-7 SWFL LIVE')}>ABC-7 SWFL <br></br>Live</p>
+                    <p className = 'live' onClick = {()=> props.showVideo('https://www.youtube.com/watch?v=GEumHK0hfdo', 'Al Jazeera English LIVE')}>Al Jazeera<br></br>English Live</p>
                 </div>
 
             :
