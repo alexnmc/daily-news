@@ -216,6 +216,7 @@ img{
     color:rgb(240, 240, 240);
     display: flex;
     align-items: center;
+    width: 29vh;
     width: 165pt;
     height:4.5vh;
     font-size: 12pt;
@@ -320,6 +321,7 @@ img{
     display:flex;
     flex-direction:column;
     height: 90vh;
+    width: 27vh;
     width: 165pt;
     position: fixed;
     background-color: rgba(255, 255, 255, 0.979);
@@ -340,6 +342,7 @@ img{
     display:flex;
     flex-direction:column;
     height: 90vh;
+    width: 29vh;
     width: 165pt;
     background-color: hsla(0, 0%, 100%, 0.977);
     overflow: scroll;
@@ -548,7 +551,7 @@ a{
 
 .button1,
 .button2{
-    width: 24vw;
+    width: 25vw;
     height: 33px;
     font-size: 0.75em;
     font-weight: bolder;
