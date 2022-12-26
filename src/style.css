@@ -3,18 +3,16 @@
     margin: 0;
 }
 
-
 body{
-      background-image: url('./Photos/news.jpg') ;
-      background-size:10%;
-      display:flex;
-      flex-direction: column;
+    background-image: url('./Photos/news.jpg') ;
+    background-size:10%;
+    display:flex;
+    flex-direction: column;
 }
 
 body::-webkit-scrollbar{
     display: none;
- }
-
+}
 
 .div{
     height: 100vh;
@@ -28,8 +26,7 @@ body::-webkit-scrollbar{
     display: none;
     width: 0 ;
     background-color: transparent;
- }
-
+}
 
 .div2{
     background-color: rgba(17, 17, 17, 0.984);
@@ -91,12 +88,10 @@ body::-webkit-scrollbar{
     cursor:pointer;
 }
 
-
 @-webkit-keyframes videoIn3 {
     from {  margin-left: -150%}
     to   {  margin-left: 10%}
 }
-
 
 @-webkit-keyframes videoIn4{
     from {  margin-right: -100%}
@@ -170,18 +165,18 @@ img{
 }
 
 .newsDiv{
-      width: 310pt;
-      padding:10px;
-      height: auto;
-      margin:auto;
-      margin-bottom: 5%;
-      margin-top:8%;
-      background-color: white;
-      display:flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      font-family: Verdana, Tahoma, sans-serif;
+    width: 310pt;
+    padding:10px;
+    height: auto;
+    margin:auto;
+    margin-bottom: 5%;
+    margin-top:8%;
+    background-color: white;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Verdana, Tahoma, sans-serif;
 }
 
 .newsDiv2{
@@ -203,7 +198,6 @@ img{
 .newsBig{
     animation: superMan 1s;
 }
-
 
 @keyframes superMan{
     from{ margin-left: -50%}
@@ -700,41 +694,40 @@ h2{
 
 @media only screen and (min-width:701px) and (max-width:1000px) {
     
-    
     .switchTo{
         width:120pt;
     }
 
-  .newsDiv2,
-  .newsDiv{
-    width:350pt;
-  }
+    .newsDiv2,
+    .newsDiv{
+        width:350pt;
+    }
     
-  .splitP {
-    visibility: hidden;
-  }
+    .splitP {
+        visibility: hidden;
+    }
   
-  .button1,
-  .button2{
-    width: 95pt;
-    height: 30px;
-    font-size: 0.8em;
-    font-weight: bolder;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 2px;
-    padding: auto;
-    border:1px solid rgb(156, 0, 0);
-}
+    .button1,
+    .button2{
+        width: 95pt;
+        height: 30px;
+        font-size: 0.8em;
+        font-weight: bolder;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 2px;
+        padding: auto;
+        border:1px solid rgb(156, 0, 0);
+    }
 
-.button1{
-    margin-left: -2%;
-}
+    .button1{
+        margin-left: -2%;
+    }
 
-.button2{
-    margin-left: 2%;
-}
+    .button2{
+        margin-left: 2%;
+    }
 
 }
 
