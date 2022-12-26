@@ -1,6 +1,5 @@
 import React from 'react'
 import {withButton} from './ButtonProvider'
-import click from './Sound/click1.mp3'
 
 
     const Button1 = (props) => {
@@ -9,8 +8,6 @@ import click from './Sound/click1.mp3'
 
         
         function playSound(){
-            var sound = new Audio(click)
-            //sound.play()
             props.handleToggle2()
         }
         
