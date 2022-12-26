@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import axios from 'axios'
+import mockData from './mockData.json'
 
 
 const ButtonContext = React.createContext()
@@ -86,7 +87,7 @@ class ButtonProvider extends Component {
         axios.get( `https://newsapi.org/v2/top-headlines?${this.state.url.length > 2 ? 'sources' : 'country'}=${this.state.url}&apiKey=f64c9be83f094f43a2c3954a6c1ec8aa`)
             .then(response => {
                 this.setState({
-                    articles: response.data.articles,
+                    articles: mockData,
                     sourceName: this.state.sourceName,
                     status: 'SUCCESS',
                     video: 'off',
@@ -101,7 +102,7 @@ class ButtonProvider extends Component {
         axios.get( `https://newsapi.org/v2/top-headlines?sources=${url}&apiKey=f64c9be83f094f43a2c3954a6c1ec8aa`)
          .then(response => {
             this.setState({
-                articles: response.data.articles,
+                articles: mockData,
                 status: 'SUCCESS',
             })
         })
@@ -124,7 +125,7 @@ class ButtonProvider extends Component {
         axios.get( `https://newsapi.org/v2/top-headlines?country=${url}&apiKey=f64c9be83f094f43a2c3954a6c1ec8aa`)
          .then(response => {
             this.setState({
-                articles: response.data.articles,
+                articles: mockData,
                 status: 'SUCCESS',
             })
         })
