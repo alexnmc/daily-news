@@ -4,7 +4,7 @@ import {withButton} from './ButtonProvider'
 
     const Button1 = (props) => {
 
-        let myRef = React.createRef()
+        const myRef = React.createRef()
 
         function getNews(url, name) {
             props.loadingAnim()

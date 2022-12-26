@@ -8,13 +8,10 @@ import Video2 from './Video2'
 import Scroll from 'react-scroll'
 
 
-
 class App extends Component { 
     constructor(props){
         super(props)
         this.myRef = React.createRef()
-        
-        
         this.state = {
             call: window.addEventListener("resize", this.onResize) //if the window size changed call the function onResize
         }
