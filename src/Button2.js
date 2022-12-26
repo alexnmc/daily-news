@@ -4,15 +4,10 @@ import {withButton} from './ButtonProvider'
 
 const Button2 = (props) => {
     
-    function playSound(){
-        props.handleToggle()
-    }
-    
     return (
-            <div className = "transitions">
-            <button className = " button1" onClick = {() => playSound()}>Watch</button>
-            { props.toggle ?
-            
+        <div className = "transitions">
+            <button className = " button1" onClick = {() =>  props.handleToggle()}>Watch</button>
+            {props.toggle ?
                 <div className = "navbarWrap" >
                     <p className = 'live' onClick = {()=> props.showVideo('https://www.youtube.com/watch?v=CKrbM_Ac3Jw', 'BBC News LIVE')}>BBC News<br></br> Live</p>
                     <p className = 'live' onClick = {()=> props.showVideo('https://www.youtube.com/watch?v=pykpO5kQJ98', 'Euronews LIVE')}>Euronews<br></br> Live</p>
@@ -29,8 +24,7 @@ const Button2 = (props) => {
             :
                 null
             }
-            
-            </div> 
+        </div> 
         )
 }
                
