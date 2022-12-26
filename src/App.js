@@ -81,7 +81,7 @@ class App extends Component {
                                     <h1 className = 'channelName3' style ={this.props.toggle2 ? {visibility: 'hidden'} : {visibility: 'visible'}}>{`Top headlines: ${this.props.sourceName}`}</h1>
                                     <div className = 'fullScreen2' onClick={() => this.fullScreen()}></div>
                                 </div>
-                                { this.props.status === 'REQUEST' ? 
+                                {this.props.status === 'REQUEST' ? 
                                     <div className = "loading3">
                                         <div className = "loading1">
                                             <Loading/>
@@ -97,7 +97,7 @@ class App extends Component {
                     </div>
                 :    
                     <div ref = {this.myRef} className = 'div' style = {this.props.newsDiv}>
-                        { this.props.status === 'REQUEST' ? 
+                        {this.props.status === 'REQUEST' ? 
                             <div className = "loading2">
                                 <div className = "loading1">
                                     <Loading/>
@@ -108,7 +108,7 @@ class App extends Component {
                                 <div className = " channelName5">
                                     <div className = 'splitP' onClick={()=> this.props.splitScreen()}>|</div>
                                 </div>
-                                { this.props.video === 'on' ?
+                                {this.props.video === 'on' ?
                                     <Video/>
                                     :
                                     <div className = 'newsBig' style = {this.props.articles.length ? {height: 'auto'} : {height: '100vh'}}>

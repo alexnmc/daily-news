@@ -6,11 +6,6 @@ import {withButton} from './ButtonProvider'
 
         let myRef = React.createRef()
 
-        
-        function playSound(){
-            props.handleToggle2()
-        }
-        
         function getNews(url, name) {
             props.loadingAnim()
             props.getNewsSource(url, name)
@@ -23,7 +18,7 @@ import {withButton} from './ButtonProvider'
             props.scrolling()
         }
 
-        function  scrolling(){
+        function scrolling(){
             props.editSwitch()
             myRef.current.scrollTo({top: 0, behavior: 'smooth'})
         }
@@ -31,7 +26,7 @@ import {withButton} from './ButtonProvider'
        
     return (
         <div className = "button2Wrap">
-            <button  className = "button2" onClick = {() => playSound()}>Read</button>
+            <button  className = "button2" onClick = {() =>  props.handleToggle2()}>Read</button>
             {props.toggle2 ?
                 <div className = "navbarWrap2" ref = {myRef}>
                 {props.switch  ?
@@ -90,7 +85,7 @@ import {withButton} from './ButtonProvider'
                         <p onClick = {()=> getNews2("gb", "United Kingdom")}>United Kingdom</p>
                         <p onClick = {()=> getNews2("us", "USA")}>USA</p>
                         <p onClick = {()=> getNews2("ve", "Venezuela")}>Venezuela</p>
-                        <p  className = 'switchTo' onClick = {()=>scrolling()}>switch to channels</p>  
+                        <p className = 'switchTo' onClick = {()=>scrolling()}>switch to channels</p>  
                     </div>
                     :
                     <div>

@@ -7,7 +7,6 @@ const ButtonContext = React.createContext()
 
 
 class ButtonProvider extends Component {
-    
     constructor(props){
         super(props)
         this.state = {
@@ -54,7 +53,7 @@ class ButtonProvider extends Component {
     showVideoMini = () => {
         this.setState({
             video:'on',
-            newsDiv:{ visibility: 'visible'},
+            newsDiv:{visibility: 'visible'},
             cover: {visibility: 'hidden'}
         })
     }
@@ -200,7 +199,6 @@ class ButtonProvider extends Component {
     
     
     render() {
-      
         return (
             <ButtonContext.Provider
                 value={{
