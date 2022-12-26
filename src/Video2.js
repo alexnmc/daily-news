@@ -4,7 +4,6 @@ import {withButton} from './ButtonProvider'
 
 const Video2 = (props) => {
 
-    
     function splitScreen2(){
        props.showVideoMini()
        props.splitScreen()
