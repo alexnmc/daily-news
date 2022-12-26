@@ -216,7 +216,7 @@ img{
     color:rgb(240, 240, 240);
     display: flex;
     align-items: center;
-    width: 166pt;
+    width: 165pt;
     height:4.5vh;
     font-size: 12pt;
 }
@@ -598,7 +598,7 @@ a{
 }
 
 .topHead{
-    width:calc(38.5vw + 2px);
+    width:calc(38.5vw + 4px);
     font-size: 4vw;
     height: auto;
     position:fixed;
